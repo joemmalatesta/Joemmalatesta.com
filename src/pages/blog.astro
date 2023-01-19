@@ -38,6 +38,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 			<section>
 				<ul>
 					{
+						// Output each post with the date it was posted.
 						posts.map((post) => (
 							<li>
 								<time datetime={post.frontmatter.pubDate}>
