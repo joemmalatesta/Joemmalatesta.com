@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
@@ -15,7 +15,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 		<BaseHead title="Bloggington" description="A list of Joe Malatesta's blog posts about tech, coding, and self improvement." />
 	</head>
 	<body>
-		<Header />
+		<Header client:load/>
 		<main>
 			<section>
 				<ul>

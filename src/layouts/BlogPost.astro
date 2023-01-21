@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 
 export interface Props {
@@ -24,7 +24,7 @@ const {
 		<BaseHead title={title} description={description} />
 	</head>
 	<body>
-		<Header />
+		<Header client:load />
 		<main class="mx-auto prose prose-indigo md:prose-lg lg:prose-lg">
 			<article>
 				<!-- Should Provide an Alt -->
