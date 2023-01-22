@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
+import BlogCard from '../components/blogCard.astro';
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
@@ -18,6 +19,13 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 		<Header client:load/>
 		<main>
 			<section>
+				<div class="grid grid-cols-3 gap-4 mx-10">
+					{
+						posts.slice(0,6).map((post) => (
+							<BlogCard title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.pubDate}/>
+						))
+					}
+				</div>
 				<ul>
 					{
 						// Output each post with the date it was posted.
