@@ -18,32 +18,13 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	<body>
 		<Header client:load/>
 		<main>
-			<section>
-				<div class="grid grid-cols-3 gap-4 mx-10">
-					{
-						posts.slice(0,6).map((post) => (
-							<BlogCard title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.pubDate}/>
-						))
-					}
-				</div>
-				<ul>
-					{
-						// Output each post with the date it was posted.
-						posts.map((post) => (
-							<li>
-								<time datetime={post.frontmatter.pubDate}>
-									{new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
-										year: 'numeric',
-										month: 'short',
-										day: 'numeric',
-									})}
-								</time>
-								<a href={post.url}>{post.frontmatter.title}</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
+			<div class="grid md:grid-cols-3 gap-4 mx-10 grid-cols-1">
+				{
+					posts.slice(0,6).map((post) => (
+						<BlogCard title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.pubDate} url={post.url}/>
+					))
+				}
+			</div>
 		</main>
 		<Footer />
 	</body>
