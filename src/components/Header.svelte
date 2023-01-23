@@ -15,9 +15,9 @@
 	</div>
 	<!-- Image links -->
 	<div class="flex mx-5 items-center">
-		<a class="mx-2" href="https://twitter.com/josumalatesta"><img src="/twitter.png" alt="Twitter Icon" width="35"></a>
-		<a class="mx-2" href="https://github.com/joemmalatesta"><img src="/github.png" alt="Github Icon" width="35"></a>
-		<a class="mx-2" href="https://www.linkedin.com/in/joe-malatesta/"><img src="/linkedin.png" alt="Linkedin Icon" width="35"></a>
+		<a class="mx-2" href="https://twitter.com/josumalatesta" target="blank"><img src="/twitter.png" alt="Twitter Icon" width="35"></a>
+		<a class="mx-2" href="https://github.com/joemmalatesta" target="blank"><img src="/github.png" alt="Github Icon" width="35"></a>
+		<a class="mx-2" href="https://www.linkedin.com/in/joe-malatesta/" target="blank"><img src="/linkedin.png" alt="Linkedin Icon" width="35"></a>
 	</div>
 </nav>
 
@@ -38,9 +38,9 @@
 		<a class="px-2" href="/about">About</a>
 	</div>
 	<div class="flex flex-row mx-2">
-		<a class="px-2"  href="https://twitter.com/josumalatesta"><img src="/twitter.png" alt="Twitter Icon" width="25"></a>
-		<a class="px-2"  href="https://github.com/joemmalatesta"><img src="/github.png" alt="Github Icon" width="25"></a>
-		<a class="px-2"  href="https://www.linkedin.com/in/joe-malatesta/"><img src="/linkedin.png" alt="Linkedin Icon" width="25"></a>
+		<a class="px-2"  href="https://twitter.com/josumalatesta" target="blank"><img src="/twitter.png" alt="Twitter Icon" width="25"></a>
+		<a class="px-2"  href="https://github.com/joemmalatesta" target="blank"><img src="/github.png" alt="Github Icon" width="25"></a>
+		<a class="px-2"  href="https://www.linkedin.com/in/joe-malatesta/" target="blank"><img src="/linkedin.png" alt="Linkedin Icon" width="25"></a>
 	</div>
 	{/if}
 </nav>
