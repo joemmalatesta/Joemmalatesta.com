@@ -21,7 +21,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 			<div class="grid md:grid-cols-3 gap-4 mx-10 grid-cols-1">
 				{
 					posts.slice(0,6).map((post) => (
-						<BlogCard title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.pubDate} url={post.url}/>
+						<BlogCard title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
 					))
 				}
 			</div>

@@ -30,10 +30,11 @@ const {
 				<!-- Should Provide an Alt -->
 				{heroImage && <img width={720} height={360} src={heroImage} alt={imageAlt} />}
 
-				<!-- Redundant for Update Date -->
-				<h1 class="title">{title}</h1>
 				<!-- && means, show if pubDate has a value -->
 				{pubDate && <time>{pubDate}</time>}
+				<h1 class="title">{title}</h1>
+
+				
 				<!-- This is where the actual MD part goes. -->
 					<slot/>
 
