@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "Third post"
+cardDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 15 2022"
 heroImage: "/italy-halal.JPG"
