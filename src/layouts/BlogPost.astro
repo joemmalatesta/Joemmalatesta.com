@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
+import Newsletter from '../components/Newsletter.svelte';
 
 export interface Props {
 	content: {
@@ -25,19 +26,23 @@ const {
 	</head>
 	<body>
 		<Header client:load />
-		<main class="md:mx-auto prose prose-indigo md:prose-lg lg:prose-lg mx-6">
+		<main class="md:mx-auto prose prose-indigo md:prose-lg mx-6">
 			<article>
 				<!-- Should Provide an Alt -->
 				{heroImage && <img width={720} height={360} src={heroImage} alt={imageAlt} />}
 
 				<!-- && means, show if pubDate has a value -->
 				{pubDate && <time>{pubDate}</time>}
-				<h1 class="title">{title}</h1>
+				<h1>{title}</h1>
 
 				
 				<!-- This is where the actual MD part goes. -->
 					<slot/>
 
+				<!-- Newsletter -->
+				<div class="my-5">
+					<Newsletter client:load/>
+				</div>
 
 			</article>
 		</main>
