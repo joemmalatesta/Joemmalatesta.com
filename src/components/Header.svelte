@@ -1,5 +1,6 @@
 <script>
 	let showNav = false
+	import { slide } from 'svelte/transition';
 </script>
 
 
@@ -31,16 +32,18 @@
 	</div>
 
 	<!-- TODO: add functionality to toggleNav button  -->
-	{#if (showNav)}
-	<div class="mx-2 mb-4 flex flex-col">
-		<a class="px-2" href="/blog">Blog</a>
-		<a class="px-2" href="/blog">Projects</a>
-		<a class="px-2" href="/about">About</a>
-	</div>
-	<div class="flex flex-row mx-2">
-		<a class="px-2"  href="https://twitter.com/josumalatesta" target="_blank" rel="noreferrer"><img src="/twitter.png" alt="Twitter Icon" width="25"></a>
-		<a class="px-2"  href="https://github.com/joemmalatesta" target="_blank" rel="noreferrer"><img src="/github.png" alt="Github Icon" width="25"></a>
-		<a class="px-2"  href="https://www.linkedin.com/in/joe-malatesta/" target="_blank" rel="noreferrer"><img src="/linkedin.png" alt="Linkedin Icon" width="25"></a>
+	{#if showNav}
+	<div class="wrapper" transition:slide>
+		<div class="mx-2 mb-4 flex flex-col" >
+			<a  class="px-2" href="/blog">Blog</a>
+			<a class="px-2" href="/blog">Projects</a>
+			<a class="px-2" href="/about">About</a>
+		</div>
+		<div class="flex flex-row mx-2">
+			<a class="px-2"  href="https://twitter.com/josumalatesta" target="_blank" rel="noreferrer"><img src="/twitter.png" alt="Twitter Icon" width="25"></a>
+			<a class="px-2"  href="https://github.com/joemmalatesta" target="_blank" rel="noreferrer"><img src="/github.png" alt="Github Icon" width="25"></a>
+			<a class="px-2"  href="https://www.linkedin.com/in/joe-malatesta/" target="_blank" rel="noreferrer"><img src="/linkedin.png" alt="Linkedin Icon" width="25"></a>
+		</div>
 	</div>
 	{/if}
 </nav>
