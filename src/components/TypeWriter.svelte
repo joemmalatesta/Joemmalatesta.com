@@ -35,7 +35,7 @@
             await sleep(40)
         } 
         // Word sits for a second before deleting
-        await sleep(1200)
+        await sleep(1000)
         await deleteWord()
 
 
@@ -51,6 +51,7 @@
     }
 
     onMount(async () => {
+        await sleep(200)
         await type()
     })
     
