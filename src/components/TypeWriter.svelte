@@ -37,6 +37,7 @@
         // Word sits for a second before deleting
         await sleep(1000)
         await deleteWord()
+        await sleep(200)
 
 
         // Loop through all possible words and restart at end
@@ -56,7 +57,7 @@
     })
     
 </script>
-<p>{output}</p>
+{output}
 
 
 
