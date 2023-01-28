@@ -11,7 +11,7 @@ const { title, description, date, url} = Astro.props;
 ---
 
 <a href={url}>
-<div class="container flex flex-col p-4 my-2 bg-gradient-to-tr from-violet-400 via-violet-200 to-white hover:from-violet-500 rounded-lg shadow-lg">
+<div class="container flex flex-col p-4 my-2 bg-gradient-to-tr from-violet-400 via-violet-200 to-violet-100 hover:from-violet-500 rounded-lg shadow-xl shadow-violet-500">
     <h1 class="text-xl font-bold">{title}</h1>
     <h3 class="text-sm text-gray-600/80">{date}</h3>
     <p class="text-md">{description}</p>

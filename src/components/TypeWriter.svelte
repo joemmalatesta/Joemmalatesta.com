@@ -57,9 +57,24 @@
     })
     
 </script>
-{output}
+{output}<span class=" blink">|</span>
 
-
+<style>
+    .blink {
+  animation: blink-animation .7s steps(5, start) infinite;
+  -webkit-animation: blink-animation .7s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
 
 
 <!-- 
