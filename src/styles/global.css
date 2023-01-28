@@ -8,7 +8,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
 body {
-  @apply lg:mx-36 mx-4;
+  @apply lg:mx-36;
   /* @apply bg-gradient-to-tr from-slate-600 via-zinc-700 to-neutral-600; */
 	font-family: 'Poppins', sans-serif !important;
   color: #505050
