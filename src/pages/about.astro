@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.svelte';
+import Footer from '../components/Footer.astro';
+import TypeWriter from '../components/TypeWriter.svelte';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title="Joe Malatesta" description="Personal website for Joe Malatesta, a software developer focused on new tech and self improvement" />
+	</head>
+	<body>
+		<Header client:load/>
+		<main class="md:mx-32 mx-6 h-screen">
+			<div class="flex items-center justify-center">
+				<div class=" hidden md:flex w-96 h-96 ring-red-500 ring-8  rounded-full items-center justify-center shadow-2xl">
+					<div class="w-80 h-80 ring-cyan-700 ring-8  rounded-full flex items-center justify-center shadow-2xl shadow-black">
+						<div class="w-60 h-60 ring-purple-500 ring-8  rounded-full flex items-center justify-center shadow-2xl shadow-black">
+							<div class="w-40 h-40 ring-green-500 ring-8 rounded-full flex items-center justify-center shadow-2xl shadow-black">
+								<div class="w-20 h-20 ring-emerald-600 ring-8 rounded-full flex items-center justify-center shadow-2xl shadow-black"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

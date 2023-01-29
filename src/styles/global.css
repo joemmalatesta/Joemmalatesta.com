@@ -9,9 +9,9 @@
 
 body {
   @apply lg:mx-36;
-  /* @apply bg-gradient-to-tr from-slate-600 via-zinc-700 to-neutral-600; */
+  @apply bg-gradient-to-r from-violet-300 to-blue-100;
 	font-family: 'Poppins', sans-serif !important;
-  color: #505050
+  color: #2e2e2e
 }
 h1, h2,h3,h4,h5,h6{
   font-family: 'Poppins', sans-serif !important

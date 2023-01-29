@@ -19,25 +19,12 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 		<Header client:load/>
 		<main>
 			<!-- TECH BLOGS -->
-			<div class="flex md:flex-row flex-col shadow-violet-300 shadow-xl my-6">
+			<div class="flex md:flex-row flex-col my-6">
 				<div class="md:w-1/2 flex items-center justify-center flex-col mx-3">
-					<h1 class="text-5xl text-bold m-2">Technology</h1>
+					<h1 class="text-5xl text-bold m-2">Recent Posts</h1>
 					<p class="text-2xl text-center">My rash opinions and excitement regarding all things programming packed into words</p>
 				</div>
 				<div class="flex flex-col md:w-2/5 mx-3">
-				{
-					posts.slice(0,5).map((post) => (
-						<BlogCard title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
-					))
-				}
-				</div>
-			</div>
-			<div class="flex flex-row shadow-violet-300 shadow-xl my-6">
-				<div class="w-1/2 flex items-center justify-center flex-col mx-3">
-					<h1 class="text-5xl text-bold m-2">Self Improvement</h1>
-					<p class="text-2xl text-center">My rash opinions and excitement regarding all things programming packed into words</p>
-				</div>
-				<div class="flex flex-col w-2/5 mx-3">
 				{
 					posts.slice(0,5).map((post) => (
 						<BlogCard title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>

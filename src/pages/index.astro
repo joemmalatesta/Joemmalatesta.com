@@ -12,21 +12,18 @@ import TypeWriter from '../components/TypeWriter.svelte';
 	</head>
 	<body>
 		<Header client:load/>
-		<main class="md:mx-32 mx-6 h-screen">
-			<div class="flex items-center justify-center">
-				<div class=" hidden md:flex w-96 h-96 ring-red-500 ring-8  rounded-full items-center justify-center shadow-2xl">
-					<div class="w-80 h-80 ring-red-500 ring-8  rounded-full flex items-center justify-center shadow-2xl shadow-black">
-						<div class="w-60 h-60 ring-purple-500 ring-8  rounded-full flex items-center justify-center shadow-2xl shadow-black">
-							<div class="w-40 h-40 ring-green-500 ring-8 rounded-full flex items-center justify-center shadow-2xl shadow-black">
-								<div class="w-20 h-20 ring-emerald-300 ring-8 rounded-full flex items-center justify-center shadow-2xl shadow-black"></div>
-							</div>
-						</div>
-					</div>
+		<main class="h-screen">
+			<div class="flex items-center justify-center mt-6">
+				<div class="flex flex-col items-center justify-center px-5">
+					<h1 class="md:text-7xl text-4xl">Joe Malatesta</h1>
+					<h3 class="md:text-4xl text-2xl">Insipired by <span><TypeWriter client:load/></span></h3>
+				</div>
+				<div class=" w-1/2">
+					<!-- Literally same as last website... replace this shit with something else. Another picture with background cropped out maybe.. -->
+					<img src="me.jpg" alt="" class="rounded-lg object-scale-down">
 				</div>
 			</div>
-			<div class="flex flex-col items-center justify-center mt-6">
-				<h1 class="md:text-6xl text-4xl">Joe Malatesta</h1>
-				<h3 class="md:text-3xl text-2xl">Insipired by <span><TypeWriter client:load/></span></h3>
+			<div class="text-center ">
 				<h5 class="mt-20 text-xl">If you're seeing this</h5>
 				<h5 class="text-xl">This site is under construction...</h5>
 			</div>
