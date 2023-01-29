@@ -21,14 +21,14 @@
 <!-- PHONE SCREEN SIZES -->
 <nav class="md:hidden flex flex-col items-start justify-start p-3 text-lg mb-3 ">
 	<div class="flex justify-between items-center w-11/12 py-2">
-		<a class="mx-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/">Joe Malatesta</a>
+		<a href="/"><img src="favicon.svg" alt="" width="70"></a>
 	 	<button on:click={() => {showNav = !showNav; console.log(showNav)}}><img src="/toggleNavButton.png" alt="Navigation menu toggler" width="40" id="navToggler" class="transform -scale-x-100"></button>
 	</div>
 
 	
 	{#if showNav}
 	<div class="wrapper" transition:slide>
-		<div class="mx-2 mb-4 flex flex-col" >
+		<div class="mx-2 mb-4 flex flex-col text-2xl" >
 			<a  class="hover:border-b-2 border-violet-500 hover:transition-all" href="/blog">Blog</a>
 			<a class="hover:border-b-2 border-violet-500 hover:transition-all" href="/blog">Projects</a>
 			<a class="hover:border-b-2 border-violet-500 hover:transition-all" href="/about">About</a>
