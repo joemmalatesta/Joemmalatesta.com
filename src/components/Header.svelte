@@ -5,20 +5,14 @@
 
 
 <!-- LARGE SCREEN SIZES -->
-<nav class="hidden md:flex items-center justify-between p-4 mb-6 text-2xl">
+<nav class=" hidden md:flex items-center justify-between  text-2xl">
 	<!-- Name -->
-	<a class="text-4xl hover:border-b-2 border-violet-500 hover:transition-all" href="/">Joe Malatesta</a>
+	<a href="/"><img src="favicon.svg" alt="" width="90"></a>
 	<!-- Main Links -->
 	<div class="flex items-center">
-		<a class="mx-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/blog">Blog</a>
+		<a class="mr-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/blog">Blog</a>
 		<a class="mx-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/about">Projects</a>
-		<a class="mx-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/about">About</a>
-	</div>
-	<!-- Image links -->
-	<div class="flex items-center">
-		<a class="mx-2" href="https://twitter.com/josumalatesta" target="_blank" rel="noreferrer"><img src="/twitter.png" alt="Twitter Icon" width="35"></a>
-		<a class="mx-2" href="https://github.com/joemmalatesta" target="_blank" rel="noreferrer"><img src="/github.png" alt="Github Icon" width="35"></a>
-		<a class="mx-2" href="https://www.linkedin.com/in/joe-malatesta/" target="_blank" rel="noreferrer"><img src="/linkedin.png" alt="Linkedin Icon" width="35"></a>
+		<a class="ml-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/about">About</a>
 	</div>
 </nav>
 
@@ -31,7 +25,7 @@
 	 	<button on:click={() => {showNav = !showNav; console.log(showNav)}}><img src="/toggleNavButton.png" alt="Navigation menu toggler" width="40" id="navToggler" class="transform -scale-x-100"></button>
 	</div>
 
-	<!-- TODO: add functionality to toggleNav button  -->
+	
 	{#if showNav}
 	<div class="wrapper" transition:slide>
 		<div class="mx-2 mb-4 flex flex-col" >
