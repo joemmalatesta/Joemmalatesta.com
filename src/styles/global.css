@@ -11,7 +11,7 @@ body {
   @apply lg:mx-36;
   @apply bg-gradient-to-r from-violet-300 to-blue-100;
 	font-family: 'Poppins', sans-serif !important;
-  color: #2e2e2e
+  color: #282828
 }
 h1, h2,h3,h4,h5,h6{
   font-family: 'Poppins', sans-serif !important

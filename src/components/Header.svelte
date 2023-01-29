@@ -7,7 +7,7 @@
 <!-- LARGE SCREEN SIZES -->
 <nav class=" hidden md:flex items-center justify-between  text-2xl">
 	<!-- Name -->
-	<a href="/"><img src="favicon.svg" alt="" width="90"></a>
+	<a href="/"><img src="../src/favicon.svg" alt="" width="90"></a>
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a class="mr-2 hover:border-b-2 border-violet-500 hover:transition-all" href="/blog">Blog</a>
@@ -19,9 +19,9 @@
 
 
 <!-- PHONE SCREEN SIZES -->
-<nav class="md:hidden flex flex-col items-start justify-start p-3 text-lg mb-3 ">
+<nav class="md:hidden flex flex-col items-start justify-start p-3 text-lg">
 	<div class="flex justify-between items-center w-11/12 py-2">
-		<a href="/"><img src="favicon.svg" alt="" width="70"></a>
+		<a href="/"><img src="../src/favicon.svg" alt="" width="70"></a>
 	 	<button on:click={() => {showNav = !showNav; console.log(showNav)}}><img src="/toggleNavButton.png" alt="Navigation menu toggler" width="40" id="navToggler" class="transform -scale-x-100"></button>
 	</div>
 
