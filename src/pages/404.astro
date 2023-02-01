@@ -1,14 +1,16 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import UnknownPage from '../components/unknownPage.svelte';
 
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title="404 Error" description="Where do you think you're going?" />
+		<title>404 Error</title>
+		<meta name="description" content="Where do you think you're going?">
+		<!-- <BaseHead title="404 Error" description="Where do you think you're going?" /> -->
 	</head>
-	<body>
-		this page cannot be found...
-	</body>
+		<!-- Quote from Toby Fox... Shout out! -->
+		<UnknownPage client:load />
 </html>

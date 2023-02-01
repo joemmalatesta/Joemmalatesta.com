@@ -8,7 +8,7 @@
     }
 
 
-    const words = ["innovation", "creativity", "the future", "challenge", "possibility"]
+    export let words = ["innovation", "creativity", "the future", "challenge", "possibility"]
     let output = ""
     let wordIndex = 0
     let letterIndex = 0
