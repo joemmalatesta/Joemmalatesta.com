@@ -45,6 +45,7 @@
     }
 </script>
 
+<!-- This looks super odd on mobile for some reason, but I will accept it because I like how it looks -->
 <body class="h-screen w-screen">
     <h1 class="text-white flex items-center justify-center text-3xl w-screen h-screen"><TypeWriter words={["Despite everything, it's still you.", "Click the logo to go home."]} /></h1>
     <a href="/">
