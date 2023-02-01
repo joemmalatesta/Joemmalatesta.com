@@ -2,10 +2,13 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
-import BlogCard from '../components/blogCard.astro';
+import BlogCard2 from '../components/blogCard2.astro';
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
+const techPosts = (await Astro.glob('./blog/tech/*.{md,mdx}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
+const improvementPosts = (await Astro.glob('./blog/improvement/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
 ---
@@ -19,7 +22,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 		<Header client:load/>
 		<main>
 			<!-- TECH BLOGS -->
-			<div class="flex md:flex-row flex-col my-6">
+			<!-- <div class="flex md:flex-row flex-col my-6">
 				<div class="md:w-1/2 flex items-center justify-center flex-col mx-3">
 					<h1 class="text-5xl text-bold m-2">Recent Posts</h1>
 					<p class="text-2xl text-center">My rash opinions and excitement regarding all things programming packed into words</p>
@@ -44,6 +47,33 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 					))
 				}
 				</div>
+			</div> -->
+
+
+
+			<div class="flex md:flex-row flex-col justify-center my-4">
+				<div class="m-3">
+					<h1 class="md:text-4xl text-3xl ml-2 font-bold">Tech Blogs</h1>
+					<div class="flex flex-col justify-center items-center ">
+						<a href=""></a>
+						{
+							techPosts.slice(0,4).map((post) => (
+								<BlogCard2 title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
+							))
+						}
+					</div>
+				</div>		
+				<div class="m-3">
+					<h1 class="md:text-4xl text-3xl ml-2 font-bold">Self Improvement</h1>
+					<div class="flex flex-col justify-center items-center">
+						<a href=""></a>
+						{
+							improvementPosts.slice(0,4).map((post) => (
+								<BlogCard2 title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
+							))
+						}
+					</div>
+				</div>	
 			</div>
 		</main>
 		<Footer />

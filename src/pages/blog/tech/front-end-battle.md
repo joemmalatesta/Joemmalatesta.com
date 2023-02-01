@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro" #Constant
+layout: "../../../layouts/BlogPost.astro" #Constant
 title: "Front end Battle"
 cardDescription: "My struggles with learning front end development, it's secret dark side, and where I stand now"
 description: "Blog post about my introduction to computers and later, software development."

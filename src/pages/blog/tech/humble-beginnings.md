@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro" #Constant
+layout: "../../../layouts/BlogPost.astro" #Constant
 title: "Humble Beginnings"
 cardDescription: "Where everything started... My pilot post about my introduction to computers, software, code, and computer science."
 description: "Blog post about my introduction to computers and later, software development."
