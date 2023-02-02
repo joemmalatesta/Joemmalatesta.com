@@ -47,7 +47,7 @@
 
 <!-- This looks super odd on mobile for some reason, but I will accept it because I like how it looks -->
 <body class="h-screen w-screen">
-    <h1 class="text-white flex items-center justify-center text-3xl w-screen h-screen"><TypeWriter words={["Despite everything, it's still you.", "Click the logo to go home."]} /></h1>
+    <h1 class="text-white flex items-center justify-center text-6xl w-screen h-screen"><TypeWriter words={["*Despite everything, it's still you.", "Click the logo to go home."]} /></h1>
     <a href="/">
 		<svg width="{logoSize}" viewBox="0 0 2400 2400" preserveAspectRatio="xMidYMid meet" style="position: absolute; left: {xPosition}px; top: {yPosition}px">
 			<g transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)" fill="{logoColor}" stroke="none">

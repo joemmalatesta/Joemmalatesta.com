@@ -60,6 +60,8 @@
 {output}<span class=" blink">|</span>
 
 <style>
+
+
     .blink {
   animation: blink-animation .7s steps(5, start) infinite;
   -webkit-animation: blink-animation .7s steps(5, start) infinite;

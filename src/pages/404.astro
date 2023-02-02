@@ -9,8 +9,16 @@ import UnknownPage from '../components/unknownPage.svelte';
 	<head>
 		<title>404 Error</title>
 		<meta name="description" content="Where do you think you're going?">
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<!-- <BaseHead title="404 Error" description="Where do you think you're going?" /> -->
 	</head>
 		<!-- Quote from Toby Fox... Shout out! -->
 		<UnknownPage client:load />
 </html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+	body {
+		font-family: 'VT323', monospace;
+	}
+</style>
