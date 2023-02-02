@@ -7,15 +7,17 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
+
 body {
   @apply lg:mx-36;
-  @apply bg-gradient-to-r from-violet-300 to-blue-100;
+  @apply selection:bg-black selection:text-white;
+  /* @apply bg-gradient-to-r from-violet-300 to-blue-100; */
 	font-family: 'Poppins', sans-serif !important;
-  color: #282828
+  color: #171717;
 }
-h1, h2,h3,h4,h5,h6{
-  font-family: 'Poppins', sans-serif !important
+h1, h2,h3,h4,h5,h6, a{
+  font-family: 'Poppins', sans-serif !important;
 }
 p {
-  font-family: 'Inter', sans-serif !important
+  font-family: 'Inter', sans-serif !important;
 }
