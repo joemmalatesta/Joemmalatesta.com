@@ -3,7 +3,7 @@ layout: "../../../layouts/BlogPost.astro" #Constant
 title: "Front end Battle"
 cardDescription: "My struggles with learning front end development, it's secret dark side, and where I stand now"
 description: "Blog post about my introduction to computers and later, software development."
-pubDate: "Aug 31, 2022"
+pubDate: "Sept 14, 2022"
 heroImage: "/front-end battle.jpg"
 ---
 Since I started learning how to program, I never gave much thought to becoming a front-end developer, and I've never been overly creative or

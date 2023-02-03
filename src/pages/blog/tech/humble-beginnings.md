@@ -2,7 +2,7 @@
 layout: "../../../layouts/BlogPost.astro" #Constant
 title: "Humble Beginnings"
 cardDescription: "Where everything started... My pilot post about my introduction to computers, software, code, and computer science."
-description: "Blog post about my introduction to computers and later, software development."
+description: "Join my journey into the world of computers, software, and coding. From sneaker botting to creating their own software, learn about their path to becoming a programmers. Discover my story and find inspiration for your own journey."
 pubDate: "Aug 31, 2022"
 heroImage: "/me.jpg"
 ---
