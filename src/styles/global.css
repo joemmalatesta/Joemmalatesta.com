@@ -5,7 +5,9 @@
  */
 
 
- @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
 
 
 body {
@@ -15,7 +17,11 @@ body {
 	font-family: 'Poppins', sans-serif !important;
   color: #171717;
 }
-h1, h2,h3,h4,h5,h6, a{
+h1{
+  font-family: 'Source Serif Pro', serif;
+
+}
+h2,h3,h4,h5,h6, a{
   font-family: 'Poppins', sans-serif !important;
 }
 p {

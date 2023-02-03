@@ -8,8 +8,9 @@
 
 	export let words = [
 		"innovation",
+		"potential",
 		"creativity",
-		"the future",
+		"progress",
 		"challenge",
 		"possibility",
 	];
