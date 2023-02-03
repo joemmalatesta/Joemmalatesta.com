@@ -15,7 +15,8 @@ import TypeWriter from "../components/TypeWriter.svelte";
 	</head>
 	<body>
 		<Header client:load />
-		<main class="h-screen">
+		<main>
+			<section>
 			<div class="mt-6 flex flex-col items-center justify-center md:flex-row">
 				<div
 					class="flex flex-col items-center justify-center p-2 px-5 text-center"
@@ -26,7 +27,7 @@ import TypeWriter from "../components/TypeWriter.svelte";
 						Joe Malatesta
 					</h1>
 					<h3
-						class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text p-2 font-bold text-transparent md:text-5xl"
+						class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text p-2 font-bold text-transparent md:text-5xl text-2xl"
 					>
 						Insipired by <span><TypeWriter client:load /></span>
 					</h3>
@@ -40,6 +41,7 @@ import TypeWriter from "../components/TypeWriter.svelte";
 					/>
 				</div>
 			</div>
+		</section>
 			<div class="text-center">
 				<h5 class="mt-20 text-xl">If you're seeing this</h5>
 				<h5 class="text-xl">This site is under construction...</h5>
