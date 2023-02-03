@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.astro";
-import BlogCard2 from "../components/blogCard2.astro";
+import BlogCard from "../components/blogCard.astro";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const techPosts = (await Astro.glob("./blog/tech/*.{md,mdx}")).sort(
@@ -44,7 +44,7 @@ const improvementPosts = (
 							techPosts
 								.slice(0, 4)
 								.map((post) => (
-									<BlogCard2
+									<BlogCard
 										title={post.frontmatter.title}
 										description={post.frontmatter.cardDescription}
 										date={post.frontmatter.pubDate}
@@ -62,7 +62,7 @@ const improvementPosts = (
 							improvementPosts
 								.slice(0, 4)
 								.map((post) => (
-									<BlogCard2
+									<BlogCard
 										title={post.frontmatter.title}
 										description={post.frontmatter.cardDescription}
 										date={post.frontmatter.pubDate}

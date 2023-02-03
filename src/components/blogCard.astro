@@ -9,12 +9,15 @@ export interface Props {
 const { title, description, date, url } = Astro.props;
 ---
 
-<a href={url}>
-	<div
-		class="container my-2 flex flex-col rounded-lg bg-gradient-to-tr from-violet-400 via-violet-200 to-violet-100 p-4 shadow-xl shadow-violet-500 hover:from-violet-500"
-	>
-		<h1 class="text-xl font-bold">{title}</h1>
-		<h3 class="text-sm text-gray-600/80">{date}</h3>
-		<p class="text-md">{description}</p>
+<!-- This looked okay--  hover:bg-violet-400 -->
+<a
+	href={url}
+	class="container my-2 flex flex-row items-center justify-between from-rose-400 to-sky-300 p-2 underline-offset-2 hover:bg-gradient-to-r"
+>
+	<div>
+		<h1 class="text-lg underline md:text-2xl">{title}</h1>
+		<h5 class="text-md">{date}</h5>
+		<h3 class="hidden text-xl md:block">{description}</h3>
 	</div>
+	<img src="arrow.svg" alt="Read More" class="" />
 </a>

@@ -5,31 +5,37 @@ import Footer from "../components/Footer.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
 import ProjectCard from "../components/ProjectCard.svelte";
 const projects = [
-    {
-        title: "Auto Typer",
-        tech:"Python, Selenium, MatPlotLib",
-        description:"Auto complete a typing test at a specified WPM. Calculate completion speed and account for specific computational delays.",
-        url:"https://github.com/joemmalatesta/Auto-Typer",
-    },
 	{
-        title: "Personal Website V1",
-        tech:"HTML, CSS, Bootstrap, PHP, MySQL",
-        description:"You're already here! Designed and implemented multiple iterations to suffice my aesthetic and responsive needs. Dynamic website using PHP and MySQL functional but not live due to hosting limitations.",
-        url:"https://dev.joemmalatesta.com/",
-    },
+		title: "Auto Typer",
+		tech: "Python, Selenium, MatPlotLib",
+		description:
+			"Auto complete a typing test at a specified WPM, taking into account computational delays",
+		url: "https://github.com/joemmalatesta/Auto-Typer",
+	},
 	{
-        title: "Discord Bot",
-        tech:"Python, REST APIs, MongoDB",
-        description:"Discord bot that pulls account and recent play data from osu! game API and returns info to the user via Discord embeds. Account and registration information saved to MongoDB database for user's ease of access.",
-        url:"https://github.com/joemmalatesta/yvy-discord-bot",
-    },
+		title: "Personal Website V1",
+		tech: "HTML, CSS, Bootstrap, PHP, MySQL",
+		description:
+			"The first iteration of my website! My introduction to front end development.",
+		url: "https://dev.joemmalatesta.com/",
+		buttonText: "Go to old site",
+	},
 	{
-        title: "CaptChart",
-        tech:"Javascript, Chartjs, Bootstrap",
-        description:"Captcha requiring users to compute equations for randomly generated linear graphs. Javascript code obfuscated in order to deny automation software.",
-        url:"https://joemmalatesta.github.io/CapChart/",
-    },
-]
+		title: 'Discord "Yvy" Bot',
+		tech: "Python, REST APIs, MongoDB",
+		description:
+			"Commands return concise information regarding osu! plays, and players.",
+		url: "https://github.com/joemmalatesta/yvy-discord-bot",
+	},
+	{
+		title: "CaptChart",
+		tech: "Javascript, Chartjs, Bootstrap",
+		description:
+			"Captcha completed by correctly identifying parts of a linear graph",
+		url: "https://joemmalatesta.github.io/CapChart/",
+		buttonText: "Try it out"
+	},
+];
 ---
 
 <!DOCTYPE html>
@@ -44,43 +50,42 @@ const projects = [
 		<Header client:load />
 		<main>
 			<section>
-				<div class="mt-6 flex flex-col items-center justify-center md:flex-row">
-					<div
-						class="flex flex-col items-center justify-center p-2 px-5 text-center"
-					>
+				<div class="md:mt-6 mt-2 flex flex-col items-center justify-center md:flex-row">
+					<div class="flex flex-col items-center justify-center p-2 px-5">
 						<h1
-							class="text-4xl font-extrabold md:text-8xl"
+							class="text-4xl font-extrabold md:text-6xl"
 						>
 							Joe Malatesta
 						</h1>
 						<h3
-							class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text p-2 text-2xl font-bold text-transparent md:text-5xl"
+							class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text lg:p-5 pb-2 text-2xl font-bold text-transparent lg:text-7xl"
 						>
 							Insipired by <span><TypeWriter client:load /></span>
 						</h3>
 					</div>
-					<div class="m-6 md:w-1/2">
-						<!-- Literally same as last website... replace this shit with something else. Another picture with background cropped out maybe.. -->
+					<!-- <div class="m-6 md:w-1/2">
+
 						<img
 							src="teaching.jpeg"
 							alt="Flexin Dancin Yah Yah Yah Yah"
 							class="rounded-tl-full rounded-br-full outline-double outline-8 outline-offset-2 outline-purple-300"
 						/>
-					</div>
+					</div> -->
 				</div>
 			</section>
-			<section id="projects">
-				<div class="grid grid-rows-2">
-				{
-					projects.map((project) => (
-						<ProjectCard
-						title={project.title}
-						tech={project.tech}
-						description={project.description}
-						url={project.url}
-						/>
-					))
-				}
+			<section id="projects" class="mx-4 sm:mx-0">
+				<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{
+						projects.map((project) => (
+							<ProjectCard
+								title={project.title}
+								tech={project.tech}
+								description={project.description}
+								url={project.url}
+								buttonText={project.buttonText}
+							/>
+						))
+					}
 				</div>
 			</section>
 			<div class="text-center">
