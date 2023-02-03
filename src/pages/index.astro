@@ -1,31 +1,46 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.svelte';
-import Footer from '../components/Footer.astro';
-import TypeWriter from '../components/TypeWriter.svelte';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.svelte";
+import Footer from "../components/Footer.astro";
+import TypeWriter from "../components/TypeWriter.svelte";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title="Joe Malatesta" description="Personal website for Joe Malatesta, a software developer focused on new tech and self improvement" />
+		<BaseHead
+			title="Joe Malatesta"
+			description="Personal website for Joe Malatesta, a software developer focused on new tech and self improvement"
+		/>
 	</head>
 	<body>
-		<Header client:load/>
+		<Header client:load />
 		<main class="h-screen">
-			<div class="flex items-center justify-center mt-6 md:flex-row flex-col">
-				<div class="flex flex-col items-center justify-center px-5 text-center p-2">
-					<h1 class="text-4xl font-extrabold text-transparent md:text-8xl bg-clip-text bg-gradient-to-r from-purple-600 to-pink-400">Joe Malatesta</h1>
-					<h3 class="md:text-5xl m-2">Insipired by <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-400 font-extrabold"><TypeWriter client:load/></span></h3>
+			<div class="mt-6 flex flex-col items-center justify-center md:flex-row">
+				<div
+					class="flex flex-col items-center justify-center p-2 px-5 text-center"
+				>
+					<h1
+						class="bg-gradient-to-r from-purple-600 to-rose-400 bg-clip-text text-4xl font-extrabold text-transparent md:text-8xl"
+					>
+						Joe Malatesta
+					</h1>
+					<h3
+						class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text p-2 font-bold text-transparent md:text-5xl"
+					>
+						Insipired by <span><TypeWriter client:load /></span>
+					</h3>
 				</div>
-				<div class="md:w-1/2 m-6">
-					
+				<div class="m-6 md:w-1/2">
 					<!-- Literally same as last website... replace this shit with something else. Another picture with background cropped out maybe.. -->
-					<img src="teaching.jpeg" alt="Flexin Dancin Yah Yah Yah Yah"
-					 class="rounded-tl-full rounded-br-full outline-8 outline-double outline-offset-2 outline-purple-300">
+					<img
+						src="teaching.jpeg"
+						alt="Flexin Dancin Yah Yah Yah Yah"
+						class="rounded-tl-full rounded-br-full outline-double outline-8 outline-offset-2 outline-purple-300"
+					/>
 				</div>
 			</div>
-			<div class="text-center ">
+			<div class="text-center">
 				<h5 class="mt-20 text-xl">If you're seeing this</h5>
 				<h5 class="text-xl">This site is under construction...</h5>
 			</div>
@@ -33,4 +48,3 @@ import TypeWriter from '../components/TypeWriter.svelte';
 		<Footer />
 	</body>
 </html>
-

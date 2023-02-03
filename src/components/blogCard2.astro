@@ -3,20 +3,21 @@ export interface Props {
 	title: string;
 	description: string;
 	date: string;
-    url: string;
+	url: string;
 }
 
-
-const { title, description, date, url} = Astro.props;
+const { title, description, date, url } = Astro.props;
 ---
 
 <!-- This looked okay--  hover:bg-violet-400 -->
-<a href={url} class="container p-2 my-2 underline-offset-2 flex flex-row justify-between items-center hover:bg-gradient-to-r from-violet-500 to-blue-300">
-    <div>
-        <h1 class="md:text-2xl text-lg underline">{title}</h1>
-        <h5 class="text-md ">{date}</h5>
-        <h3 class="text-xl hidden md:block">{description}</h3>
-    </div>
-    <img src="arrow.svg" alt="Read More" class="">
-    
+<a
+	href={url}
+	class="container my-2 flex flex-row items-center justify-between from-violet-500 to-blue-300 p-2 underline-offset-2 hover:bg-gradient-to-r"
+>
+	<div>
+		<h1 class="text-lg underline md:text-2xl">{title}</h1>
+		<h5 class="text-md">{date}</h5>
+		<h3 class="hidden text-xl md:block">{description}</h3>
+	</div>
+	<img src="arrow.svg" alt="Read More" class="" />
 </a>

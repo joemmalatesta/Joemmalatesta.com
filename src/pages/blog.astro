@@ -1,79 +1,77 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.svelte';
-import Footer from '../components/Footer.astro';
-import BlogCard2 from '../components/blogCard2.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.svelte";
+import Footer from "../components/Footer.astro";
+import BlogCard2 from "../components/blogCard2.astro";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const techPosts = (await Astro.glob('./blog/tech/*.{md,mdx}')).sort(
-	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+const techPosts = (await Astro.glob("./blog/tech/*.{md,mdx}")).sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
 );
-const improvementPosts = (await Astro.glob('./blog/improvement/*.{md,mdx}')).sort(
-	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+const improvementPosts = (
+	await Astro.glob("./blog/improvement/*.{md,mdx}")
+).sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
 );
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title="Bloggington" description="A list of Joe Malatesta's blog posts about tech, coding, and self improvement." />
+		<BaseHead
+			title="Bloggington"
+			description="A list of Joe Malatesta's blog posts about tech, coding, and self improvement."
+		/>
 	</head>
 	<body>
-		<Header client:load/>
-		<main>
-			<!-- TECH BLOGS -->
-			<!-- <div class="flex md:flex-row flex-col my-6">
-				<div class="md:w-1/2 flex items-center justify-center flex-col mx-3">
-					<h1 class="text-5xl text-bold m-2">Recent Posts</h1>
-					<p class="text-2xl text-center">My rash opinions and excitement regarding all things programming packed into words</p>
-				</div>
-				<div class="flex flex-col md:w-2/5 mx-3">
-				{
-					posts.slice(0,5).map((post) => (
-						<BlogCard title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
-					))
-				}
-				</div>
-			</div>
-			<div class="flex flex-col">
-				<div class="flex items-center justify-center flex-col m-3">
-					<h1 class="text-5xl text-bold m-2">Technology</h1>
-					<p class="text-2xl text-center">My rash opinions and excitement regarding all things programming packed into words</p>
-				</div>
-				<div class="grid md:grid-cols-3 gap-4 mx-10 grid-cols-1">
-				{
-					posts.slice(0,6).map((post) => (
-						<BlogCard title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
-					))
-				}
-				</div>
-			</div> -->
-
-
-			<h1 class="md:text-8xl text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-purple-400 to-pink-500 p-5">Blogs</h1>
-			<div class="flex md:flex-row flex-col justify-center my-4">
+		<Header client:load />
+		<main class="h-screen">
+			<h1
+				class="bg-gradient-to-t from-purple-400 to-pink-500 bg-clip-text p-5 text-center text-6xl font-extrabold text-transparent md:text-8xl"
+			>
+				Blogs
+			</h1>
+			<div class="my-4 flex flex-col justify-center md:flex-row">
 				<div class="m-6">
-					<h1 class="md:text-4xl text-3xl ml-2 font-bold">Tech Blogs</h1>
-					<div class="flex flex-col justify-center items-center ">
+					<h1 class="ml-2 text-3xl font-bold md:text-4xl">Tech Blogs</h1>
+					<div class="flex flex-col items-center justify-center">
 						<a href=""></a>
 						{
-							techPosts.slice(0,4).map((post) => (
-								<BlogCard2 title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
-							))
+							techPosts
+								.slice(0, 4)
+								.map((post) => (
+									<BlogCard2
+										title={post.frontmatter.title}
+										description={post.frontmatter.cardDescription}
+										date={post.frontmatter.pubDate}
+										url={post.url}
+									/>
+								))
 						}
 					</div>
-				</div>		
+				</div>
 				<div class="m-6">
-					<h1 class="md:text-4xl text-3xl ml-2 font-bold">Self Improvement</h1>
-					<div class="flex flex-col justify-center items-center">
+					<h1 class="ml-2 text-3xl font-bold md:text-4xl">Self Improvement</h1>
+					<div class="flex flex-col items-center justify-center">
 						<a href=""></a>
 						{
-							improvementPosts.slice(0,4).map((post) => (
-								<BlogCard2 title={post.frontmatter.title} description={post.frontmatter.cardDescription} date={post.frontmatter.pubDate} url={post.url}/>
-							))
+							improvementPosts
+								.slice(0, 4)
+								.map((post) => (
+									<BlogCard2
+										title={post.frontmatter.title}
+										description={post.frontmatter.cardDescription}
+										date={post.frontmatter.pubDate}
+										url={post.url}
+									/>
+								))
 						}
 					</div>
-				</div>	
+				</div>
 			</div>
 		</main>
 		<Footer />
