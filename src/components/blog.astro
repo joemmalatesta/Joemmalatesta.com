@@ -5,30 +5,26 @@ import Footer from "../components/Footer.astro";
 import BlogCard from "../components/blogCard.astro";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const techPosts = (await Astro.glob("./blog/tech/*.{md,mdx}")).sort(
+const techPosts = (await Astro.glob("../pages/blog/tech/*.{md,mdx}")).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
 		new Date(a.frontmatter.pubDate).valueOf()
 );
 const improvementPosts = (
-	await Astro.glob("./blog/improvement/*.{md,mdx}")
+	await Astro.glob("../pages/blog/improvement/*.{md,mdx}")
 ).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
 		new Date(a.frontmatter.pubDate).valueOf()
 );
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead
-			title="Bloggington"
-			description="A list of Joe Malatesta's blog posts about tech, coding, and self improvement."
-		/>
-	</head>
+<!-- <head>
+	<BaseHead
+		title="Bloggington"
+		description="A list of Joe Malatesta's blog posts about tech, coding, and self improvement."
+	/>
+</head> -->
 	<body>
-		<Header client:load />
 		<main>
 			<h1
 				class="bg-gradient-to-t from-purple-400 to-pink-500 bg-clip-text p-5 text-center text-6xl font-extrabold text-transparent md:text-8xl"
@@ -74,6 +70,5 @@ const improvementPosts = (
 				</div>
 			</div>
 		</main>
-		<Footer />
 	</body>
-</html>
+

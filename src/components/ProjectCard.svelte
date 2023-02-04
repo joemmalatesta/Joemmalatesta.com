@@ -4,9 +4,10 @@
 	export let tech;
 	export let url;
 	export let buttonText = "Learn more";
+	let toggleDescription = false
 </script>
 
-<!-- Maybe make one for smaller screens where its just title and tech with a dropdown. -->
+
 <div
 	class="container bg-gradient-to-r from-rose-400 to-sky-300 rounded-lg p-5 flex flex-col items-start"
 >
@@ -21,3 +22,5 @@
 		>{buttonText}</a
 	>
 </div>
+
+

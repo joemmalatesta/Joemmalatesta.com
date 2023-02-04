@@ -4,6 +4,7 @@ import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
 import ProjectCard from "../components/ProjectCard.svelte";
+import Blog from "../components/blog.astro";
 const projects = [
 	{
 		title: "Auto Typer",
@@ -58,7 +59,7 @@ const projects = [
 							Joe Malatesta
 						</h1>
 						<h3
-							class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text lg:p-5 pb-2 text-2xl font-bold text-transparent lg:text-7xl"
+							class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text lg:p-5 pb-2 sm:text-4xl text-2xl font-bold text-transparent lg:text-7xl"
 						>
 							Insipired by <span><TypeWriter client:load /></span>
 						</h3>
@@ -74,6 +75,11 @@ const projects = [
 				</div>
 			</section>
 			<section id="projects" class="mx-4 lg:mx-0">
+				<h1
+				class="bg-gradient-to-t from-purple-400 to-pink-500 bg-clip-text p-5 text-center text-6xl font-extrabold text-transparent md:text-8xl my-3"
+			>
+				Projects
+			</h1>
 				<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 					{
 						projects.map((project) => (
@@ -87,6 +93,9 @@ const projects = [
 						))
 					}
 				</div>
+			</section>
+			<section id="blog">
+			<Blog />
 			</section>
 			<div class="text-center">
 				<h5 class="mt-20 text-xl">If you're seeing this</h5>

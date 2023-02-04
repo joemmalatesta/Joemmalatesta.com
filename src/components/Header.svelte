@@ -27,15 +27,15 @@
 	<div class="flex items-center">
 		<a
 			class="mr-2 hover:border-b-2 border-spacing-3 border-purple-500 hover:font-extrabold transition duration-200"
-			href="/blog">Blog</a
+			href="#blog">Blog</a
 		>
 		<a
 			class="mx-2 hover:border-b-2 border-spacing-3 border-purple-500 hover:font-extrabold transition duration-200"
-			href="/about">Projects</a
+			href="#projects">Projects</a
 		>
 		<a
 			class="ml-2 hover:border-b-2 border-spacing-3 border-purple-500 hover:font-extrabold transition duration-200"
-			href="/about">About</a
+			href="#about">About</a
 		>
 	</div>
 </nav>
@@ -78,7 +78,7 @@
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
-				<a class="" href="/blog">Blog</a>
+				<a class="" href="#blog">Blog</a>
 				<a class="" href="/blog">Projects</a>
 				<a class="" href="/about">About</a>
 			</div>

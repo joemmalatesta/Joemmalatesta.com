@@ -1,18 +1,18 @@
 ---
 layout: "../../../layouts/BlogPost.astro" #Constant
-title: "Beginners Teaching Beginners"
+title: "In Defense of Technical Interviews"
 cardDescription: ""
 description: ""
-pubDate: "Feb 01, 2022"
+pubDate: "Feb 01, 2023"
 heroImage: "/in-defense-of-technical-interviews.jpg"
 ---
 
-Technical Interviews are, without doubt, the most loathed part of the interview process. For many, they are the sole thing that deters them from applying at many top companies, barring them from earning a higher salary. 
+Technical Interviews are, without doubt, the most loathed part of the interview process. For many, they are the sole thing that deters them from applying at many top companies, barring them from earning a higher salary or a better work life balance. 
 
 ### The current state of interviews
 There are two main ways programming ability is measured in an interview process. Either a take home assignment, or a technical interview. These each have their pros and cons, but with the advancement of AI, it is reasonable to believe that one could complete a take home test without real knowledge of what they are completing. With that said, I don't think that the current technical interview is perfect by any stretch, but here are some suggestions.
 
-### The structure is pretty good
+### The structure is actually pretty good
 In terms of measuring coding ability and thought process, a real time interview is the companies best bet. With hundreds of thousands of dollars on the line, it is fair to assume that cheating on an asynchronous project or interview is commonplace. While I agree with the way the interview is held, I don't agree with the questions that are asked, or the expectation placed on the interviewee.
 
 ### My suggestion
