@@ -22,3 +22,8 @@ If the goal of the technical interview is to simply see how candidates would go 
 In technical interviews, rather than asking a common leetcode question, ask them one that pertains to the specific companies goals, and observe the questions they ask and the reasoning behind their solution. The ability for an employee to function with the good of the company in mind is highly undervalued.
 
 
+#### Conclusion
+
+As a whole, technical interviews get a bad rap because people feel as though it doesn't reflect a true working environment, a lot like teaching barring students from using calculators on math tests, the barring of using the internet on technical interviews will never make sense to many. If you break it down, though, technical interviews actually have a great structure for weeding out candidates, but the questions need to be much more generalized and take into account specific company goals.
+
+
