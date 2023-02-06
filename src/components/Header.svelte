@@ -27,15 +27,15 @@
 	<div class="flex items-center">
 		<a
 			class="mr-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition"
-			href="#blog">Blog</a
+			href="/#blog">Blog</a
 		>
 		<a
 			class="mx-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
-			href="#projects">Projects</a
+			href="/#projects">Projects</a
 		>
 		<a
 			class="ml-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
-			href="#about">About</a
+			href="/#about">About</a
 		>
 	</div>
 </nav>
@@ -48,10 +48,10 @@
 				width="70"
 				viewBox="0 0 2400 2400"
 				preserveAspectRatio="xMidYMid meet"
+				class="hover:fill-rose-400 fill-black transition-all"		
 			>
 				<g
 					transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
-					fill="#000000"
 					stroke="none"
 				>
 					<path
@@ -78,9 +78,9 @@
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
-				<a class="" href="#blog">Blog</a>
-				<a class="" href="/blog">Projects</a>
-				<a class="" href="/about">About</a>
+				<a class="" href="/#blog">Blog</a>
+				<a class="" href="/#projects">Projects</a>
+				<a class="" href="/#about">About</a>
 			</div>
 			<div class="flex flex-row mx-2">
 				<a

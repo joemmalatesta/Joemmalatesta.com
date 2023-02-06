@@ -13,7 +13,7 @@
 >
 	<h2 class="text-2xl">{title}</h2>
 	<p class="text-sm md:text-base mb-2 text-neutral-700">{tech}</p>
-	<p class="mb-3 sm:text-lg text-base">{description}</p>
+	<p class="mb-3 sm:text-lg text-base hidden md:block">{description}</p>
 	<a
 		href={url}
 		target="_blank"
