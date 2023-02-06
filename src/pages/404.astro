@@ -6,6 +6,16 @@ import UnknownPage from "../components/unknownPage.svelte";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Analytics -->
+		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-PVJYSFBCJW"></script>
+		<script type="text/partytown">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PVJYSFBCJW');
+		</script>
+		
 		<title>404 Error</title>
 		<meta name="description" content="Where do you think you're going?" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
