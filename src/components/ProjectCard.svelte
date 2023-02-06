@@ -18,7 +18,7 @@
 		href={url}
 		target="_blank"
 		rel="noreferrer"
-		class="bg-neutral-200 px-4 py-2 rounded-full text-black hover:text-white font-medium hover:bg-rose-500 hover:transition ease-in-out shadow-black shadow-md"
+		class="bg-neutral-200 px-4 py-2 rounded-full text-black hover:text-white font-medium hover:bg-black hover:transition ease-in-out shadow-black shadow-md"
 		>{buttonText}</a
 	>
 </div>

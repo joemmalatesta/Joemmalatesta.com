@@ -11,7 +11,7 @@
 			width="90"
 			viewBox="0 0 2400 2400"
 			preserveAspectRatio="xMidYMid meet"
-			class="fill-black hover:fill-purple-500  duration-200"
+			class="hover:fill-rose-400 fill-black transition-all"		
 		>
 			<g
 				transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
@@ -26,15 +26,15 @@
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a
-			class="mr-2 hover:border-b-2 border-spacing-3 border-purple-500 hover:font-extrabold transition duration-200"
+			class="mr-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition"
 			href="#blog">Blog</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-purple-500 hover:font-extrabold transition duration-200"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
 			href="#projects">Projects</a
 		>
 		<a
-			class="ml-2 hover:border-b-2 border-spacing-3 border-purple-500 hover:font-extrabold transition duration-200"
+			class="ml-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
 			href="#about">About</a
 		>
 	</div>

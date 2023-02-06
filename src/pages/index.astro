@@ -5,38 +5,7 @@ import Footer from "../components/Footer.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
 import ProjectCard from "../components/ProjectCard.svelte";
 import Blog from "../components/blog.astro";
-const projects = [
-	{
-		title: "Auto Typer",
-		tech: "Python, Selenium, MatPlotLib",
-		description:
-			"Auto complete a typing test at a specified WPM, taking into account computational delays",
-		url: "https://github.com/joemmalatesta/Auto-Typer",
-	},
-	{
-		title: "Personal Website V1",
-		tech: "HTML, CSS, Bootstrap, PHP, MySQL",
-		description:
-			"The first iteration of my website! My introduction to front end development.",
-		url: "https://dev.joemmalatesta.com/",
-		buttonText: "Go to old site",
-	},
-	{
-		title: 'Discord "Yvy" Bot',
-		tech: "Python, REST APIs, MongoDB",
-		description:
-			"Commands return concise information regarding osu! plays, and players.",
-		url: "https://github.com/joemmalatesta/yvy-discord-bot",
-	},
-	{
-		title: "CaptChart",
-		tech: "Javascript, Chartjs, Bootstrap",
-		description:
-			"Captcha completed by correctly identifying parts of a linear graph",
-		url: "https://joemmalatesta.github.io/CapChart/",
-		buttonText: "Try it out"
-	},
-];
+import Projects from "../components/projects.astro"
 ---
 
 <!DOCTYPE html>
@@ -50,6 +19,7 @@ const projects = [
 	<body>
 		<Header client:load />
 		<main>
+			<!-- Main section -->
 			<section>
 				<div class="md:mt-6 mt-2 flex flex-col items-center justify-center md:flex-row">
 					<div class="flex flex-col items-center justify-center p-2 px-5">
@@ -59,44 +29,25 @@ const projects = [
 							Joe Malatesta
 						</h1>
 						<h3
-							class="m-2 bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text lg:p-5 pb-2 sm:text-4xl text-2xl font-bold text-transparent lg:text-7xl"
+							class="m-2 bg-gradient-to-t from-purple-400 to-pink-500 bg-clip-text lg:p-5 pb-2 sm:text-4xl text-2xl font-bold text-transparent lg:text-7xl"
 						>
 							Insipired by <span><TypeWriter client:load /></span>
 						</h3>
 					</div>
-					<!-- <div class="m-6 md:w-1/2">
+				</div>
+			</section>
 
-						<img
-							src="teaching.jpeg"
-							alt="Flexin Dancin Yah Yah Yah Yah"
-							class="rounded-tl-full rounded-br-full outline-double outline-8 outline-offset-2 outline-purple-300"
-						/>
-					</div> -->
-				</div>
-			</section>
+			<!-- Projects Section -->
 			<section id="projects" class="mx-4 lg:mx-0">
-				<h1
-				class="bg-gradient-to-t from-purple-400 to-pink-500 bg-clip-text p-5 text-center text-6xl font-extrabold text-transparent md:text-8xl my-3"
-			>
-				Projects
-			</h1>
-				<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-					{
-						projects.map((project) => (
-							<ProjectCard
-								title={project.title}
-								tech={project.tech}
-								description={project.description}
-								url={project.url}
-								buttonText={project.buttonText}
-							/>
-						))
-					}
-				</div>
+				<Projects />
 			</section>
+
+			<!-- Blog Section -->
 			<section id="blog">
-			<Blog />
+				<Blog />
 			</section>
+
+			<!-- Disclaima -->
 			<div class="text-center">
 				<h5 class="mt-20 text-xl">If you're seeing this</h5>
 				<h5 class="text-xl">This site is under construction...</h5>
