@@ -9,7 +9,7 @@ export interface Props {
 	image?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL("https://www.joemmalatesta/", Astro.site);
 
 const { title, description, image = 'me.jpg' } = Astro.props;
 ---
@@ -34,6 +34,7 @@ const { title, description, image = 'me.jpg' } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
+<!-- Use genertaed one once I test it..	 -->
 <!-- <link rel="canonical" href={canonicalURL} /> -->
 <link rel="canonical" href="https://www.joemmalatesta.com" />
 
