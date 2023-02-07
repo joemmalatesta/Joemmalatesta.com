@@ -11,8 +11,8 @@
 <div
 	class="container bg-gradient-to-r from-rose-400 to-sky-300 rounded-lg p-5 flex flex-col items-start"
 >
-	<h2 class="text-2xl">{title}</h2>
-	<p class="text-sm md:text-base mb-2 text-neutral-700">{tech}</p>
+	<h3 class="text-2xl">{title}</h3>
+	<h5 class="text-sm md:text-base mb-2 text-neutral-700">{tech}</h5>
 	<p class="mb-3 sm:text-lg text-base hidden md:block">{description}</p>
 	<a
 		href={url}
