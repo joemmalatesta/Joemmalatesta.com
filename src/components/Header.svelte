@@ -37,7 +37,6 @@
 			class="ml-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
 			href="/#about">About</a
 		>
-		<a class="ml-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100" href="/Joseph Malatesta.pdf">Resume</a>
 	</div>
 </nav>
 
@@ -82,7 +81,6 @@
 				<a class="" href="/#blog">Blog</a>
 				<a class="" href="/#projects">Projects</a>
 				<a class="" href="/#about">About</a>
-				<a class="" href="/Joseph Malatesta.pdf">Resume</a>
 			</div>
 			<div class="flex flex-row mx-2">
 				<a
