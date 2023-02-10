@@ -11,7 +11,7 @@
 			width="90"
 			viewBox="0 0 2400 2400"
 			preserveAspectRatio="xMidYMid meet"
-			class="hover:fill-rose-400 fill-black transition-all"		
+			class="hover:fill-rose-400 fill-black transition-all"
 		>
 			<g
 				transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
@@ -26,7 +26,11 @@
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a
-			class="mr-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition"
+			class="mr-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
+			href="/#about">About</a
+		>
+		<a
+			class="mx-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition"
 			href="/#blog">Blog</a
 		>
 		<a
@@ -35,7 +39,7 @@
 		>
 		<a
 			class="ml-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
-			href="/#about">About</a
+			href="/#contact">Contact</a
 		>
 	</div>
 </nav>
@@ -48,7 +52,7 @@
 				width="70"
 				viewBox="0 0 2400 2400"
 				preserveAspectRatio="xMidYMid meet"
-				class="hover:fill-rose-400 fill-black transition-all"		
+				class="hover:fill-rose-400 fill-black transition-all"
 			>
 				<g
 					transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
@@ -78,32 +82,10 @@
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
-				<a class="" href="/#blog">Blog</a>
-				<a class="" href="/#projects">Projects</a>
-				<a class="" href="/#about">About</a>
-			</div>
-			<div class="flex flex-row mx-2">
-				<a
-					class="pr-2"
-					href="https://twitter.com/josumalatesta"
-					target="_blank"
-					rel="noreferrer"
-					><img src="/twitter.png" alt="Twitter Icon" width="25" /></a
-				>
-				<a
-					class="px-2"
-					href="https://github.com/joemmalatesta"
-					target="_blank"
-					rel="noreferrer"
-					><img src="/github.png" alt="Github Icon" width="25" /></a
-				>
-				<a
-					class="px-2"
-					href="https://www.linkedin.com/in/joe-malatesta/"
-					target="_blank"
-					rel="noreferrer"
-					><img src="/linkedin.png" alt="Linkedin Icon" width="25" /></a
-				>
+				<a class="" href="/#about">▹About</a>
+				<a class="" href="/#blog">▹Blog</a>
+				<a class="" href="/#projects">▹Projects</a>
+				<a class="" href="/#contact">▹Contact</a>
 			</div>
 		</div>
 	{/if}

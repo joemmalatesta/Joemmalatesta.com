@@ -11,7 +11,6 @@
 
 
 body {
-  @apply lg:mx-16;
   @apply selection:bg-black selection:text-white;
   /* @apply bg-gradient-to-r from-violet-300 to-blue-100; */
 	font-family: 'Poppins', sans-serif !important;

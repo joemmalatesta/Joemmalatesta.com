@@ -6,6 +6,8 @@ import TypeWriter from "../components/TypeWriter.svelte";
 import ProjectCard from "../components/ProjectCard.svelte";
 import Blog from "../components/blog.astro";
 import Projects from "../components/projects.astro"
+import About from "../components/about.astro";
+import Contact from "../components/contact.svelte";
 ---
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@ import Projects from "../components/projects.astro"
 		<Header client:load />
 		<main>
 			<!-- Main section -->
-			<section>
+			<section class="bg-neutral-800 lg:px-16">
 				<div class="md:mt-6 mt-2 flex flex-col items-center justify-center md:flex-row">
 					<div class="flex flex-col items-center justify-center p-2 px-5">
 						<h1
@@ -32,15 +34,26 @@ import Projects from "../components/projects.astro"
 				</div>
 			</section>
 
+
+
+			<section id="about" class="lg:px-16 py-5 bg-teal-200">
+					<About />
+			</section>
+
+			<section id="blog" class="lg:px-16 py-5 bg--200">
+				<Blog />
+			</section>
+
 			<!-- Projects Section -->
-			<section id="projects" class="mx-4 lg:mx-0">
+			<section id="projects" class="lg:px-16 px-4 py-5 bg-stone-300">
 				<Projects />
 			</section>
 
-			<!-- Blog Section -->
-			<section id="blog" class="my-5">
-				<Blog />
+			<section id="contact" class="lg:px-16 py-5 bg-orange-200">
+				<Contact />
+				<Footer />
 			</section>
+
 
 			<!-- Disclaima -->
 			<div class="text-center">
@@ -48,6 +61,5 @@ import Projects from "../components/projects.astro"
 				<h5 class="text-xl">This site is under construction...</h5>
 			</div>
 		</main>
-		<Footer />
 	</body>
 </html>
