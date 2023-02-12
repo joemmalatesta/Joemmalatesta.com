@@ -1,28 +1,23 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
   let name, subject, message
-
+  function sendEmail(){
+    console.log("Email successfully sent!")
+  }
 </script>
 <main>
     <SectionHeader title={"Contact"} />
-    <div class="container">
-    <form action="/">
-        <h4>Name</h4>
-        <input type="text">
-        <h4>Email</h4>
-        <input type="text">
-        <h4>Subject</h4>
-        <input type="text">
-        <h4>Message</h4>
-        <input type="text">
-        <br>
-        <button type="submit" class="p-2 bg-slate-700">Send</button>
+    <div class="container flex flex-row justify-center items-center">
+    <form action="/" class="mx-3 md:mx-auto">
+        <div class="md:flex flex-row">
+            <input type="text" placeholder="Name" class="outline-double p-2 focus:placeholder:opacity-0 transition-all rounded-md m-1 duration-700 w-full md:w-auto">
+            <input type="text" placeholder="Email" class="outline-double p-2 focus:placeholder:opacity-0 transition-all rounded-md m-1 w-full md:w-auto">
+        </div>
+        <div class="md:flex flex-col">
+            <input type="text" placeholder="Subject" class="outline-double p-2 focus:placeholder:opacity-0 transition-all rounded-md m-1 w-full md:w-auto">
+            <input type="text" placeholder="Message" class="outline-double p-2 focus:placeholder:opacity-0 transition-all rounded-md m-1 w-full md:w-auto">
+        </div>
+        <button type="submit" class="p-2 bg-slate-700 w-full rounded-lg" on:click={sendEmail()}>Send</button>
     </form>
     </div>
 </main>
-
-<style>
-    input {
-        @apply outline-double
-    }
-</style>
