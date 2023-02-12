@@ -5,6 +5,7 @@
 </script>
 <main>
     <SectionHeader title={"Contact"} />
+    <div class="container">
     <form action="/">
         <h4>Name</h4>
         <input type="text">
@@ -15,8 +16,9 @@
         <h4>Message</h4>
         <input type="text">
         <br>
-        <button type="submit">Send</button>
+        <button type="submit" class="p-2 bg-slate-700">Send</button>
     </form>
+    </div>
 </main>
 
 <style>
