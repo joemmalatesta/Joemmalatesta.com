@@ -12,12 +12,12 @@ const { title, description, date, url } = Astro.props;
 <!-- This looked okay--  hover:bg-violet-400 -->
 <a
 	href={url}
-	class="container my-2 flex flex-row items-center justify-between from-rose-400 to-sky-300 p-2 hover:bg-gradient-to-r"
+	class="container my-2 flex flex-row items-center justify-between from-rose-200 to-rose-300 p-2 hover:bg-gradient-to-r"
 >
 	<div>
 		<h4 class="text-lg md:text-2xl">{title}</h4>
-		<h6 class="text-sm">{date}</h6>
-		<p class="hidden text-xl md:block">{description}</p>
+		<h6 class="text-sm text-neutral-500">{date}</h6>
+		<p class="hidden text-lg lg:block">{description}</p>
 	</div>
 	<img src="arrow.svg" alt="Read More" class="" />
 </a>

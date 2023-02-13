@@ -10,7 +10,7 @@
     <div class="container flex flex-row justify-center items-center">
     <form action="/" class="mx-3 md:mx-auto">
         <div class="md:flex flex-row">
-            <input type="text" placeholder="Name" class="outline-double p-2 focus:placeholder:opacity-0 rounded-md m-1 duration-700 w-full md:w-auto">
+            <input type="text" placeholder="Name" class="outline-double p-2 focus:placeholder:opacity-0 focus:transition-all rounded-md m-1 w-full md:w-auto">
             <input type="text" placeholder="Email" class="outline-double p-2 focus:placeholder:opacity-0 rounded-md m-1 w-full md:w-auto">
         </div>
         <div class="md:flex flex-col">

@@ -9,7 +9,7 @@
 	<!-- Name -->
 	<a href="/">
 		<svg
-			width="90"
+			width="100"
 			viewBox="0 0 2400 2400"
 			preserveAspectRatio="xMidYMid meet"
 			on:mouseenter={() => {fillColor = "url(#Gradient)"; console.log("meow")}}
@@ -35,19 +35,19 @@
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a
-			class="mr-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
+			class="mr-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
 			href="/#about">About</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition"
 			href="/#blog">Blog</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
 			href="/#projects">Projects</a
 		>
 		<a
-			class="ml-2 hover:border-b-2 border-spacing-3 border-rose-400 hover:font-extrabold transition-all duration-100"
+			class="ml-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
 			href="/#contact">Contact</a
 		>
 	</div>
@@ -61,8 +61,15 @@
 				width="70"
 				viewBox="0 0 2400 2400"
 				preserveAspectRatio="xMidYMid meet"
-				class="hover:fill-rose-400 fill-black transition-all"
-			>
+				on:mouseenter={() => {fillColor = "url(#Gradient)"; console.log("meow")}}
+				on:mouseleave={() => {fillColor = "black"}}
+		>
+		<defs>
+			<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+			  <stop offset="0%" style="stop-color:#262626;stop-opacity:1"/>
+			  <stop offset="100%" style="stop-color:#fb7185;stop-opacity:1"/>
+			</linearGradient>
+		</defs>
 				<g
 					transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
 					stroke="none"

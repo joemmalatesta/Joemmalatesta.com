@@ -9,6 +9,7 @@ const projects = [
 		description:
 			"Auto complete a typing test at a specified WPM, taking into account computational delays",
 		url: "https://github.com/joemmalatesta/Auto-Typer",
+		image: "/auto-typer.jpg"
 	},
 	{
 		title: "Personal Website V1",
@@ -17,6 +18,7 @@ const projects = [
 			"The first iteration of my website! My introduction to front end development.",
 		url: "https://dev.joemmalatesta.com/",
 		buttonText: "Go to old site",
+		image: "/old-website.jpg"
 	},
 	{
 		title: 'Discord "Yvy" Bot',
@@ -24,6 +26,7 @@ const projects = [
 		description:
 			"Commands return concise information regarding osu! plays, and players.",
 		url: "https://github.com/joemmalatesta/yvy-discord-bot",
+		image: "/yvy-bot.jpg"
 	},
 	{
 		title: "CaptChart",
@@ -31,7 +34,8 @@ const projects = [
 		description:
 			"Captcha completed by correctly identifying parts of a linear graph",
 		url: "https://joemmalatesta.github.io/CapChart/",
-		buttonText: "Try it out"
+		buttonText: "Try it out",
+		image: "/capchart.jpg"
 	},
 ];
 ---
@@ -46,6 +50,7 @@ const projects = [
                 description={project.description}
                 url={project.url}
                 buttonText={project.buttonText}
+				image={project.image}
             />
         ))
     }
