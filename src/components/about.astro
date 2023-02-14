@@ -8,9 +8,9 @@ import SectionHeader from "./SectionHeader.svelte";
 		subtitle={"My lifes story packed into 2 sentences."}
 	/>
 	<div class="mx-5 my-2 flex flex-col justify-around items-center lg:flex-row">
-		<div class="my-3">
-			<h2 class="text-4xl font-bold">Joe Malatesta</h2>
-			<p class="text-lg">
+		<div class="my-3 lg:w-1/2">
+			<h2 class="md:text-4xl text-2xl font-bold">Joe Malatesta</h2>
+			<p class="lg:text-xl md:text-lg">
 				I have been balling for my whole career. I am working as a front-end
 				developer intern. I'm very interested in cutting edge technology and
 				hope to one day be able to contribute to a company pushing the current
@@ -27,10 +27,10 @@ import SectionHeader from "./SectionHeader.svelte";
 		</div>
 	
 	<div
-		class="relative rounded-lg outline outline-4 outline-offset-4 outline-rose-600 mx-5"
+		class="relative rounded-lg outline outline-4 outline-offset-4 outline-rose-500 lg:w-1/2 md:w-2/3 md:m-5 m-2 lg:scale-90"
 	>
-		<img src="me.jpg" alt="Joe Malatesta Portrait" class="rounded-xl" />
-		<img
+		<img src="professional-pic.jpeg" alt="Joe Malatesta Portrait" class="rounded-xl"/>
+		<!-- <img
 			src="/logos/tailwind.png"
 			alt="tailwind icon"
 			class="absolute top-1 left-1 -rotate-6"
@@ -53,7 +53,7 @@ import SectionHeader from "./SectionHeader.svelte";
 			alt="vercel icon"
 			class="absolute bottom-1 right-1 -rotate-6"
 			width="55"
-		/>
+		/> -->
 	</div>
 </div>
 </main>
