@@ -12,7 +12,7 @@
 			width="100"
 			viewBox="0 0 2400 2400"
 			preserveAspectRatio="xMidYMid meet"
-			on:mouseenter={() => {fillColor = "url(#Gradient)"; console.log("meow")}}
+			on:mouseenter={() => {fillColor = "url(#Gradient)"}}
 			on:mouseleave={() => {fillColor = "black"}}
 		>
 		<defs>
@@ -61,7 +61,7 @@
 				width="70"
 				viewBox="0 0 2400 2400"
 				preserveAspectRatio="xMidYMid meet"
-				on:mouseenter={() => {fillColor = "url(#Gradient)"; console.log("meow")}}
+				on:mouseenter={() => {fillColor = "url(#Gradient)"}}
 				on:mouseleave={() => {fillColor = "black"}}
 		>
 		<defs>
