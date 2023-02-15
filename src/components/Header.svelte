@@ -35,10 +35,6 @@
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a
-			class="mr-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
-			href="/#about">About</a
-		>
-		<a
 			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition"
 			href="/#blog">Blog</a
 		>
@@ -98,7 +94,6 @@
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
-				<a class="" href="/#about">▹About</a>
 				<a class="" href="/#blog">▹Blog</a>
 				<a class="" href="/#projects">▹Projects</a>
 				<a class="" href="/#contact">▹Contact</a>
