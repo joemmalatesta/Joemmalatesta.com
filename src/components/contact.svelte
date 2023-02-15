@@ -12,7 +12,7 @@
             <input type="text" bind:value={name} placeholder="Name" class="ring ring-neutral-700 p-2 focus:outline-none focus:ring-neutral-800 focus:placeholder:opacity-0 rounded-md m-2">
             <input type="text" bind:value={email} placeholder="Email" class="ring ring-neutral-700 p-2 focus:outline-none focus:ring-neutral-800 focus:placeholder:opacity-0 rounded-md m-2">
             <input type="text" bind:value={message} placeholder="Message" class="ring ring-neutral-700 p-2 focus:outline-none focus:ring-neutral-800 focus:placeholder:opacity-0 rounded-md m-2 h-40 pt-2">
-          <button type="submit" class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg scale-95" on:click={sendEmail}>Get in Touch</button>
+          <button type="submit" class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg" on:click={sendEmail}>Get in Touch</button>
     </form>
     </div>
 </main>
