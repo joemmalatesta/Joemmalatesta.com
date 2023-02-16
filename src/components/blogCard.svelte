@@ -1,17 +1,48 @@
-
 <script>
-	export let title, description, date, url
+	export let title, description, date, url, image;
+	export let active = false;
+	let showToggle = false
+	let arrowSize = 20
+	let screenWidth
+	$: if (screenWidth < 1024){
+		arrowSize = 15
+	}
+	let turnArrow
+	$: if (active) {
+		turnArrow = "-"
+	}
+	else{
+		turnArrow = ""
+	}
+	import { slide } from "svelte/transition";
 </script>
 
-
 <!-- This looked okay--  hover:bg-violet-400 -->
-<div
-	class="container flex flex-col from-rose-200 to-rose-300 p-2 border-b border-spacing-4 border-neutral-800"
->
-	<div class="flex flex-row justify-between w-full">
-		<h4 class="text-lg md:text-2xl font-semibold">{title}</h4>
-		<h6 class="text-sm text-neutral-500">{date}</h6>
+<div class="flex flex-col container border-b-2 border-neutral-800/40 p-2" on:mouseenter={() => {showToggle = true}} on:mouseleave={() => {showToggle = false}}>
+	<div class="flex flex-row justify-between">
+		<div>
+			<h6 class="text-sm text-neutral-500">{date}</h6>
+			<a href={url}>
+				<h4 class="text-lg md:text-xl lg:text-2xl font-semibold">{title}</h4>
+			</a>
+		</div>
+		{#if showToggle || active || screenWidth < 1024}
+		<button on:click={() => {active= !active}}>
+			<img src="arrow.svg" alt="expand blog card" class="{turnArrow}rotate-90 transition duration-300" width={arrowSize}>
+		</button>
+		{/if}
 	</div>
-		<p class="hidden text-lg lg:block">{description}</p>
-		<a href={url} class="underline underline-offset-2 text-rose-500 hover:text-rose-600 text-lg w-fit">read more</a>
+	{#if active}
+	<div transition:slide>
+		<p class="text-md lg:text-lg">{description}</p>
+		<a
+			href={url}
+			class="underline underline-offset-2 text-rose-500 hover:text-rose-600 text-md w-fit"
+			>read more</a
+		>
+	</div>
+	{/if}
 </div>
+
+<svelte:window bind:innerWidth={screenWidth}></svelte:window>
+

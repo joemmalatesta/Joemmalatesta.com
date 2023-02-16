@@ -6,14 +6,13 @@ import BlogCard from "../components/blogCard.svelte";
 import SectionHeader from "./SectionHeader.svelte";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const techPosts = (await Astro.glob("../pages/blog/tech/*.{md,mdx}")).sort(
+const techPosts = (await Astro.glob("../pages/blog/programming/*.{md,mdx}")).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
 		new Date(a.frontmatter.pubDate).valueOf()
 );
 const improvementPosts = (
-	await Astro.glob("../pages/blog/improvement/*.{md,mdx}")
-).sort(
+	await Astro.glob("../pages/blog/improvement/*.{md,mdx}")).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
 		new Date(a.frontmatter.pubDate).valueOf()
@@ -28,43 +27,49 @@ const improvementPosts = (
 		<main>
 			<SectionHeader title={"Blog"} subtitle={"A place for my thoughts about things"} />
 			<div class="my-4 flex flex-col justify-center lg:flex-row">
-				<div class="m-6">
-					<h3 class="ml-2 text-3xl font-bold md:text-4xl text-rose-400">Tech Blogs</h3>
-					<div class="flex flex-col items-center justify-center">
-						<a href=""></a>
+				<div class="mx-6 my-3 lg:w-1/2">
+					<div class="flex justify-between items-center">
+						<h3 class="text-2xl font-bold md:text-4xl text-rose-400">Programming</h3>
+						<a href="/programming-blogs" class="text-rose-500 underline-offset-2 underline hover:text-rose-600">See all</a>
+						</div>
+					<div class="flex flex-col items-start justify-center">
+
 						{
 							techPosts
 								.slice(0, 4)
 								.map((post) => (
-									<BlogCard
+									<BlogCard client:load
 										title={post.frontmatter.title}
 										description={post.frontmatter.cardDescription}
 										date={post.frontmatter.pubDate}
 										url={post.url}
+										image={post.frontmatter.heroImage}
 									/>
 								))
 						}
 					</div>
-					<h5><a href="/tech-blogs" class="text-rose-500 underline-offset-2 underline hover:text-rose-600">All tech blogs</a></h5>
 				</div>
-				<div class="m-6">
-					<h3 class="text-3xl font-bold md:text-4xl text-rose-400">Self Improvement</h3>
+				<div class="mx-6 my-3 lg:w-1/2">
+					<div class="flex justify-between items-center">
+					<h3 class="text-2xl font-bold md:text-4xl text-rose-400">Self Improvement</h3>
+					<a href="/improvement-blogs" class="text-rose-500 underline-offset-2 underline hover:text-rose-600">See all</a>
+					</div>
 					<div class="flex flex-col items-center justify-center">
-						<a href=""></a>
 						{
 							improvementPosts
 								.slice(0, 4)
 								.map((post) => (
-									<BlogCard
+									<BlogCard client:load
 										title={post.frontmatter.title}
 										description={post.frontmatter.cardDescription}
 										date={post.frontmatter.pubDate}
 										url={post.url}
+										image={post.frontmatter.heroImage}
 									/>
 								))
 						}
 					</div>
-					<h5><a href="/improvement-blogs" class="text-rose-500 underline-offset-2 underline hover:text-rose-600 text-end">All self improvement blogs</a></h5>
+					
 				</div>
 			</div>
 		</main>
