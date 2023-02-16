@@ -1,18 +1,55 @@
 <script>
-  import SectionHeader from "./SectionHeader.svelte";
-  let name, email, message
-  function sendEmail(){
-    console.log("Email successfully sent!")
-  }
+	import SectionHeader from "./SectionHeader.svelte";
+	let name, email, message;
+	function sendEmail() {
+		console.log("Email successfully sent!");
+	}
 </script>
+
 <main>
-    <SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
-    <div class="flex justify-center">
-    <form action="/" class="mx-3 flex flex-col lg:w-1/3 w-full">
-            <input type="text" bind:value={name} placeholder="Name" class="appearance-none ring ring-neutral-700 p-2 focus:outline-none focus:ring-neutral-800 focus:placeholder:opacity-0 rounded-md m-2">
-            <input type="text" bind:value={email} placeholder="Email" class="appearance-none ring ring-neutral-700 p-2 focus:outline-none focus:ring-neutral-800 focus:placeholder:opacity-0 rounded-md m-2">
-            <input type="text" bind:value={message} placeholder="Message" class="appearance-none ring ring-neutral-700 p-2 focus:outline-none focus:ring-neutral-800 focus:placeholder:opacity-0 rounded-md m-2 h-40 pt-2">
-          <button type="submit" class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg" on:click={sendEmail}>Get in Touch</button>
-    </form>
-    </div>
+	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
+	<div class="flex justify-center">
+		<form action="/" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full">
+			<!-- Email and Name -->
+			<div class="flex flex-col xl:flex-row">
+				<div class="xl:w-full xl:mr-5 m-2">
+					<label class="text-sm" for="name">Name</label>
+					<input
+						type="text"
+						name="name" id="name"
+						bind:value={name}
+						placeholder="Drahkma Smeltorge"
+						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200  rounded-md w-full"
+					/>
+				</div>
+				<div class="xl:w-full xl:mr-5 m-2">
+					<label class="text-sm" for="email">Email</label>
+					<input
+						type="text" 
+						name="email" id="email"
+						bind:value={email}
+						placeholder="Munch@gmail.com"
+						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200  rounded-md w-full"
+					/>
+				</div>
+			</div>
+
+
+			<div class="flex flex-col mt-3 m-2">
+        <label class="text-sm" for="message">Message</label>
+				<textarea
+					type="text"
+					name="message" id="message"
+					bind:value={message}
+					placeholder="Hey Joe, just want to let you know your website looks a little girly..."
+					class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-md h-40"
+				/>
+			</div>
+			<button
+				type="submit"
+				class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg"
+				on:click={sendEmail}>Get in Touch</button
+			>
+		</form>
+	</div>
 </main>

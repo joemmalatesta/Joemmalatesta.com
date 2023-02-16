@@ -14,9 +14,9 @@
 	class="container rounded-lg p-5 flex flex-col items-start bg-gradient-to-r from-rose-200 to-rose-300"
 
 >
-	<h3 class="text-2xl">{title}</h3>
-	<h5 class="text-sm md:text-base mb-2 text-neutral-700">{tech}</h5>
-	<p class="mb-3 sm:text-lg text-base hidden lg:block">{description}</p>
+	<h3 class="text-2xl font-semibold">{title}</h3>
+	<h5 class="text-sm md:text-base mb-2 text-neutral-600">{tech}</h5>
+	<p class="mb-3 sm:text-lg text-base hidden lg:block ">{description}</p>
 	<a
 		href={url}
 		target="_blank"

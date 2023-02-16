@@ -37,7 +37,7 @@
 		<p class="text-md lg:text-lg">{description}</p>
 		<a
 			href={url}
-			class="underline underline-offset-2 text-rose-500 hover:text-rose-600 text-md w-fit"
+			class="underline underline-offset-2 text-rose-500 hover:text-rose-600 md:text-lg w-fit"
 			>read more</a
 		>
 	</div>
