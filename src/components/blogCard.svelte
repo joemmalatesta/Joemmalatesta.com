@@ -20,7 +20,7 @@
 <!-- This looked okay--  hover:bg-violet-400 -->
 <div class="flex flex-col container border-b-2 border-neutral-800/40 p-2" on:mouseenter={() => {showToggle = true}} on:mouseleave={() => {showToggle = false}}>
 	<div class="flex flex-row justify-between">
-		<div>
+		<div class="w-fit">
 			<h6 class="text-sm text-neutral-500">{date}</h6>
 			<a href={url}>
 				<h4 class="text-lg md:text-xl lg:text-2xl font-semibold">{title}</h4>
