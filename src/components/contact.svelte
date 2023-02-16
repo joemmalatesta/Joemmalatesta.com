@@ -13,7 +13,7 @@
 			<!-- Email and Name -->
 			<div class="flex flex-col xl:flex-row">
 				<div class="xl:w-full xl:mr-5 m-2">
-					<label class="text-sm" for="name">Name</label>
+					<label class="text-sm text-rose-500 my-2" for="name">Name</label>
 					<input
 						type="text"
 						name="name" id="name"
@@ -23,7 +23,7 @@
 					/>
 				</div>
 				<div class="xl:w-full xl:mr-5 m-2">
-					<label class="text-sm" for="email">Email</label>
+					<label class="text-sm text-rose-500 my-2" for="email">Email</label>
 					<input
 						type="text" 
 						name="email" id="email"
@@ -36,7 +36,7 @@
 
 
 			<div class="flex flex-col mt-3 m-2">
-        <label class="text-sm" for="message">Message</label>
+        <label class="text-sm text-rose-500 my-1" for="message">Message</label>
 				<textarea
 					type="text"
 					name="message" id="message"
