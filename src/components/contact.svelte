@@ -1,8 +1,20 @@
 <script>
 	import SectionHeader from "./SectionHeader.svelte";
 	let name, email, message;
+	let showError = false
+	let showEmailError = false
 	function sendEmail() {
-		console.log("Email successfully sent!");
+		if (!name || !message || !email) {
+			showError = true
+			return
+		}
+		if (!email.includes("@") || !email.includes(".")){
+			showEmailError
+			return
+		}
+		alert("Sent!")
+		showError = false
+		showEmailError = false
 	}
 </script>
 
@@ -25,12 +37,15 @@
 				<div class="xl:w-full xl:mr-5 m-2">
 					<label class="text-sm text-rose-500 my-2" for="email">Email</label>
 					<input
-						type="text" 
+						type="email" 
 						name="email" id="email"
 						bind:value={email}
 						placeholder="Munch@gmail.com"
 						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200  rounded-md w-full"
 					/>
+				{#if showEmailError}
+				<h6 class="text-red-700 text-sm mx-2">Please enter a valid email</h6>
+				{/if}
 				</div>
 			</div>
 
@@ -45,6 +60,9 @@
 					class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-md h-40"
 				/>
 			</div>
+			{#if showError}
+			<h6 class="text-red-700 text-sm mx-2">All fields must be filled out</h6>
+			{/if}
 			<button
 				type="submit"
 				class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg"
