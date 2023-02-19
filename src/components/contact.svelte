@@ -64,7 +64,6 @@
 			<h6 class="text-red-700 text-sm mx-2">All fields must be filled out</h6>
 			{/if}
 			<button
-				type="submit"
 				class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg"
 				on:click={sendEmail}>Get in Touch</button
 			>
