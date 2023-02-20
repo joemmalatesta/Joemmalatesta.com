@@ -1,27 +1,30 @@
 <script>
+  import { m } from "../../dist/chunks/index.b515a994";
 	import SectionHeader from "./SectionHeader.svelte";
 	let name, email, message;
 	let showError = false
 	let showEmailError = false
 	function sendEmail() {
-		if (!name || !message || !email) {
-			showError = true
-			return
-		}
-		if (!email.includes("@") || !email.includes(".")){
-			showEmailError
-			return
-		}
-		alert("Sent!")
-		showError = false
-		showEmailError = false
+    console.log("Writing to API")
+		fetch("/api/test", {
+			method: "POST",
+			body: JSON.stringify({name: name, email: email, message: message})
+		})
+			.then(response => response.json())
+			.then(data => {
+				alert(data.message);
+			})
+			.catch(error => {
+				console.error(error);
+			});
 	}
 </script>
 
 <main>
 	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
 	<div class="flex justify-center">
-		<form action="https://formsubmit.co/f74266613ba3aeebba57f2f9b1977600" method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full">
+		<!-- <form action="https://formsubmit.co/f74266613ba3aeebba57f2f9b1977600" method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full"> -->
+			<form class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full">
 			<!-- Email and Name -->
 			<div class="flex flex-col xl:flex-row">
 				<div class="xl:w-full xl:mr-5 m-2">

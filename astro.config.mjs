@@ -11,6 +11,7 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "server",
   site: 'https://joemmalatesta.com',
   integrations: [mdx(), sitemap(), tailwind(), svelte(),
     partytown({
