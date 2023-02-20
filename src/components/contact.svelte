@@ -23,7 +23,7 @@
 	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
 	<div class="flex justify-center">
 		<!-- <form action="https://formsubmit.co/f74266613ba3aeebba57f2f9b1977600" method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full"> -->
-			<form class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full">
+			<form method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full">
 			<!-- Email and Name -->
 			<div class="flex flex-col xl:flex-row">
 				<div class="xl:w-full xl:mr-5 m-2">
