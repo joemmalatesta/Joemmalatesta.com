@@ -1,5 +1,4 @@
 <script>
-  import { m } from "../../dist/chunks/index.b515a994";
 	import SectionHeader from "./SectionHeader.svelte";
 	let name, email, message;
 	let showError = false
