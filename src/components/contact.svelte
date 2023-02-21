@@ -4,12 +4,18 @@
 	let showError = false
 	let showEmailError = false
 	function sendEmail() {
-    console.log("Writing to API")
+		const payload = {
+		name: name,
+		email: email,
+		message: message
+		};
 		fetch("/api/test", {
 			method: "POST",
-			body: JSON.stringify({name: name, email: email, message: message})
-		})
-			.then(response => response.json())
+			headers: {
+        		"Content-Type": "application/json"
+    		},
+			body: JSON.stringify(payload)
+		})	.then(response => response.json())
 			.then(data => {
 				alert(data.message);
 			})
@@ -17,13 +23,24 @@
 				console.error(error);
 			});
 	}
+
+	function validateForm() {
+		if (!name || !email || !message) {
+			showError = true
+			return
+		}
+		if (!email.contains("@") || !email.contains(".")){
+			showEmailError = true
+			return
+		}
+		sendEmail()
+	}
 </script>
 
 <main>
 	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
 	<div class="flex justify-center">
-		<!-- <form action="https://formsubmit.co/f74266613ba3aeebba57f2f9b1977600" method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full"> -->
-			<form method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full">
+			<form method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full" >
 			<!-- Email and Name -->
 			<div class="flex flex-col xl:flex-row">
 				<div class="xl:w-full xl:mr-5 m-2">
