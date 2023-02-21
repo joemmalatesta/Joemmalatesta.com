@@ -22,18 +22,29 @@ export async function post({ request }) {
                <p><strong>Message:</strong>${data.message}</p>`,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Email sent: ' + info.response);
-        }
-    });
-
     let payload = {
-        message: "Server received your message!"
+        message: "deafult ah"
     }
+
+    try {
+        await new Promise((resolve, reject) => {
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    console.log(error);
+                    payload.message = `Error: ${error}`
+                    reject(error);
+                } else {
+                    console.log('Email sent: ' + info.response);
+                    payload.message = `That jawn worked!`
+                    resolve();
+                }
+            });
+        });
+    } catch (error) {
+        // Handle error if necessary
+    }
+
+    console.log(payload.message)
     return {
         body: JSON.stringify(payload)
     };

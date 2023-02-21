@@ -3,13 +3,14 @@
 	let name, email, message;
 	let showError = false
 	let showEmailError = false
+	let modalMessage = ""
 	function sendEmail() {
 		const payload = {
 		name: name,
 		email: email,
 		message: message
 		};
-		fetch("/api/test", {
+		fetch("/api/contact", {
 			method: "POST",
 			headers: {
         		"Content-Type": "application/json"
@@ -17,7 +18,7 @@
 			body: JSON.stringify(payload)
 		})	.then(response => response.json())
 			.then(data => {
-				alert(data.message);
+				alert(data.message)
 			})
 			.catch(error => {
 				console.error(error);
