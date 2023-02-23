@@ -4,8 +4,7 @@
 	let name, email, message;
 	let showError = false
 	let showEmailError = false
-	let showModal = false
-	let modalType = 'success'
+	let modalType = ''
 	function sendEmail() {
 		const payload = {
 		name: name,
@@ -21,7 +20,6 @@
 		})	.then(response => response.json())
 			.then(data => {
 				modalType = data.message
-				showModal = true
 			})
 			.catch(error => {
 				console.error(error);
@@ -42,9 +40,9 @@
 	}
 </script>
 
-{#if showModal}
-<Modal type={modalType} />
-{/if}
+
+<Modal bind:modalType />
+
 <main>
 	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
 	<div class="flex justify-center">

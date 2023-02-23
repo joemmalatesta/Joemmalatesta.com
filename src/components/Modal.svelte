@@ -2,15 +2,14 @@
   // I think I went about rendering the modals completely wrong but only time will tell. It feels awkward calling it in one component and hiding it in another, though.
   //Okay yeah so that don't work. showModal never goes back to false in the contact component.
   import { fade } from 'svelte/transition';
-  export let type
-  let dismiss = false
+  export let modalType
 
 </script>
 
 
 
 <!-- Success -->
-{#if type == "success" && dismiss == false}
+{#if modalType == "success"}
 <div
   transition:fade={{duration: 200}}
  class="fixed z-50 inset-0 overflow-y-auto backdrop-brightness-50">
@@ -23,7 +22,7 @@
       </div>
       <div class="flex flex-col items-center justify-center">
         <p class="text-sm md:text-lg text-center">I'll get back to you in a day or two</p>
-        <button on:click={() => {dismiss = !dismiss}} class="py-2 px-12 rounded-lg my-2 bg-rose-400 text-white hover:bg-rose-500 w-full">Sounds good</button>
+        <button on:click={() => {modalType = ""}} class="py-2 px-12 rounded-lg my-2 bg-rose-400 text-white hover:bg-rose-500 w-full">Sounds good</button>
       </div>
     </div>
   </div>
@@ -34,7 +33,7 @@
 
 
 <!-- Failure -->
-{#if type == "failure" && dismiss == false}
+{#if modalType == "failure"}
 <div
   transition:fade={{duration: 200}}
  class="fixed z-50 inset-0 overflow-y-auto backdrop-brightness-50">
@@ -48,7 +47,7 @@
       <div class="flex flex-col items-center justify-center">
         <p class="text-sm md:text-lg text-center">It seems my messenger has misplaced your note</p>
         <p class="md:text-sm text-xs my-1">You can always try again, or <span><a href="mailto:joemmalatesta@gmail.com" class="underline underline-offset-2 ">contact me directly</a></span> </p>
-        <button on:click={() => {dismiss = !dismiss}} class="py-2 px-12 rounded-lg my-2 bg-rose-400 text-white hover:bg-rose-500">Sigh..</button>
+        <button on:click={() => {modalType = ""}} class="py-2 px-12 rounded-lg my-2 bg-rose-400 text-white hover:bg-rose-500">Sigh..</button>
       </div>
     </div>
   </div>
