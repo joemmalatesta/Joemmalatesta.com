@@ -1,9 +1,11 @@
 <script>
+	import Modal from "./Modal.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
 	let name, email, message;
 	let showError = false
 	let showEmailError = false
-	let modalMessage = ""
+	let showModal = false
+	let modalType = 'success'
 	function sendEmail() {
 		const payload = {
 		name: name,
@@ -18,13 +20,13 @@
 			body: JSON.stringify(payload)
 		})	.then(response => response.json())
 			.then(data => {
-				alert(data.message)
+				modalType = data.message
+				showModal = true
 			})
 			.catch(error => {
 				console.error(error);
 			});
 		name = ""; email= ""; message= "";
-		//SHOW MODAL NOW
 	}
 
 	function validateForm() {
@@ -40,10 +42,13 @@
 	}
 </script>
 
+{#if showModal}
+<Modal type={modalType} />
+{/if}
 <main>
 	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
 	<div class="flex justify-center">
-			<form method="POST" class="mx-3 flex flex-col md:2/3 xl:w-1/2 w-full" >
+			<form method="POST" class="mx-3 flex flex-col md:w-2/3 w-full" >
 			<!-- Email and Name -->
 			<div class="flex flex-col xl:flex-row">
 				<div class="xl:w-full xl:mr-5 m-2">
@@ -62,7 +67,7 @@
 						type="email" 
 						name="email" id="email"
 						bind:value={email}
-						placeholder="Munch@gmail.com"
+						placeholder="example@gmail.com"
 						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200  rounded-md w-full"
 					/>
 				{#if showEmailError}
@@ -78,7 +83,7 @@
 					type="text"
 					name="message" id="message"
 					bind:value={message}
-					placeholder="Hey Joe, just want to let you know your website looks a little girly..."
+					placeholder="Hey Joe, this is totally random but..."
 					class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-md h-40"
 				/>
 			</div>

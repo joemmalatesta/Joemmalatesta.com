@@ -23,7 +23,7 @@ export async function post({ request }) {
     };
 
     let payload = {
-        message: "deafult ah"
+        message: "failure"
     }
 
     try {
@@ -31,11 +31,11 @@ export async function post({ request }) {
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
                     console.log(error);
-                    payload.message = `Error: ${error}`
+                    payload.message = `failure`
                     reject(error);
                 } else {
                     console.log('Email sent: ' + info.response);
-                    payload.message = `That jawn worked!`
+                    payload.message = `success`
                     resolve();
                 }
             });
