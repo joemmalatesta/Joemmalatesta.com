@@ -23,6 +23,8 @@
 			.catch(error => {
 				console.error(error);
 			});
+		name = ""; email= ""; message= "";
+		//SHOW MODAL NOW
 	}
 
 	function validateForm() {
@@ -85,7 +87,7 @@
 			{/if}
 			<button
 				class="p-2 bg-rose-400 hover:bg-rose-500 text-white rounded-lg"
-				on:click={sendEmail}>Get in Touch</button
+				on:click|preventDefault={sendEmail}>Get in Touch</button
 			>
 		</form>
 	</div>
