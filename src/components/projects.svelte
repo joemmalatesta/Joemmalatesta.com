@@ -48,10 +48,11 @@ const projects = [
 
 
 <SectionHeader title={"Projects"} subtitle={"blood, sweat, and carpal tunnel has lead me to this"}/>
-<div class="flex justify-center"
->
+
+
+<div class="justify-center hidden lg:flex">
 	<!-- active item -->
-	<div class="w-3/5 mx-5 my-3 h-full"
+	<div class="w-2/3 mx-5 my-3 h-max"
 	transition:fade
 	>
 			<ProjectCard
@@ -66,7 +67,7 @@ const projects = [
 	</div>
 
 	<!-- not active -->
-	<div class="flex-flex-col w-1/5">
+	<div class="lg:w-1/4">
 
 		{#each projects as project, index}
 			{#if index != active}
@@ -96,7 +97,7 @@ const projects = [
 
 <!-- Maybe use for phone sizes.  -->
 
-<!-- <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:hidden">
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:hidden">
 	{#each projects as project}
 				<ProjectCard
 					title={project.title}
@@ -105,7 +106,7 @@ const projects = [
 					url={project.url}
 					buttonText={project.buttonText}
 					image={project.image}
-					bind:active
+					phoneScreen = {true}
 				/>
 		{/each}
-</div> -->
+</div>
