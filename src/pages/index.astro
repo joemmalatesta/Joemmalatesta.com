@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
 import ProjectCard from "../components/ProjectCard.svelte";
 import Blog from "../components/blog.astro";
-import Projects from "../components/projects.astro"
+import Projects from "../components/projects.svelte"
 import About from "../components/about.astro";
 import Contact from "../components/contact.svelte";
 ---
@@ -48,7 +48,7 @@ nice gradient -->
 
 			<!-- Projects Section -->
 			<section id="projects" class="lg:px-16 px-4 py-5 ">
-				<Projects />
+				<Projects client:load/>
 			</section>
 
 			<section id="contact" class="lg:px-16 py-5 ">

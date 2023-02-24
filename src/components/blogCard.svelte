@@ -1,4 +1,5 @@
 <script>
+	//TODO.. no more arrow just click and it will become active
 	export let title, description, date, url, image;
 	export let active = false;
 	let showToggle = false
