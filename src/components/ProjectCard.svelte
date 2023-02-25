@@ -39,10 +39,10 @@
 <!-- Very messy workaround -->
 {#if phoneScreen} 
 	<a href="{url}" target="_blank" rel="noopener noreferrer">
-	<div class="relative h-48 bg-cover bg-center hover:scale-105 transition-all duration-300 active:scale-95 rounded-xl" style="background-image: url({image});">
+	<div class="relative h-36 bg-cover bg-center rounded-xl" style="background-image: url({image});">
 	<div class="absolute inset-0 bg-gray-900 opacity-75 rounded-xl"></div>
 	<div class="absolute inset-0 flex items-center justify-center">
-	  <h3 class="text-4xl font-bold text-white text-center px-2">{title}</h3>
+	  <h3 class="lg:text-4xl text-3xl font-bold text-white text-center px-2">{title}</h3>
 	</div>
 	</div>
 	</a>

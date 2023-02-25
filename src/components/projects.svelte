@@ -4,8 +4,8 @@ import SectionHeader from "./SectionHeader.svelte";
 import {flip} from 'svelte/animate';
 import { slide, fade } from "svelte/transition";
 
-let active = 0
-
+let active = null
+$: console.log(active)
 const projects = [
 	{
 		title: "Auto Typer",
@@ -50,7 +50,9 @@ const projects = [
 <SectionHeader title={"Projects"} subtitle={"blood, sweat, and carpal tunnel has lead me to this"}/>
 
 
-<div class="justify-center hidden lg:flex">
+{#if projects[active]} 
+<!-- active = 0 == false so ++ type beat -->
+<div class="justify-center hidden lg:flex flex-row">
 	<!-- active item -->
 	<div class="w-2/3 mx-5 my-3 h-max"
 	transition:fade
@@ -67,13 +69,12 @@ const projects = [
 	</div>
 
 	<!-- not active -->
-	<div class="lg:w-1/4">
-
+	<div class="w-1/4">
 		{#each projects as project, index}
 			{#if index != active}
 				<div class="my-3"
-				on:click={() => {active = index; console.log("clicked")}}
-				on:keypress={() => {active = index; console.log("clicked")}}
+				on:click={() => {active = index}}
+				on:keypress={() => {active = index}}
 				transition:slide
 				>
 					<ProjectCard
@@ -90,7 +91,30 @@ const projects = [
 		{/each}
 	</div>
 </div>
+{/if}
 
+
+
+<!-- Original place. -->
+{#if active == null}
+<div class="grid-cols-1 gap-4 md:grid-cols-2 hidden lg:grid">
+	{#each projects as project, index}
+			<div
+			on:click={() => {active = index}}
+			on:keypress={() => {active = index}}
+			>
+				<ProjectCard
+					title={project.title}
+					tech={project.tech}
+					description={project.description}
+					url={project.url}
+					buttonText={project.buttonText}
+					image={project.image}
+				/>
+			</div>
+		{/each}
+</div>
+{/if}
 
 
 

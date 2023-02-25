@@ -1,7 +1,14 @@
 <script>
 	let showNav = false;
+	let burgerClass
+	$: if (showNav) {
+		burgerClass = " transform rotate-180"
+	}
+	else {
+		burgerClass = "transform -scale-x-100"
+	}
 	let fillColor = "black"
-	import { slide } from "svelte/transition";
+	import { slide, fade } from "svelte/transition";
 </script>
 
 <!-- LARGE SCREEN SIZES -->
@@ -77,16 +84,16 @@
 			</svg>
 		</a>
 		<button
+			transition:fade
 			on:click={() => {
 				showNav = !showNav;
-				console.log(showNav);
 			}}
 			><img
 				src="/toggleNavButton.png"
 				alt="Navigation menu toggler"
 				width="40"
 				id="navToggler"
-				class="transform -scale-x-100"
+				class={burgerClass}
 			/></button
 		>
 	</div>
