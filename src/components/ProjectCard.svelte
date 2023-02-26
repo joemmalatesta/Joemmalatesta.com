@@ -41,8 +41,9 @@
 	<a href="{url}" target="_blank" rel="noopener noreferrer">
 	<div class="relative h-36 bg-cover bg-center rounded-xl" style="background-image: url({image});">
 	<div class="absolute inset-0 bg-gray-900 opacity-75 rounded-xl"></div>
-	<div class="absolute inset-0 flex items-center justify-center">
-	  <h3 class="lg:text-4xl text-3xl font-bold text-white text-center px-2">{title}</h3>
+	<div class="absolute inset-0 flex items-center justify-center flex-col">
+	  <h3 class="text-3xl font-bold text-white text-center p-2">{title}</h3>
+	  <h6 class="text-lg font-bold text-neutral-200 text-center">{buttonText}</h6>
 	</div>
 	</div>
 	</a>

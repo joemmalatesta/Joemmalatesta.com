@@ -4,10 +4,25 @@ import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
 import ProjectCard from "../components/ProjectCard.svelte";
-import Blog from "../components/blog.astro";
+import Blog from "../components/blog.svelte";
 import Projects from "../components/projects.svelte"
 import About from "../components/about.astro";
 import Contact from "../components/contact.svelte";
+
+// Sorry about this...
+const techPosts = (await Astro.glob("../pages/blog/programming/*.{md,mdx}")).sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
+);
+const improvementPosts = (
+	await Astro.glob("../pages/blog/improvement/*.{md,mdx}")).sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
+);
+let quotes =   ['"Something I made up for the time being, this will not remain on the website..." - Joe Malatesta',
+				'"Man cannot remake himself without suffering, for he is both the marble and the sculptor." - Alexis Carrel' ]
 ---
 <!-- from-purple-400 to-pink-500 
 nice gradient -->
@@ -43,7 +58,7 @@ nice gradient -->
 			</section>
 
 			<section id="blog" class="lg:px-16 py-5 ">
-				<Blog />
+				<Blog client:load postTypes={[techPosts, improvementPosts]} quotes={quotes}/>
 			</section>
 
 			<!-- Projects Section -->

@@ -24,7 +24,7 @@
 		<div class="w-fit">
 			<h6 class="text-sm text-neutral-500">{date}</h6>
 			<a href={url}>
-				<h4 class="text-lg md:text-xl lg:text-2xl font-semibold">{title}</h4>
+				<h4 class="text-lg md:text-xl 2xl:text-2xl font-semibold">{title}</h4>
 			</a>
 		</div>
 		{#if showToggle || active || screenWidth < 1024}

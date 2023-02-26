@@ -1,11 +1,9 @@
 <script>
 import ProjectCard from "./ProjectCard.svelte";
 import SectionHeader from "./SectionHeader.svelte";
-import {flip} from 'svelte/animate';
-import { slide, fade } from "svelte/transition";
+import { slide, fade, crossfade } from "svelte/transition";
 
 let active = null
-$: console.log(active)
 const projects = [
 	{
 		title: "Auto Typer",
@@ -55,7 +53,6 @@ const projects = [
 <div class="justify-center hidden lg:flex flex-row">
 	<!-- active item -->
 	<div class="w-2/3 mx-5 my-3 h-max"
-	transition:fade
 	>
 			<ProjectCard
 					title={projects[active].title}
