@@ -19,7 +19,7 @@
 </script>
 
 <!-- This looked okay--  hover:bg-violet-400 -->
-<div class="flex flex-col container border-b-2 border-neutral-800/40 p-2" on:mouseenter={() => {showToggle = true}} on:mouseleave={() => {showToggle = false}}>
+<div class="flex flex-col container border-b-2 border-neutral-800/20 p-2" on:mouseenter={() => {showToggle = true}} on:mouseleave={() => {showToggle = false}}>
 	<div class="flex flex-row justify-between">
 		<div class="w-fit">
 			<h6 class="text-sm text-neutral-500">{date}</h6>
@@ -35,7 +35,7 @@
 	</div>
 	{#if active}
 	<div transition:slide>
-		<p class="text-md lg:text-lg">{description}</p>
+		<p>{description}</p>
 		<a
 			href={url}
 			class="underline underline-offset-2 text-rose-500 hover:text-rose-600 md:text-lg w-fit"

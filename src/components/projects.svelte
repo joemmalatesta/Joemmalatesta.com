@@ -20,7 +20,7 @@ const projects = [
 		description:
 			"The first iteration of my website! My introduction to front end development.",
 		url: "https://dev.joemmalatesta.com/",
-		buttonText: "Go to old site",
+		buttonText: "Visit old site",
 		image: "/old-website.jpg",
 	},
 	{
@@ -38,7 +38,7 @@ const projects = [
 		description:
 			"Captcha completed by correctly identifying parts of a linear graph",
 		url: "https://joemmalatesta.github.io/CapChart/",
-		buttonText: "Try it out",
+		buttonText: "Live demo",
 		image: "/capchart.jpg",
 	},
 ];
