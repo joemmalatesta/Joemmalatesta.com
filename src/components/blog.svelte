@@ -85,7 +85,7 @@
 		<!-- Quote / other portion -->
 		<div class="lg:w-2/5 flex items-center mx-5">
 			<h3
-				class="md:text-4xl bg-gradient-to-br from-rose-200 via-rose-300 to-rose-400 p-6 rounded-tr-full mx-12 md:mx-2 text-2xl rounded-bl-full"
+				class="md:text-4xl bg-gradient-to-br from-rose-200 via-rose-300 to-rose-400 p-6 rounded-tr-full text-2xl rounded-bl-full"
 			>
 				{quotes[active]}
 			</h3>
