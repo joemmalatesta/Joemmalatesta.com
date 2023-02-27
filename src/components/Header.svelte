@@ -2,10 +2,10 @@
 	let showNav = false;
 	let burgerClass
 	$: if (showNav) {
-		burgerClass = " transform rotate-180"
+		burgerClass = " transform rotate-180 transition-all"
 	}
 	else {
-		burgerClass = "transform -scale-x-100"
+		burgerClass = "transform -scale-x-100 transition-all"
 	}
 	let fillColor = "black"
 	import { slide, fade } from "svelte/transition";
