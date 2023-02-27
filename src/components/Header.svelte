@@ -84,7 +84,6 @@
 			</svg>
 		</a>
 		<button
-			transition:fade
 			on:click={() => {
 				showNav = !showNav;
 			}}
