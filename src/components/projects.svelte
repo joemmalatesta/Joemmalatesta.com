@@ -1,7 +1,7 @@
 <script>
 import ProjectCard from "./ProjectCard.svelte";
 import SectionHeader from "./SectionHeader.svelte";
-import { slide, fade, crossfade } from "svelte/transition";
+import { slide, fade, crossfade, fly } from "svelte/transition";
 
 let active = null
 const projects = [
@@ -72,7 +72,7 @@ const projects = [
 				<div class="my-3"
 				on:click={() => {active = index}}
 				on:keypress={() => {active = index}}
-				transition:slide
+				transition:slide={{duration: 500}}
 				>
 					<ProjectCard
 						title={project.title}

@@ -12,7 +12,7 @@
 </script>
 
 <!-- LARGE SCREEN SIZES -->
-<nav class=" hidden md:flex items-center justify-between  text-2xl mx-44">
+<nav class=" hidden md:flex items-center justify-between  text-2xl xl:mx-36 lg:mx-10 md:mx-5">
 	<!-- Name -->
 	<a href="/">
 		<svg
