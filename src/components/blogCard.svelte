@@ -31,9 +31,7 @@
 			</a>
 		</div>
 		{#if showToggle || active || screenWidth < 1024}
-		<button on:click={() => {active= !active}}>
 			<img src="arrow.svg" alt="expand blog card" class="{turnArrow}rotate-90 transition duration-300" width={arrowSize}>
-		</button>
 		{/if}
 	</div>
 	{#if active}
