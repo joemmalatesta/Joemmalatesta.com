@@ -64,6 +64,8 @@
 <!-- 
 THIS IS BEST PRACTICE FOR SVELTE ACCORDING TO CHATGPT BUT NOT READABLE FOR ME BUT KEEP IN MIND IF PERFORMANCE ISSUES
 
+
+
 import { onMount, writable } from 'svelte';
 
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -110,6 +112,8 @@ onMount(() => {
 
 
  -->
+
+ 
 <style>
 	.blink {
 		animation: blink-animation 0.7s steps(5, start) infinite;

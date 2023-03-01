@@ -20,7 +20,10 @@
 
 <!-- This looked okay--  hover:bg-violet-400 -->
 <div class="flex flex-col container border-b-2 border-neutral-800/20 p-2" on:mouseenter={() => {showToggle = true}} on:mouseleave={() => {showToggle = false}}>
-	<div class="flex flex-row justify-between">
+	<div class="flex flex-row justify-between"
+	on:click={() => {active = !active}}	
+	on:keypress={() => {active = !active}}
+	>
 		<div class="w-fit">
 			<h6 class="text-sm text-neutral-500">{date}</h6>
 			<a href={url}>
@@ -44,6 +47,8 @@
 	</div>
 	{/if}
 </div>
+
+
 
 <svelte:window bind:innerWidth={screenWidth}></svelte:window>
 
