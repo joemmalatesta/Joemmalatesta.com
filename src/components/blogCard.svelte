@@ -20,7 +20,7 @@
 
 <!-- This looked okay--  hover:bg-violet-400 -->
 <div class="flex flex-col container border-b-2 border-neutral-800/20 p-2" on:mouseenter={() => {showToggle = true}} on:mouseleave={() => {showToggle = false}}>
-	<div class="flex flex-row justify-between"
+	<div class="flex flex-row justify-between cursor-pointer"
 	on:click={() => {active = !active}}	
 	on:keypress={() => {active = !active}}
 	>
