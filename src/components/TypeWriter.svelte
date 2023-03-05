@@ -112,8 +112,6 @@ onMount(() => {
 
 
  -->
-
- 
 <style>
 	.blink {
 		animation: blink-animation 0.7s steps(5, start) infinite;

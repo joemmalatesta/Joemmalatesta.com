@@ -1,33 +1,38 @@
 <script>
 	let showNav = false;
-	let burgerClass
+	let burgerClass;
 	$: if (showNav) {
-		burgerClass = " transform rotate-180 transition-all"
+		burgerClass = " transform rotate-180 transition-all";
+	} else {
+		burgerClass = "transform -scale-x-100 transition-all";
 	}
-	else {
-		burgerClass = "transform -scale-x-100 transition-all"
-	}
-	let fillColor = "black"
+	let fillColor = "black";
 	import { slide, fade } from "svelte/transition";
 </script>
 
 <!-- LARGE SCREEN SIZES -->
-<nav class=" hidden md:flex items-center justify-between  text-2xl xl:mx-36 lg:mx-10 md:mx-5">
+<nav
+	class=" hidden md:flex items-center justify-between  text-2xl xl:mx-36 lg:mx-10 md:mx-5"
+>
 	<!-- Name -->
 	<a href="/">
 		<svg
 			width="100"
 			viewBox="0 0 2400 2400"
 			preserveAspectRatio="xMidYMid meet"
-			on:mouseenter={() => {fillColor = "url(#Gradient)"}}
-			on:mouseleave={() => {fillColor = "black"}}
+			on:mouseenter={() => {
+				fillColor = "url(#Gradient)";
+			}}
+			on:mouseleave={() => {
+				fillColor = "black";
+			}}
 		>
-		<defs>
-			<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-			  <stop offset="0%" style="stop-color:#262626;stop-opacity:1"/>
-			  <stop offset="100%" style="stop-color:#fb7185;stop-opacity:1"/>
-			</linearGradient>
-		</defs>
+			<defs>
+				<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color:#262626;stop-opacity:1" />
+					<stop offset="100%" style="stop-color:#fb7185;stop-opacity:1" />
+				</linearGradient>
+			</defs>
 			<g
 				transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
 				stroke="none"
@@ -56,8 +61,6 @@
 	</div>
 </nav>
 
-
-
 <!-- PHONE SCREEN SIZES -->
 <nav class="md:hidden flex flex-col items-start justify-start p-3 text-lg">
 	<div class="flex justify-between items-center w-full py-2 px-2">
@@ -66,15 +69,19 @@
 				width="70"
 				viewBox="0 0 2400 2400"
 				preserveAspectRatio="xMidYMid meet"
-				on:mouseenter={() => {fillColor = "url(#Gradient)"}}
-				on:mouseleave={() => {fillColor = "black"}}
-		>
-		<defs>
-			<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-			  <stop offset="0%" style="stop-color:#262626;stop-opacity:1"/>
-			  <stop offset="100%" style="stop-color:#fb7185;stop-opacity:1"/>
-			</linearGradient>
-		</defs>
+				on:mouseenter={() => {
+					fillColor = "url(#Gradient)";
+				}}
+				on:mouseleave={() => {
+					fillColor = "black";
+				}}
+			>
+				<defs>
+					<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" style="stop-color:#262626;stop-opacity:1" />
+						<stop offset="100%" style="stop-color:#fb7185;stop-opacity:1" />
+					</linearGradient>
+				</defs>
 				<g
 					transform="translate(0.000000,2400.000000) scale(0.100000,-0.100000)"
 					stroke="none"
