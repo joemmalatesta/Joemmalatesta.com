@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/BlogPost.astro" #Constant
-title: "Be careful next time you compliment someone"
+title: "Think before you compliment someone"
 cardDescription: "Recount the story of why I initially stopped going to the gym, and the power of the Overjustification Effect"
 description: "A blog post recounting the story of why I quit going to the gym, and a cautionary tale of letting others validation overtake your own"
 pubDate: "Jan 10, 2023"
