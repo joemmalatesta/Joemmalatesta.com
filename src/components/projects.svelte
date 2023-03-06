@@ -51,9 +51,9 @@
 
 {#if projects[active]}
 	<!-- active = 0 == false so ++ type beat -->
-	<div class="justify-center hidden lg:flex flex-row">
+	<div class="justify-center items-center hidden lg:flex flex-row">
 		<!-- active item -->
-		<div class="w-2/3 mx-5 my-3 h-max">
+		<div class="mx-5 my-3 h-max">
 			<ProjectCard
 				title={projects[active].title}
 				tech={projects[active].tech}
@@ -66,7 +66,7 @@
 		</div>
 
 		<!-- not active -->
-		<div class="w-1/4">
+		<div class="w-96">
 			{#each projects as project, index}
 				{#if index != active}
 					<div
