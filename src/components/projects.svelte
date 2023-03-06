@@ -70,7 +70,7 @@
 			{#each projects as project, index}
 				{#if index != active}
 					<div
-						class="my-3"
+						class="my-3 cursor-pointer"
 						on:click={() => {
 							active = index;
 						}}
@@ -97,7 +97,7 @@
 
 <!-- Original place. -->
 {#if active == null}
-	<div class="grid-cols-1 gap-4 md:grid-cols-2 hidden lg:grid">
+	<div class="grid-cols-1 gap-4 md:grid-cols-2 hidden lg:grid cursor-pointer">
 		{#each projects as project, index}
 			<div
 				on:click={() => {
