@@ -28,27 +28,30 @@
 	}}
 >
 	<div
-		class="flex flex-row justify-between cursor-pointer"
+		class="flex flex-row justify-between items-center cursor-pointer"
 		on:click={() => {
 			active = !active;
 		}}
 		on:keypress={() => {
 			active = !active;
 		}}
-	>
+		>
 		<div class="w-fit">
 			<h6 class="text-sm text-neutral-500 font-light">{date}</h6>
 			<a href={url}>
 				<h4 class="text-lg md:text-xl 2xl:text-2xl">{title}</h4>
 			</a>
 		</div>
-		{#if showToggle || active || screenWidth < 1024}
+		<!-- This causing issues on phone screen -->
+		{#if showToggle || active || screenWidth < 1024} 
+		<div>
 			<img
 				src="arrow.svg"
 				alt="expand blog card"
 				class="{turnArrow}rotate-90 transition duration-300"
 				width={arrowSize}
 			/>
+		</div>
 		{/if}
 	</div>
 	{#if active}

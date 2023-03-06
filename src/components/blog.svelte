@@ -32,7 +32,7 @@
 	>
 		<button
 			on:click={switchActive}
-			class="p-2 bg-neutral-800 text-white rounded-lg"
+			class="p-1 py-2 bg-neutral-800 text-white rounded-lg"
 		>
 			<div class="flex">
 				<p
