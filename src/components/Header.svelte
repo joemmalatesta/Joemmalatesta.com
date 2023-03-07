@@ -62,7 +62,7 @@
 </nav>
 
 <!-- PHONE SCREEN SIZES -->
-<nav class="md:hidden flex flex-col items-start justify-start p-3 text-lg">
+<nav class="md:hidden flex flex-col items-start justify-start px-3 text-lg">
 	<div class="flex justify-between items-center w-full py-2 px-2">
 		<a href="/">
 			<svg
