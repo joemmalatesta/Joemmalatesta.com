@@ -28,7 +28,7 @@
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
-	<div class="md:my-4 flex flex-col justify-center lg:flex-row">
+	<div class="flex flex-col justify-center lg:flex-row">
 		<!-- LEFT SIDE -->
 		<div class="mx-3 lg:mx-6 md:my-3 lg:w-1/2">
 			
