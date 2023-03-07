@@ -1,0 +1,37 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import BlogCard from "../components/blogCard.svelte";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.svelte";
+const techPosts = (await Astro.glob("../pages/blog/programming/*.{md,mdx}")).sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <BaseHead title={"Tech Blogs"} description={"A list of all blogs pertaining to technology. I talk about programming, namely front end development with new and cutting edge tools like svelte, tailwind, and deployment with vercel."}/>
+</head>
+<body>
+    <Header client:load/>
+    <div class="flex flex-col items-start justify-center">
+
+        {
+            techPosts
+                .map((post) => (
+                    <BlogCard client:load
+                        title={post.frontmatter.title}
+                        description={post.frontmatter.cardDescription}
+                        date={post.frontmatter.pubDate}
+                        url={post.url}
+                        image={post.frontmatter.heroImage}
+                    />
+                ))
+        }
+    </div>
+    <Footer />
+</body>
+</html>
