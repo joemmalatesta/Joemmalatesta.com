@@ -6,7 +6,6 @@
 	let showEmailError = false;
 	let modalType = "";
 	function sendEmail() {
-		console.log("what wrong")
 		const payload = {
 			name: name,
 			email: email,
