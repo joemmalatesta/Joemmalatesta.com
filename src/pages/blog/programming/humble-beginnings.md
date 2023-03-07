@@ -4,7 +4,7 @@ title: "Humble Beginnings"
 cardDescription: "Where everything started... My pilot post about my introduction to computers, software, code, and computer science."
 description: "Join my journey into the world of computers, software, and coding. From sneaker botting to creating their own software, learn about their path to becoming a programmers. Discover my story and find inspiration for your own journey."
 pubDate: "Aug 31, 2022"
-heroImage: "/me.jpg"
+heroImage: "me.jpg"
 ---
 I've always had an affinity for computers, just in general. From a young age, watching my dad troubleshoot Windows XP was fascinating to me
 and it's incredible that a couple of on and off switches inside of a box can put me online, playing an infinite block game at 144 frames per

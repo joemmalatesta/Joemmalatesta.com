@@ -12,7 +12,7 @@
 				"Auto complete a typing test at a specified WPM, taking into account computational delays",
 			url: "https://github.com/joemmalatesta/Auto-Typer",
 			buttonText: "Learn more",
-			image: "/auto-typer.jpg",
+			image: "projects/auto-typer.jpg",
 		},
 		{
 			title: "Personal Website V1",
@@ -21,7 +21,7 @@
 				"The first iteration of my website! My introduction to front end development.",
 			url: "https://dev.joemmalatesta.com/",
 			buttonText: "Visit old site",
-			image: "/old-website.jpg",
+			image: "projects/old-website.jpg",
 		},
 		{
 			title: 'Discord "Yvy" Bot',
@@ -30,7 +30,7 @@
 				"Commands return concise information regarding osu! plays, and players.",
 			url: "https://github.com/joemmalatesta/yvy-discord-bot",
 			buttonText: "Learn more",
-			image: "/yvy-bot.jpg",
+			image: "projects/yvy-bot.jpg",
 		},
 		{
 			title: "CaptChart",
@@ -39,7 +39,7 @@
 				"Captcha completed by correctly identifying parts of a linear graph",
 			url: "https://joemmalatesta.github.io/CapChart/",
 			buttonText: "Live demo",
-			image: "/capchart.jpg",
+			image: "projects/capchart.jpg",
 		},
 	];
 </script>

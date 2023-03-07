@@ -24,7 +24,6 @@
 			})
 			.catch((error) => {
 				console.error(error);
-				console.log("why the heck")
 			});
 		name = "";
 		email = "";

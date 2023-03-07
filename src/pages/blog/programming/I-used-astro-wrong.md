@@ -4,7 +4,7 @@ title: "I used Astro wrong..."
 cardDescription: "I strayed far away from Astros intended use, and I'm ashamed. A cautionary tale."
 description: "In this article, the author reflects on their experience building a website using the Astro framework. They admit to not fully utilizing Astro's best features and instead relying heavily on Svelte components, which caused the project not to be recognized as an \"Astro\" project on GitHub. The author also shares their thoughts on their component layout and styling choices, acknowledging that they need to improve their design process for future projects. Despite these challenges, the author enjoyed using Astro as a playground for experimenting with JavaScript, Svelte, and Tailwind, and plans to apply their learnings to upcoming projects, including a Scattergories game for the Svelte hackathon."
 pubDate: "Mar 1, 2023"
-heroImage: "/teaching.jpeg"
+heroImage: "/blogs/programming/teaching.jpeg"
 ---
 
 

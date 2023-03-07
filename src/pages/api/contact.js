@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function post({ request }) {
-    console.log("working at least")
+
     const data = await request.json();
     const mailOptions = {
         from: "joemmalatesta1@gmail.com",
@@ -42,7 +42,7 @@ export async function post({ request }) {
             });
         });
     } catch (error) {
-        console.log(error)
+        //not really needed
     }
 
     console.log(payload.message)

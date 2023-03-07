@@ -34,7 +34,6 @@
 				yDirection *= -1;
 			}
 		}, 20);
-		console.log(windowHeight, windowWidth);
 	});
 
 	onDestroy(() => {
