@@ -12,7 +12,8 @@
   export let quotes;
 
   let activePosts = posts[0].slice(0, 3);
-  console.log(posts)
+
+  /** @param {number} index */
   function handleClick(index) {
     console.log(activePosts[0].frontmatter.title);
     if (index == 1) {
@@ -43,15 +44,16 @@
     activePosts[0] = temp;
 
   }
+
 </script>
 
 <main>
   <SectionHeader title={"Blog"} subtitle={"A place for my thoughts about things"} />
 
-  <div class="flex justify-center items-center">
+  <div class="flex justify-center items-center transition-all">
     {#each activePosts as post, index}
     <div
-      class="-mx-7 {index == 1 ? 'scale-105 z-50 shadow-lg' : 'scale-90 opacity-70 shadow-md'} shadow-black"
+      class="-mx-7 rounded-lg {index == 1 ? 'scale-105 z-50 shadow-lg active' : 'scale-90 opacity-70 shadow-md not-active'} shadow-black"
       on:click={() => handleClick(index)}
       on:keypress={() => handleClick(index)}
     >
@@ -66,3 +68,8 @@
     {/each}
   </div>
 </main>
+
+
+
+
+ 

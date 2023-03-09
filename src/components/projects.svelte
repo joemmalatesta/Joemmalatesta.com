@@ -2,10 +2,12 @@
 	import ProjectCard from "./ProjectCard.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
 	import { slide, fade, crossfade, fly } from "svelte/transition";
+	import { flip } from "svelte/animate";
 
 	let active = null;
 	const projects = [
-		{
+		{	
+			id : 0,
 			title: "Auto Typer",
 			tech: "Python, Selenium, MatPlotLib",
 			description:
@@ -15,6 +17,7 @@
 			image: "projects/auto-typer.jpg",
 		},
 		{
+			id : 1,
 			title: "Personal Website V1",
 			tech: "HTML, CSS, Bootstrap, PHP, MySQL",
 			description:
@@ -24,6 +27,7 @@
 			image: "projects/old-website.jpg",
 		},
 		{
+			id : 2,
 			title: 'Discord "Yvy" Bot',
 			tech: "Python, REST APIs, MongoDB",
 			description:
@@ -33,6 +37,7 @@
 			image: "projects/yvy-bot.jpg",
 		},
 		{
+			id : 3,
 			title: "CaptChart",
 			tech: "Javascript, Chartjs, Bootstrap",
 			description:
@@ -95,6 +100,8 @@
 	</div>
 {/if}
 
+
+
 <!-- Original place. -->
 {#if active == null}
 	<div class="grid-cols-1 gap-4 md:grid-cols-2 hidden lg:grid cursor-pointer">
@@ -119,6 +126,9 @@
 		{/each}
 	</div>
 {/if}
+
+
+
 
 
 
