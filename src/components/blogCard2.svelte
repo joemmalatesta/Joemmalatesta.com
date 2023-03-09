@@ -3,11 +3,11 @@
 </script>
 
 <!-- <a href={url} class="p-2"> -->
-<div class="outline flex flex-col w-60 h-88 rounded-lg">
-    <div>
-        <img src={image} alt="{title} Image" class="">
+<div class=" flex flex-col w-96 h-96 justify-between">
+    <div class="h-1/2">
+        <img src={image} alt="{title} Image" class="object-cover">
     </div>
-    <div class="flex flex-col bg-rose-200 p-4">
+    <div class="flex flex-col bg-rose-200 p-4 h-1/2 align-bottom">
         <p>{date}</p>
         <h3>{title}</h3>
         <p>{description}</p>

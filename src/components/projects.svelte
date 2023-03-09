@@ -53,7 +53,7 @@
 	<!-- active = 0 == false so ++ type beat -->
 	<div class="justify-center items-center hidden lg:flex flex-row">
 		<!-- active item -->
-		<div class="mx-5 my-3 h-max">
+		<div class="w-2/3">
 			<ProjectCard
 				title={projects[active].title}
 				tech={projects[active].tech}
@@ -66,7 +66,7 @@
 		</div>
 
 		<!-- not active -->
-		<div class="w-96">
+		<div class="w-1/3">
 			{#each projects as project, index}
 				{#if index != active}
 					<div
@@ -119,6 +119,9 @@
 		{/each}
 	</div>
 {/if}
+
+
+
 
 <!-- Maybe use for phone sizes.  -->
 

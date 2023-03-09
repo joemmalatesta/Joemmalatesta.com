@@ -14,12 +14,15 @@
 
 <!-- ACTIVE -->
 {#if active && !phoneScreen}
-	<div class="flex flex-col h-full">
-		<div>
-			<img src={image} alt="{title} image" />
+	<div class="flex flex-col h-fit w-fit justify-between">
+		<div class="">
+			<img src={image} alt="{title} image" class="object-cover aspect-video w-[480px] h-[270px]"/>
 		</div>
 		<div>
+			<p class="text-neutral-700/40">{tech}</p>
 			<h3>{title}</h3>
+			<p>{description}</p>
+
 		</div>
 	</div>
 {/if}

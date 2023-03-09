@@ -3,7 +3,7 @@
 	import Footer from "../components/Footer.astro";
 	import BlogCard from "../components/blogCard.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
-	import { crossfade, fade } from "svelte/transition";
+	import { crossfade, fade, fly, blur, scale, slide } from "svelte/transition";
 	import BlogCard2 from "./blogCard2.svelte";
 	import { flip } from "svelte/animate";
   export let postTypes;
@@ -12,7 +12,7 @@
   export let quotes;
 
   let activePosts = posts[0].slice(0, 3);
-
+  console.log(posts)
   function handleClick(index) {
     console.log(activePosts[0].frontmatter.title);
     if (index == 1) {
@@ -51,7 +51,7 @@
   <div class="flex justify-center items-center">
     {#each activePosts as post, index}
     <div
-      class="-mx-7 {index == 1 ? 'scale-105 z-50' : 'scale-90 opacity-70'}"
+      class="-mx-7 {index == 1 ? 'scale-105 z-50 shadow-lg' : 'scale-90 opacity-70 shadow-md'} shadow-black"
       on:click={() => handleClick(index)}
       on:keypress={() => handleClick(index)}
     >
