@@ -4,8 +4,8 @@
 	import SectionHeader from "./SectionHeader.svelte";
 	import { slide, fade, crossfade, fly } from "svelte/transition";
 	import { flip } from "svelte/animate";
+	import { each } from "svelte/internal";
 
-	let active = null;
 	const projects = [
 		{
 			id: 0,
@@ -48,6 +48,8 @@
 			image: "projects/capchart.jpg",
 		},
 	];
+	let active = 0;
+	let delay = 0;
 </script>
 
 <SectionHeader
@@ -55,8 +57,51 @@
 	subtitle={"blood, sweat, and carpal tunnel has lead me to this"}
 />
 
-<div class="flex justify-around flex-wrap">
+<div class="lg:flex flex-col hidden justify-center items-center">
+	<div class="p-6 bg-slate-400 from-rose-200 to-rose-400 rounded-lg w-3/4 bg-opacity-50 ring-rose-400 ring-4">
+		<ProjectCard2
+			title={projects[active].title}
+			tech={projects[active].tech}
+			description={projects[active].description}
+			url={projects[active].url}
+			buttonText={projects[active].buttonText}
+			image={projects[active].image}
+			active={true}
+		/>
+	</div>
+	<div class="flex justify-center items-center">
+		{#each projects as project, index}
+			{#if index != active}
+				<div
+					class="scale-[.8] hover:scale-90 transition-all duration-300"
+					on:click={() => {
+						active = index;
+					}}
+					on:keypress={() => {
+						active = index;
+					}}
+				>
+					<ProjectCard2
+						title={project.title}
+						tech={project.tech}
+						description={project.description}
+						url={project.url}
+						buttonText={project.buttonText}
+						image={project.image}
+						active={false}
+					/>
+				</div>
+			{/if}
+		{/each}
+	</div>
+</div>
+
+<!-- 
+
+<div class="justify-center items-center hidden lg:flex flex-col">
 	{#each projects as project, index (project.id)}
+	
+		{#if index == active}<div>
 		<div>
 			<ProjectCard2
 				title={project.title}
@@ -65,10 +110,31 @@
 				url={project.url}
 				buttonText={project.buttonText}
 				image={project.image}
+				active={true}
 			/>
 		</div>
+	</div>
+		{:else}
+		<div class="flex">
+		<div class=""
+		on:click={() => {active = index}}
+		on:keypress={() => {active = index}}>
+			<ProjectCard2
+				title={project.title}
+				tech={project.tech}
+				description={project.description}
+				url={project.url}
+				buttonText={project.buttonText}
+				image={project.image}
+				active={false}
+			/>
+		</div>
+	</div>
+		{/if}
 	{/each}
 </div>
+ -->
+
 <!-- Maybe use for phone sizes.  -->
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:hidden">
