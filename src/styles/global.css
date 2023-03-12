@@ -13,6 +13,7 @@
 body {
   @apply selection:bg-black selection:text-white;
   /* @apply bg-gradient-to-r from-violet-300 to-blue-100; */
+
 	font-family: 'Poppins', sans-serif !important;
   color: #171717;
 }
@@ -21,10 +22,10 @@ h1{
 
 }
 h2,h3,h4,h5,h6, a{
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Inter', sans-serif;
 }
 p {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Inter', sans-serif;
 }
 
 

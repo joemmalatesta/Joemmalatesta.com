@@ -4,7 +4,6 @@
 	import SectionHeader from "./SectionHeader.svelte";
 	import { slide, fade, crossfade, fly } from "svelte/transition";
 	import { flip } from "svelte/animate";
-	import { each } from "svelte/internal";
 
 	const projects = [
 		{
@@ -16,6 +15,7 @@
 			url: "https://github.com/joemmalatesta/Auto-Typer",
 			buttonText: "Learn more",
 			image: "projects/auto-typer.jpg",
+			logos: ["python.png", "selenium.png", "matplotlib.png", ""]
 		},
 		{
 			id: 1,
@@ -26,6 +26,7 @@
 			url: "https://dev.joemmalatesta.com/",
 			buttonText: "Visit old site",
 			image: "projects/old-website.jpg",
+			logos: ["bootstrap.png", "css.png", "html.png", "github.svg"]
 		},
 		{
 			id: 2,
@@ -36,6 +37,7 @@
 			url: "https://github.com/joemmalatesta/yvy-discord-bot",
 			buttonText: "Learn more",
 			image: "projects/yvy-bot.jpg",
+			logos: ["python.png", "pi.png", "mongo.png", "osu.png"]
 		},
 		{
 			id: 3,
@@ -46,6 +48,7 @@
 			url: "https://joemmalatesta.github.io/CapChart/",
 			buttonText: "Live demo",
 			image: "projects/capchart.jpg",
+			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"]
 		},
 	];
 	let active = 0;
@@ -58,7 +61,8 @@
 />
 
 <div class="lg:flex flex-col hidden justify-center items-center">
-	<div class="p-6 bg-slate-400 from-rose-200 to-rose-400 rounded-lg w-3/4 bg-opacity-50 ring-rose-400 ring-4">
+	<div class="p-6 rounded-lg xl:w-3/4 w-full bg-gradient-to-r from-rose-400/50 to-neutral-800/60"
+	transition:fade={{duration: 500}}>
 		<ProjectCard2
 			title={projects[active].title}
 			tech={projects[active].tech}
@@ -69,11 +73,11 @@
 			active={true}
 		/>
 	</div>
-	<div class="flex justify-center items-center">
+	<div class="flex justify-between items-center">
 		{#each projects as project, index}
 			{#if index != active}
 				<div
-					class="scale-[.8] hover:scale-90 transition-all duration-300"
+					class="m-4"
 					on:click={() => {
 						active = index;
 					}}
@@ -89,6 +93,7 @@
 						buttonText={project.buttonText}
 						image={project.image}
 						active={false}
+						logos={project.logos}
 					/>
 				</div>
 			{/if}
@@ -96,44 +101,7 @@
 	</div>
 </div>
 
-<!-- 
 
-<div class="justify-center items-center hidden lg:flex flex-col">
-	{#each projects as project, index (project.id)}
-	
-		{#if index == active}<div>
-		<div>
-			<ProjectCard2
-				title={project.title}
-				tech={project.tech}
-				description={project.description}
-				url={project.url}
-				buttonText={project.buttonText}
-				image={project.image}
-				active={true}
-			/>
-		</div>
-	</div>
-		{:else}
-		<div class="flex">
-		<div class=""
-		on:click={() => {active = index}}
-		on:keypress={() => {active = index}}>
-			<ProjectCard2
-				title={project.title}
-				tech={project.tech}
-				description={project.description}
-				url={project.url}
-				buttonText={project.buttonText}
-				image={project.image}
-				active={false}
-			/>
-		</div>
-	</div>
-		{/if}
-	{/each}
-</div>
- -->
 
 <!-- Maybe use for phone sizes.  -->
 

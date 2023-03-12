@@ -82,12 +82,12 @@
 
 		<!-- Quote / other portion -->
 		<!-- Maybe should do a specific signup for newsletter and the quote next to it so it doesn't look so shit -->
-		<div class="lg:w-2/5 flex items-center mx-5">
-			<h3
-				class="md:text-4xl bg-gradient-to-br from-rose-200 via-rose-300 to-rose-400 p-6 rounded-tr-full text-2xl rounded-bl-full"
+		<div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-rose-200 via-rose-300 to-rose-400 p-6 rounded-tr-full rounded-bl-full">
+			<p
+				class="md:text-4xl p-6 font-serif text-2xl"
 			>
 				{quotes[active]}
-			</h3>
+			</p>
 		</div>
 	</div>
 </main>
