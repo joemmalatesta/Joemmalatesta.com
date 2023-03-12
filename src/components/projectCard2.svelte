@@ -27,13 +27,13 @@
 {/if}
 
 {#if !active}
-	<div class="relative scale-95 hover:scale-105 transition-all duration-300"
+	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer"
 	on:mouseenter={() => {inactiveHovered = true; }}
 	on:mouseleave={() => {inactiveHovered = false}}>
 		<img src={image} alt="" class="w-80 h-40 xl:w-96 xl:h-48 rounded-xl z-10" />
 		<div class="absolute inset-0 bg-gray-900 opacity-75 rounded-xl" />
 		<div class="absolute inset-0 flex items-center justify-center">
-			<h3 class="text-4xl font-bold text-white text-center px-2 cursor-default">{title}</h3>
+			<h3 class="text-4xl font-bold text-white text-center px-2 cursor-pointer">{title}</h3>
 		</div>
 		<img src="/logos/{logos[0]}" alt="" class="{inactiveHovered ? "-translate-x-7 translate-y-7 opacity-100 rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="bottom: 0; left: 0">
 		<img src="/logos/{logos[1]}" alt="" class="{inactiveHovered ? "translate-x-7 translate-y-7 opacity-100 -rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="bottom: 0; right: 0">
