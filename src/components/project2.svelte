@@ -51,7 +51,7 @@
 			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"]
 		},
 	];
-	let active = 0;
+	let active;
 	let delay = 0;
 </script>
 
@@ -61,8 +61,10 @@
 />
 
 <div class="lg:flex flex-col hidden justify-center items-center">
-	<div class="p-6 rounded-lg xl:w-3/4 w-full bg-gradient-to-r from-rose-400/50 to-neutral-800/60"
-	transition:fade={{duration: 500}}>
+	{#if projects[active]}
+	<div class="p-6 rounded-lg xl:w-3/4 w-full bg-gradient-to-r from-rose-400/50 to-neutral-800/60 backdrop-blur-sm"
+	in:fade
+	out:fade>
 		<ProjectCard2
 			title={projects[active].title}
 			tech={projects[active].tech}
@@ -73,7 +75,8 @@
 			active={true}
 		/>
 	</div>
-	<div class="flex justify-between items-center">
+	{/if}
+	<div class="flex items-center {projects[active] ? "justify-between" : "flex-wrap justify-center"}">
 		{#each projects as project, index}
 			{#if index != active}
 				<div

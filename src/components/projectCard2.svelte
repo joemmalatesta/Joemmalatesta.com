@@ -15,7 +15,7 @@
 		<div class="w-1/2 flex flex-col justify-center items-start mx-5"
 		>
 			<p>{tech}</p>
-			<h4 class="font-bold text-3xl">{title}</h4>
+			<h4 class="font-bold text-3xl poppins">{title}</h4>
 			<p class="text-xl">{description}</p>
 			<a href={url} class="flex items-center text-xl font-semibold my-2 py-2"
             on:mouseenter={() => {urlHover = true }}
@@ -28,7 +28,7 @@
 
 {#if !active}
 	<div class="relative scale-95 hover:scale-105 transition-all duration-300"
-	on:mouseenter={() => {inactiveHovered = true; console.log(logos) }}
+	on:mouseenter={() => {inactiveHovered = true; }}
 	on:mouseleave={() => {inactiveHovered = false}}>
 		<img src={image} alt="" class="w-80 h-40 xl:w-96 xl:h-48 rounded-xl z-10" />
 		<div class="absolute inset-0 bg-gray-900 opacity-75 rounded-xl" />
@@ -36,8 +36,8 @@
 			<h3 class="text-4xl font-bold text-white text-center px-2 cursor-default">{title}</h3>
 		</div>
 		<img src="/logos/{logos[0]}" alt="" class="{inactiveHovered ? "-translate-x-7 translate-y-7 opacity-100 rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="bottom: 0; left: 0">
-    <img src="/logos/{logos[1]}" alt="" class="{inactiveHovered ? "translate-x-7 translate-y-7 opacity-100 -rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="bottom: 0; right: 0">
-    <img src="/logos/{logos[2]}" alt="" class="{inactiveHovered ? "translate-x-7 -translate-y-7 opacity-100 rotate-12" :"opacity-0"} absolute w-10 transition-all duration-300" style="top: 0; right: 0">
-    <img src="/logos/{logos[3]}" alt="" class="{inactiveHovered ? "-translate-x-7 -translate-y-7 opacity-100 -rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="top: 0; left: 0">
+		<img src="/logos/{logos[1]}" alt="" class="{inactiveHovered ? "translate-x-7 translate-y-7 opacity-100 -rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="bottom: 0; right: 0">
+		<img src="/logos/{logos[2]}" alt="" class="{inactiveHovered ? "translate-x-7 -translate-y-7 opacity-100 rotate-12" :"opacity-0"} absolute w-10 transition-all duration-300" style="top: 0; right: 0">
+		<img src="/logos/{logos[3]}" alt="" class="{inactiveHovered ? "-translate-x-7 -translate-y-7 opacity-100 -rotate-12" :" opacity-0"} absolute w-10 transition-all duration-300" style="top: 0; left: 0">
 	</div>
 {/if}

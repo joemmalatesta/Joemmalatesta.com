@@ -5,6 +5,7 @@
 	let showToggle = false;
 	let arrowSize = 20;
 	let screenWidth;
+	let urlHover = false
 	$: if (screenWidth < 1024) {
 		arrowSize = 15;
 	}
@@ -38,9 +39,7 @@
 		>
 		<div class="w-fit">
 			<h6 class="text-sm text-neutral-500 font-light">{date}</h6>
-			<a href={url}>
-				<h4 class="text-lg md:text-xl 2xl:text-2xl">{title}</h4>
-			</a>
+			<h4 class="text-lg md:text-xl 2xl:text-2xl font-semibold poppins">{title}</h4>
 		</div>
 		<!-- This causing issues on phone screen -->
 		{#if showToggle || active || screenWidth < 1024} 
@@ -56,12 +55,13 @@
 	</div>
 	{#if active}
 		<div transition:slide>
-			<p>{description}</p>
-			<a
-				href={url}
-				class="underline underline-offset-2 text-rose-500 hover:text-rose-600 md:text-lg w-fit"
-				>read more</a
-			>
+			<p class="lg:text-lg">{description}</p>
+
+			<a href={url} class="flex items-center lg:text-xl text-lg font-semibold py-2 text-rose-400 w-fit"
+            on:mouseenter={() => {urlHover = true }}
+            on:mouseleave={() => {urlHover = false }}>Read more
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="#fb7185" clip-rule="evenodd" class="{urlHover ? "mx-4" : "mx-1"} transition-all duration-300"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+            </a>
 		</div>
 	{/if}
 </div>
