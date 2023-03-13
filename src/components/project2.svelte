@@ -15,7 +15,8 @@
 			url: "https://github.com/joemmalatesta/Auto-Typer",
 			buttonText: "Learn more",
 			image: "projects/auto-typer.jpg",
-			logos: ["python.png", "selenium.png", "matplotlib.png"]
+			logos: ["python.png", "selenium.png", "matplotlib.png"],
+			colors: ["#8fa770", "#b8a6c1"]
 		},
 		{
 			id: 1,
@@ -26,7 +27,8 @@
 			url: "https://dev.joemmalatesta.com/",
 			buttonText: "Visit old site",
 			image: "projects/old-website.jpg",
-			logos: ["bootstrap.png", "css.png", "html.png", "github.svg"]
+			logos: ["bootstrap.png", "css.png", "html.png", "github.svg"],
+			colors : ["#70a1b1", "#1d1d1d"]
 		},
 		{
 			id: 2,
@@ -37,7 +39,8 @@
 			url: "https://github.com/joemmalatesta/yvy-discord-bot",
 			buttonText: "Learn more",
 			image: "projects/yvy-bot.jpg",
-			logos: ["python.png", "pi.png", "mongo.png", "osu.png"]
+			logos: ["python.png", "pi.png", "mongo.png", "osu.png"],
+			colors : ["#33387d", "#424659"]
 		},
 		{
 			id: 3,
@@ -48,7 +51,8 @@
 			url: "https://joemmalatesta.github.io/CapChart/",
 			buttonText: "Live demo",
 			image: "projects/capchart.jpg",
-			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"]
+			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"],
+			colors : ["#e89850", "#c8bbde"]
 		},
 	];
 	let active;
@@ -60,9 +64,10 @@
 	subtitle={"blood, sweat, and carpal tunnel has lead me to this"}
 />
 
-<div class="lg:flex flex-col hidden justify-center items-center">
+<div class="lg:flex flex-col hidden justify-center items-center relative">
 	{#if projects[active]}
-	<div class="p-6 rounded-lg xl:w-3/4 w-full bg-gradient-to-r from-rose-400/50 to-neutral-800/60 backdrop-blur-sm"
+	<div class="p-6 rounded-lg xl:w-3/4 w-full "
+	style="background: linear-gradient(to right, {projects[active].colors[0]} 0%, {projects[active].colors[1]} 100%)"
 	in:fade
 	out:fade>
 		<ProjectCard2
@@ -73,6 +78,7 @@
 			buttonText={projects[active].buttonText}
 			image={projects[active].image}
 			active={true}
+			colors={projects[active].colors}
 		/>
 	</div>
 	{/if}
