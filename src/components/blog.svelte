@@ -8,11 +8,6 @@
 	export let posts;
 	let active = 0;
 	export let quotes;
-	function switchActive() {
-		if (active == 0) {
-			active = 1;
-		} else active = 0;
-	}
 </script>
 
 <!-- <head>
@@ -24,7 +19,7 @@
 <main>
 	<SectionHeader
 		title={"Blog"}
-		subtitle={"A place for my thoughts about things"}
+		subtitle={"Live through my dissonance with me"}
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
@@ -38,27 +33,28 @@
 				class=" flex justify-center md:justify-start"
 				transition:crossfade={{ duration: 200 }}
 			>
-				<button
-					on:click={switchActive}
+				<div
 					class="p-1 py-2 bg-neutral-800 text-white rounded-lg"
 				>
 					<div class="flex">
-						<p
+						<button
+						on:click={() => {active = 0}}
 							class="{active == 0
 								? 'bg-rose-400'
 								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95"
 						>
 							{postTypes[0]}
-						</p>
-						<p
+							</button>
+						<button
+						on:click={() => {active = 1}}
 							class="{active == 1
 								? 'bg-rose-400'
 								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95"
 						>
 							{postTypes[1]}
-						</p>
+							</button>
 					</div>
-				</button>
+				</div>
 			</div>
 
 
