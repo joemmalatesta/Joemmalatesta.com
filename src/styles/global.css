@@ -7,6 +7,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 
 
 
@@ -39,6 +42,11 @@ p {
 .serif{
   font-family: sans-serif;
 }
+
+.quote {
+  font-family: 'Itim', cursive;
+}
+
 
 
 
