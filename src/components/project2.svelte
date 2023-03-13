@@ -15,7 +15,7 @@
 			url: "https://github.com/joemmalatesta/Auto-Typer",
 			buttonText: "Learn more",
 			image: "projects/auto-typer.jpg",
-			logos: ["python.png", "selenium.png", "matplotlib.png", ""]
+			logos: ["python.png", "selenium.png", "matplotlib.png"]
 		},
 		{
 			id: 1,
@@ -118,6 +118,7 @@
 			buttonText={project.buttonText}
 			image={project.image}
 			phoneScreen={true}
+			logos={project.logos}
 		/>
 	{/each}
 </div>

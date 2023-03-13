@@ -87,7 +87,7 @@
 
 		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
 			<div class="bg-gradient-to-tl from-rose-400/70 to-blue-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
-			<p class="absolute lg:text-3xl xl:text-4xl font-serif xl:w-2/3 z-50 font-semibold quote ">{quotes[active]}</p>
+			<p class="absolute lg:text-3xl xl:text-4xl xl:w-2/3 z-50 quote ">{quotes[active]}</p>
 			
 		</div>
 		<!-- <div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-rose-200 via-rose-300 to-rose-400 p-6 rounded-tr-full rounded-bl-full blur-sm">
