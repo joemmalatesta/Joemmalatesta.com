@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 
@@ -44,7 +45,7 @@ p {
 }
 
 .quote {
-  font-family: 'Itim', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
