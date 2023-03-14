@@ -16,7 +16,7 @@
 			buttonText: "Learn more",
 			image: "projects/auto-typer.jpg",
 			logos: ["python.png", "selenium.png", "matplotlib.png"],
-			colors: ["#8fa770", "#b8a6c1"]
+			colors: ["#b8a6c1", "#8fa770" ]
 		},
 		{
 			id: 1,
@@ -28,7 +28,7 @@
 			buttonText: "Visit old site",
 			image: "projects/old-website.jpg",
 			logos: ["bootstrap.png", "css.png", "html.png", "github.svg"],
-			colors : ["#70a1b1", "#1d1d1d"]
+			colors : ["#1d1d1d", "#70a1b1"]
 		},
 		{
 			id: 2,
@@ -40,7 +40,7 @@
 			buttonText: "Learn more",
 			image: "projects/yvy-bot.jpg",
 			logos: ["python.png", "pi.png", "mongo.png", "osu.png"],
-			colors : ["#33387d", "#b4ac9c"]
+			colors : ["#33333a", "#33387d", "#b4ac9c"]
 		},
 		{
 			id: 3,
@@ -65,12 +65,13 @@
 	subtitle={"blood, sweat, and carpal tunnel has lead me to this"}
 />
 
+
 <div class="lg:flex flex-col hidden justify-center items-center py-3">
 	{#if projects[active]}
 	<div class="p-6 rounded-lg xl:w-3/4 w-full relative z-10">
 	<div 
 	class="w-full scale-110 h-full absolute inset-0 -z-10 blur-2xl"
-	style="background: linear-gradient(to right, {projects[active].colors[0]} 0%, {projects[active].colors[1]} 100%)"  />
+	style="background: linear-gradient(to right, {projects[active].colors.join(", ")});"  />
 		<ProjectCard2
 			title={projects[active].title}
 			tech={projects[active].tech}
@@ -110,7 +111,11 @@
 		{/each}
 	</div>
 </div>
-
+{#if projects[active]}
+<div class="flex justify-center items-center">
+<button class="text-center underline text-lg underline-offset-2 hover:underline-offset-4 transition-all" on:click={() => {active = null}}>Reset View</button>
+</div>
+{/if}
 
 
 <!-- Maybe use for phone sizes.  -->
