@@ -40,7 +40,7 @@
 			buttonText: "Learn more",
 			image: "projects/yvy-bot.jpg",
 			logos: ["python.png", "pi.png", "mongo.png", "osu.png"],
-			colors : ["#33333a", "#33387d", "#b4ac9c"]
+			colors : ["#33333a", "#b4ac9c", "#33387d"]
 		},
 		{
 			id: 3,
