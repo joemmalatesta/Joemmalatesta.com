@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
+import SectionHeader from "../components/SectionHeader.svelte";
 ---
 
 <!DOCTYPE html>
@@ -15,30 +16,36 @@ import TypeWriter from "../components/TypeWriter.svelte";
 	</head>
 	<body>
 		<Header client:load />
-		<main class="mx-6 h-screen md:mx-32">
-			<div class="flex items-center justify-center">
-				<div
-					class="hidden h-96 w-96 items-center justify-center rounded-full shadow-2xl ring-8 ring-red-500 md:flex"
-				>
-					<div
-						class="flex h-80 w-80 items-center justify-center rounded-full shadow-2xl shadow-black ring-8 ring-cyan-700"
-					>
-						<div
-							class="flex h-60 w-60 items-center justify-center rounded-full shadow-2xl shadow-black ring-8 ring-purple-500"
-						>
-							<div
-								class="flex h-40 w-40 items-center justify-center rounded-full shadow-2xl shadow-black ring-8 ring-green-500"
-							>
-								<div
-									class="flex h-20 w-20 items-center justify-center rounded-full shadow-2xl shadow-black ring-8 ring-emerald-600"
-								>
-								</div>
-							</div>
-						</div>
-					</div>
+		<SectionHeader title={"About me"} subtitle={"An in depth look at where I came from, where I am now, and what I want to be."} />
+		<div class=" flex flex-col lg:mx-40 xl:mx-60">
+			<div class="flex flex-col md:flex-row justify-between md:m-4 mx-10 my-5">
+				<div class="md:w-1/2">
+					<p class="md:text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laboriosam animi fuga cupiditate repellendus minus nisi dignissimos molestias, eaque, quod similique, ad enim perspiciatis. Dolores perferendis illum quaerat numquam ab?</p>
+				</div>
+				<div class="md:w-1/2 ">
+					<img src="/pureto-boy.jpeg" alt="" class="">
 				</div>
 			</div>
-		</main>
+			<div class="flex flex-col justify-between md:m-4 mx-10 my-5 md:flex-row-reverse">
+				<div class="md:w-1/2 md:mx-3">
+					<p class="md:text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis velit alias nam tenetur repellendus, quia itaque, cupiditate reiciendis laborum aliquam dolor esse amet atque rem ratione, cumque animi praesentium.</p>
+				</div>
+				<div class="md:w-1/2">
+					<img src="/hawaii-hill.jpeg" alt="" class="">
+				</div>
+			</div>
+			<div class="flex flex-col md:flex-row justify-between md:m-4 mx-10 my-5">
+				<div class="md:w-1/2 poppins">
+					<p class="md:text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, minima obcaecati dolor ducimus illo earum ex qui laboriosam quam ea voluptatibus neque consectetur, enim quisquam sequi, ad in non esse!</p>
+				</div>
+				<div class="md:w-1/2">
+					<img src="/hawaii-tube.jpeg" alt="" class="">
+				</div>
+			</div>
+		</div>
+
+
+
 		<Footer />
 	</body>
 </html>

@@ -9,5 +9,5 @@
 	>
 		{title}
 	</h1>
-	<h5 class="md:text-xl text-lg">{subtitle}</h5>
+	<h5 class="md:text-xl text-lg lg:w-1/2">{subtitle}</h5>
 </div>

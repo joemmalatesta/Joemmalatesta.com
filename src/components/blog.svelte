@@ -19,7 +19,7 @@
 <main>
 	<SectionHeader
 		title={"Blog"}
-		subtitle={"Live through lense my dissonance, slowly shackling myself to the strain of society and absolving me of all aspiration"}
+		subtitle={"I'll explain my dissonance "}
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
