@@ -40,7 +40,7 @@
 			buttonText: "Learn more",
 			image: "projects/yvy-bot.jpg",
 			logos: ["python.png", "pi.png", "mongo.png", "osu.png"],
-			colors : ["#33387d", "#424659"]
+			colors : ["#33387d", "#b4ac9c"]
 		},
 		{
 			id: 3,
@@ -59,17 +59,18 @@
 	let delay = 0;
 </script>
 
+
 <SectionHeader
 	title={"Projects"}
 	subtitle={"blood, sweat, and carpal tunnel has lead me to this"}
 />
 
-<div class="lg:flex flex-col hidden justify-center items-center relative">
+<div class="lg:flex flex-col hidden justify-center items-center py-3">
 	{#if projects[active]}
-	<div class="p-6 rounded-lg xl:w-3/4 w-full "
-	style="background: linear-gradient(to right, {projects[active].colors[0]} 0%, {projects[active].colors[1]} 100%)"
-	in:fade
-	out:fade>
+	<div class="p-6 rounded-lg xl:w-3/4 w-full relative z-10">
+	<div 
+	class="w-full scale-110 h-full absolute inset-0 -z-10 blur-2xl"
+	style="background: linear-gradient(to right, {projects[active].colors[0]} 0%, {projects[active].colors[1]} 100%)"  />
 		<ProjectCard2
 			title={projects[active].title}
 			tech={projects[active].tech}
@@ -86,7 +87,7 @@
 		{#each projects as project, index}
 			{#if index != active}
 				<div
-					class="m-4"
+					class="m-4 z-20"
 					on:click={() => {
 						active = index;
 					}}

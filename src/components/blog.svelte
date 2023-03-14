@@ -19,7 +19,7 @@
 <main>
 	<SectionHeader
 		title={"Blog"}
-		subtitle={"Live through my dissonance with me"}
+		subtitle={"Live through lense my dissonance, slowly shackling myself to the strain of society and absolving me of all aspiration"}
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
@@ -63,7 +63,7 @@
 				class="flex flex-col items-start justify-center"
 			>
 			
-				{#each posts[active].slice(0, 4) as post}
+				{#each posts[active].slice(0, 5) as post}
 					<BlogCard
 						client:load
 						title={post.frontmatter.title}
