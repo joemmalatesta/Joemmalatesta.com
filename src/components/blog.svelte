@@ -19,7 +19,7 @@
 <main>
 	<SectionHeader
 		title={"Blog"}
-		subtitle={"Please bear with me while I sort out my dissonance"}
+		subtitle={"Bear with me while I sort out an identity crisis"}
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
