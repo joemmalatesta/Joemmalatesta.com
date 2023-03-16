@@ -45,17 +45,21 @@
 		</svg>
 	</a>
 	<!-- Main Links -->
-	<div class="flex items-center">
+	<div class="flex items-center">\
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition duration-100"
+			href="/#about">About</a
+		>
+		<a
+			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition duration-100"
 			href="/#blog">Blog</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition-all duration-100"
 			href="/#projects">Projects</a
 		>
 		<a
-			class="ml-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
+			class="ml-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition-all duration-100"
 			href="/#contact">Contact</a
 		>
 	</div>
@@ -109,6 +113,7 @@
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
+				<a class="" href="/#about">▹About</a>
 				<a class="" href="/#blog">▹Blog</a>
 				<a class="" href="/#projects">▹Projects</a>
 				<a class="" href="/#contact">▹Contact</a>
