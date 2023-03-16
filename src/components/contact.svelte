@@ -63,7 +63,7 @@
 						id="name"
 						bind:value={name}
 						placeholder="Jane Goodall"
-						class="appearance-none ring ring-slate-400/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm  drop-shadow-lg w-full"
+						class="appearance-none ring-2 ring-slate-200/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm  drop-shadow-lg text-black w-full"
 					/>
 				</div>
 				<div class="xl:w-full m-2">
@@ -74,10 +74,10 @@
 						id="email"
 						bind:value={email}
 						placeholder="example@gmail.com"
-						class="appearance-none ring ring-slate-400/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm drop-shadow-lg w-full"
+						class="appearance-none ring-2 ring-slate-200/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm drop-shadow-lg text-black w-full"
 					/>
 					{#if showEmailError}
-						<h6 class="text-red-700 text-sm m-px">
+						<h6 class="text-red-500 text-sm m-px">
 							Please enter a valid email
 						</h6>
 					{/if}
@@ -94,11 +94,11 @@
 					id="message"
 					bind:value={message}
 					placeholder="Hey Joe, this is totally random but..."
-					class="appearance-none ring ring-slate-400/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-sm  drop-shadow-lg h-40"
+					class="appearance-none ring-2 ring-slate-200/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-sm  drop-shadow-lg text-black h-40"
 				/>
 			</div>
 			{#if showError}
-				<h6 class="text-red-700 text-sm mx-2">All fields must be filled out</h6>
+				<h6 class="text-red-500 text-sm mx-2">All fields must be filled out</h6>
 			{/if}
 			<button
 				class="p-2 bg-sky-400 hover:bg-sky-500 text-white rounded-lg"

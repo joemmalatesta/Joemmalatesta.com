@@ -72,3 +72,10 @@
 		</div>
 	</div>
 {/if}
+
+
+<style>
+	*{
+		@apply text-slate-700;
+	}
+</style>

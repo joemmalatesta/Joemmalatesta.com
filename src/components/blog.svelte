@@ -41,7 +41,7 @@
 						on:click={() => {active = 0}}
 							class="{active == 0
 								? 'bg-sky-400'
-								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95"
+								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-slate-700 {active == 0 ? "font-semibold": ""}"
 						>
 							{postTypes[0]}
 							</button>
@@ -49,7 +49,7 @@
 						on:click={() => {active = 1}}
 							class="{active == 1
 								? 'bg-sky-400'
-								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95"
+								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-slate-700 {active == 1 ? "font-semibold": ""}"
 						>
 							{postTypes[1]}
 							</button>
