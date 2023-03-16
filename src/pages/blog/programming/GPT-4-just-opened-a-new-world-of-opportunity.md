@@ -12,14 +12,14 @@ Open AI recently [did a livestream](https://www.youtube.com/watch?v=outcGtbnMuQ)
 
 In normal conversation and common questions, GPT-3.5 and GPT-4 perform similarly, but
 
-- “The difference comes out when the complexity of the task reaches a sufficient threshold—GPT-4 is more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5.” - [openai.com]([https://openai.com/research/gpt-4](https://openai.com/research/gpt-4))
+> “The difference comes out when the complexity of the task reaches a sufficient threshold—GPT-4 is more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5.” - [openai.com](https://openai.com/research/gpt-4)
     
 For example, in the stream, GPT-3.5 was unable to summarize some text using words that start with specific letters, while GPT-4 did this flawlessly. More notably, They compared the ability of GPT-3.5 and GPT-4 through a series of tests, including all of the offered AP Tests. While performing miles better than GPT-3.5 on math exams like AP Calculus AB, GPT-4 oddly continued to do poorly on the English language and literature exams earning 2’s on both AP exams, same as GPT-3.5. I’ll be out of school soon enough so all of that isn’t super exciting to me, but here’s what is.
 
 
 ### System prompt
 
-with the new GPT-4 model, you can now tell Chat GPT what it is and it will respond in character to who you want it to be. In the demo, they prompted the chat bot to be “TaxGPT” the tax expert. It then responded to all of the prompts in character and the host of the preview made it apparent that these prompts helped a lot in getting correct and relevant information. On the same note, it’s now easier to develop specific chat bot use cases, as the system prompt can be whatever the developer choses and remain constant. Before, chatting with [Rick Sanchez]([https://rickandmorty.fandom.com/wiki/Rick_Sanchez](https://rickandmorty.fandom.com/wiki/Rick_Sanchez)) and things of that nature was much more difficult because each message had to include a prompt saying who they wanted the bot be. Now, with system prompts, this has been made much simpler and is a parameter that can be used in the API.
+with the new GPT-4 model, you can now tell Chat GPT what it is and it will respond in character to who you want it to be. In the demo, they prompted the chat bot to be “TaxGPT” the tax expert. It then responded to all of the prompts in character and the host of the preview made it apparent that these prompts helped a lot in getting correct and relevant information. On the same note, it’s now easier to develop specific chat bot use cases, as the system prompt can be whatever the developer choses and remain constant. Before, chatting with [Rick Sanchez](https://rickandmorty.fandom.com/wiki/Rick_Sanchez) and things of that nature was much more difficult because each message had to include a prompt saying who they wanted the bot be. Now, with system prompts, this has been made much simpler and is a parameter that can be used in the API.
 
 ### Longer prompts
 
@@ -31,4 +31,4 @@ This is by far the most exciting addition for me. Not because of what it can cur
 
 #### off topic
 
-Smart glasses are coming soon and I’m fuckin stoked. Imagine looking at something and seeing the history or look at a problem and get the answer. Look at someone, and get their feeling from their body language. All of this can be possible and harnessed into some lenses and I cannot wait until that day comes. Imagine hacking in real life sports. This is hardly even related at this point, but imagine you’re playing tennis or football and can see the trajectory of the ball in real time. Nuts to think about. Anyway, I digress.
+Smart glasses are coming soon and I’m fuckin stoked. Imagine looking at something and seeing the history or look at a problem and get the answer. Look at someone and understand their emotion from their body language. All of this can be possible and harnessed into some lenses and I cannot wait until that day comes. Imagine hacking in real life sports. This is hardly even related at this point, but imagine you’re playing baseball or football and can see the trajectory of the ball in real time. Nuts to think about. Anyway, I digress.
