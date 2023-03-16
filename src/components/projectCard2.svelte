@@ -27,7 +27,7 @@
 {/if}
 
 {#if !active}
-	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer"
+	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer rounded-xl ring-slate-100 ring-1"
 	on:mouseenter={() => {inactiveHovered = true; }}
 	on:mouseleave={() => {inactiveHovered = false}}>
 		<img src={image} alt="" class="w-80 h-40 xl:w-96 xl:h-48 rounded-xl z-10" />
