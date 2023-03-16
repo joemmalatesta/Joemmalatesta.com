@@ -24,7 +24,7 @@
 		//Delete letters one at a time, with a wait
 		for (let i = word.length - 1; i >= 0; i--) {
 			output = output.slice(0, -1);
-			await sleep(50);
+			await sleep(60);
 		}
 		letterIndex = 0;
 	}
@@ -35,10 +35,10 @@
 		while (letterIndex < word.length) {
 			output += word[letterIndex];
 			letterIndex++;
-			await sleep(50);
+			await sleep(60);
 		}
 		// Word sits for a second before deleting
-		await sleep(1000);
+		await sleep(1400);
 		await deleteWord();
 		await sleep(200);
 

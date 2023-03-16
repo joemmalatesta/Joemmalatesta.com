@@ -19,15 +19,13 @@
 		class="relative h-36 bg-cover bg-center rounded-xl"
 		style="background-image: url({image});"
 	>
-		<div class="absolute inset-0 bg-gray-900 opacity-[.85] rounded-xl" />
-		<div class="absolute inset-0 flex items-center justify-center flex-col">
-			<h3 class="text-3xl font-bold text-white text-center p-2">{title}</h3>
-			<div class="flex justify-center items-center">
-				{#each logos as logo}
-					<img src="logos/{logo}" alt="" class="md:w-7 w-8 mx-2">
-				{/each}
+	<div class="absolute inset-0 bg-neutral-800 opacity-75 rounded-xl" />
+	<div class="absolute inset-0 flex items-center justify-center flex-col">
+			<div class="flex justify-center items-center text-slate-100/80 text-sm">
+				{tech}
 			</div>
-			<h6 class="text-lg font-bold text-neutral-200 text-center">
+			<h3 class="text-3xl font-bold text-white text-center p-1">{title}</h3>
+			<h6 class="font-bold text-center text-sky-300 text-xl">
 				{buttonText}
 			</h6>
 		</div>

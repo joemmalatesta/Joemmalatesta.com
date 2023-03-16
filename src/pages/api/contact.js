@@ -17,10 +17,9 @@ export async function post({ request }) {
     const mailOptions = {
         from: "joemmalatesta1@gmail.com",
         to: "joemmalatesta@gmail.com",
-        subject: 'New message from your website',
-        html: `<p><strong>Name:</strong>${data.name}</p>
-               <p><strong>Email:</strong>${data.email}</p>
-               <p><strong>Message:</strong>${data.message}</p>`,
+        subject: `Website message from ${data.name}`,
+        html:`<p>Email:</strong>${data.email}</p>
+              <p>Message:</strong>${data.message}</p>`,
     };
 
     let payload = {

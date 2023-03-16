@@ -16,7 +16,7 @@
 				<div class="my-2 flex flex-col items-center justify-center">
 					<img src="/checkmark.svg" alt="checkmark" />
 					<h2 class="text-xl md:text-3xl font-bold text-center">
-						Message Sent Successfully
+						Success
 					</h2>
 				</div>
 				<div class="flex flex-col items-center justify-center">
@@ -27,7 +27,7 @@
 						on:click={() => {
 							modalType = "";
 						}}
-						class="py-2 px-12 rounded-lg my-2 bg-rose-400 text-white hover:bg-rose-500 w-full"
+						class="py-2 px-12 rounded-lg my-2 bg-sky-400 text-white hover:bg-sky-500 w-full"
 						>Sounds good</button
 					>
 				</div>
@@ -64,7 +64,7 @@
 						on:click={() => {
 							modalType = "";
 						}}
-						class="py-2 px-12 rounded-lg my-2 bg-rose-400 text-white hover:bg-rose-500"
+						class="py-2 px-12 rounded-lg my-2 bg-sky-400 text-white hover:bg-sky-500"
 						>Sigh..</button
 					>
 				</div>
@@ -72,3 +72,10 @@
 		</div>
 	</div>
 {/if}
+
+
+<style>
+	*{
+		@apply text-slate-700;
+	}
+</style>
