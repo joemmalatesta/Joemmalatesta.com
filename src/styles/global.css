@@ -19,11 +19,10 @@ body {
   /* @apply bg-gradient-to-r from-violet-300 to-blue-100; */
 
 	font-family: 'Inter', sans-serif;
-  @apply bg-slate-800 text-slate-100 overflow-x-hidden;
+  @apply bg-slate-900 text-slate-100 overflow-x-hidden;
 }
 h1{
   font-family:  sans-serif;
-
 }
 h2,h3,h4,h5,h6, a{
   font-family: 'Inter', sans-serif;

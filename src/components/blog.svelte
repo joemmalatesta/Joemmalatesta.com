@@ -40,16 +40,16 @@
 						<button
 						on:click={() => {active = 0}}
 							class="{active == 0
-								? 'bg-sky-400'
-								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-slate-700 {active == 0 ? "font-semibold": ""}"
+								? 'bg-sky-400 font-semibold'
+								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-slate-700 quote"
 						>
 							{postTypes[0]}
 							</button>
 						<button
 						on:click={() => {active = 1}}
 							class="{active == 1
-								? 'bg-sky-400'
-								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-slate-700 {active == 1 ? "font-semibold": ""}"
+								? 'bg-sky-400 font-semibold'
+								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-slate-700 quote"
 						>
 							{postTypes[1]}
 							</button>
@@ -82,7 +82,7 @@
 
 
 		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
-			<div class="bg-gradient-to-tl from-rose-400/70 via-pink-300/70 to-sky-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
+			<div class="bg-gradient-to-tl from-rose-400/70 via-violet-300/80 to-sky-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
 			<p class="absolute lg:text-3xl xl:text-4xl xl:w-3/4 z-50 quote font-semibold">{quotes[active]}</p>
 			
 		</div>
