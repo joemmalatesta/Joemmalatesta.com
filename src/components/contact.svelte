@@ -6,6 +6,10 @@
 	let showEmailError = false;
 	let modalType = "";
 	function sendEmail() {
+		if (validateForm() == false) {
+			console.log("here");
+			return;
+		}
 		const payload = {
 			name: name,
 			email: email,
@@ -33,13 +37,13 @@
 	function validateForm() {
 		if (!name || !email || !message) {
 			showError = true;
-			return;
+			return false;
 		}
-		if (!email.contains("@") || !email.contains(".")) {
+		if (!email.includes("@") || !email.includes(".")) {
 			showEmailError = true;
-			return;
+			return false;
 		}
-		sendEmail();
+		return true;
 	}
 </script>
 
@@ -52,28 +56,28 @@
 			<!-- Email and Name -->
 			<div class="flex flex-col xl:flex-row">
 				<div class="xl:w-full xl:mr-5 m-2">
-					<label class="text-sm text-rose-500 my-2" for="name">Name</label>
+					<label class="text-sm text-neutral-500 my-2" for="name">Name</label>
 					<input
 						type="text"
 						name="name"
 						id="name"
 						bind:value={name}
-						placeholder="Drahkma Smeltorge"
-						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200  rounded-md w-full"
+						placeholder="Emmet Till"
+						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm  drop-shadow-lg w-full"
 					/>
 				</div>
-				<div class="xl:w-full xl:mr-5 m-2">
-					<label class="text-sm text-rose-500 my-2" for="email">Email</label>
+				<div class="xl:w-full m-2">
+					<label class="text-sm text-neutral-500 my-2" for="email">Email</label>
 					<input
 						type="email"
 						name="email"
 						id="email"
 						bind:value={email}
 						placeholder="example@gmail.com"
-						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200  rounded-md w-full"
+						class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm drop-shadow-lg w-full"
 					/>
 					{#if showEmailError}
-						<h6 class="text-red-700 text-sm mx-2">
+						<h6 class="text-red-700 text-sm m-px">
 							Please enter a valid email
 						</h6>
 					{/if}
@@ -81,14 +85,16 @@
 			</div>
 
 			<div class="flex flex-col mt-3 m-2">
-				<label class="text-sm text-rose-500 my-1" for="message">Message</label>
+				<label class="text-sm text-neutral-500 my-1" for="message"
+					>Message</label
+				>
 				<textarea
 					type="text"
 					name="message"
 					id="message"
 					bind:value={message}
 					placeholder="Hey Joe, this is totally random but..."
-					class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-md h-40"
+					class="appearance-none ring ring-neutral-700/80 p-2 focus:outline-none focus:ring-neutral-800/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-sm  drop-shadow-lg h-40"
 				/>
 			</div>
 			{#if showError}
