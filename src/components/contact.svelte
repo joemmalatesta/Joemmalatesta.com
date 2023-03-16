@@ -35,6 +35,8 @@
 	}
 
 	function validateForm() {
+		showError = false
+		showEmailError = false
 		if (!name || !email || !message) {
 			showError = true;
 			return false;
@@ -63,7 +65,7 @@
 						id="name"
 						bind:value={name}
 						placeholder="Jane Goodall"
-						class="appearance-none ring-2 ring-slate-200/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm  drop-shadow-lg text-black w-full"
+						class="bg-slate-300 placeholder:text-slate-800 appearance-none ring-2 ring-slate-600 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm  drop-shadow-lg text-black w-full"
 					/>
 				</div>
 				<div class="xl:w-full m-2">
@@ -74,7 +76,7 @@
 						id="email"
 						bind:value={email}
 						placeholder="example@gmail.com"
-						class="appearance-none ring-2 ring-slate-200/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm drop-shadow-lg text-black w-full"
+						class="bg-slate-300 placeholder:text-slate-800 appearance-none ring-2 ring-slate-600 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm drop-shadow-lg text-black w-full"
 					/>
 					{#if showEmailError}
 						<h6 class="text-red-500 text-sm m-px">
@@ -94,7 +96,7 @@
 					id="message"
 					bind:value={message}
 					placeholder="Hey Joe, this is totally random but..."
-					class="appearance-none ring-2 ring-slate-200/80 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-sm  drop-shadow-lg text-black h-40"
+					class="bg-slate-300 placeholder:text-slate-800 appearance-none ring-2 ring-slate-600 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-sm  drop-shadow-lg text-black h-40"
 				/>
 			</div>
 			{#if showError}
