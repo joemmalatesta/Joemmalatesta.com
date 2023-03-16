@@ -34,13 +34,13 @@
 				transition:crossfade={{ duration: 200 }}
 			>
 				<div
-					class="p-1 py-2 bg-neutral-800 text-white rounded-lg"
+					class="p-1 py-2 bg-slate-200 text-white rounded-lg"
 				>
 					<div class="flex">
 						<button
 						on:click={() => {active = 0}}
 							class="{active == 0
-								? 'bg-rose-400'
+								? 'bg-sky-400'
 								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95"
 						>
 							{postTypes[0]}
@@ -48,7 +48,7 @@
 						<button
 						on:click={() => {active = 1}}
 							class="{active == 1
-								? 'bg-rose-400'
+								? 'bg-sky-400'
 								: ''} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95"
 						>
 							{postTypes[1]}
@@ -82,11 +82,11 @@
 
 
 		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
-			<div class="bg-gradient-to-tl from-rose-400/70 to-blue-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
+			<div class="bg-gradient-to-tl from-rose-400/70 via-pink-300/70 to-sky-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
 			<p class="absolute lg:text-3xl xl:text-4xl xl:w-3/4 z-50 quote font-semibold">{quotes[active]}</p>
 			
 		</div>
-		<!-- <div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-rose-200 via-rose-300 to-rose-400 p-6 rounded-tr-full rounded-bl-full blur-sm">
+		<!-- <div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-sky-200 via-sky-300 to-sky-400 p-6 rounded-tr-full rounded-bl-full blur-sm">
 			<p
 				class="md:text-4xl p-6 font-serif text-2xl"
 			>

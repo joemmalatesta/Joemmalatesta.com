@@ -15,11 +15,11 @@
 
 
 body {
-  @apply selection:bg-black selection:text-white;
+  @apply selection:text-black selection:bg-slate-100;
   /* @apply bg-gradient-to-r from-violet-300 to-blue-100; */
 
 	font-family: 'Inter', sans-serif;
-  color: #171717;
+  @apply bg-slate-800 text-slate-100 overflow-x-hidden;
 }
 h1{
   font-family:  sans-serif;

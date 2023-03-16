@@ -27,7 +27,7 @@
 					<img src="logos/{logo}" alt="" class="md:w-7 w-8 mx-2">
 				{/each}
 			</div>
-			<h6 class="text-lg font-bold text-neutral-200 text-center">
+			<h6 class="text-lg font-bold text-slate-200 text-center">
 				{buttonText}
 			</h6>
 		</div>

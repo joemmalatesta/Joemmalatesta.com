@@ -6,7 +6,7 @@
 	} else {
 		burgerClass = "transform -scale-x-100 transition-all";
 	}
-	let fillColor = "black";
+	let fillColor = "#f1f5f9";
 	import { slide, fade } from "svelte/transition";
 </script>
 
@@ -24,13 +24,13 @@
 				fillColor = "url(#Gradient)";
 			}}
 			on:mouseleave={() => {
-				fillColor = "black";
+				fillColor = "#f1f5f9";
 			}}
 		>
 			<defs>
 				<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-					<stop offset="0%" style="stop-color:#262626;stop-opacity:1" />
-					<stop offset="100%" style="stop-color:#fb7185;stop-opacity:1" />
+					<stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+					<stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
 				</linearGradient>
 			</defs>
 			<g
@@ -47,15 +47,15 @@
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-sky-300 hover:font-extrabold transition"
 			href="/#blog">Blog</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-sky-300 hover:font-extrabold transition-all duration-100"
 			href="/#projects">Projects</a
 		>
 		<a
-			class="ml-2 hover:border-b-2 border-spacing-3 border-neutral-500 hover:font-extrabold transition-all duration-100"
+			class="ml-2 hover:border-b-2 border-spacing-3 border-sky-300 hover:font-extrabold transition-all duration-100"
 			href="/#contact">Contact</a
 		>
 	</div>
@@ -73,13 +73,13 @@
 					fillColor = "url(#Gradient)";
 				}}
 				on:mouseleave={() => {
-					fillColor = "black";
+					fillColor = "#f1f5f9";
 				}}
 			>
 				<defs>
 					<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-						<stop offset="0%" style="stop-color:#262626;stop-opacity:1" />
-						<stop offset="100%" style="stop-color:#fb7185;stop-opacity:1" />
+						<stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+						<stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
 					</linearGradient>
 				</defs>
 				<g
