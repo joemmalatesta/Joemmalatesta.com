@@ -16,7 +16,7 @@
 				<div class="my-2 flex flex-col items-center justify-center">
 					<img src="/checkmark.svg" alt="checkmark" />
 					<h2 class="text-xl md:text-3xl font-bold text-center">
-						Message Sent Successfully
+						Success
 					</h2>
 				</div>
 				<div class="flex flex-col items-center justify-center">
