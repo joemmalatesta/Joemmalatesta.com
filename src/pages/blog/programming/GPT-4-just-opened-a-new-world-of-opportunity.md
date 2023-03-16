@@ -1,7 +1,7 @@
 ---
 layout: "../../../layouts/BlogPost.astro" #Constant
-title: "GPT-4 just opened a new world of opportunity"
-cardDescription: "Technology I'm betting on in 2023 that will last the test of time, and my 2022 recap."
+title: "GPT-4 just opened a new world of possibility"
+cardDescription: "GPT-4 was just announced and there are some major improvements..."
 description: "OpenAI has recently introduced GPT-4, the latest language model with enhanced capabilities. GPT-4 is reliable, creative, and able to handle much more complex tasks than its predecessor GPT-3.5. It can now accept images as inputs and describe and understand them with incredible accuracy. With the system prompt, developers can choose the character they want Chat GPT to be, making it easier to develop specific chat bot use cases. Additionally, GPT-4 can accept up to 25,000 words, making it easier for programmers and students to prompt the chat bot with documentation and get up-to-date information. The most exciting addition is GPT-4's ability to accept images, enabling endless possibilities for bridging the gap between powerful computing and vision. The future of smart glasses is also mentioned, where individuals can see the history of objects or even hack in real-life sports. Overall, GPT-4 has a wide range of practical upgrades that have the potential to shape the future."
 pubDate: "March 15, 2023"
 heroImage: "/blogs/programming/teaching.jpeg"
