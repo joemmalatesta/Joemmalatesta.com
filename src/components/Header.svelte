@@ -114,7 +114,7 @@
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
-				<a class="" href="/#about">▹About</a>
+				<a class="" href="/about">▹About</a>
 				<a class="" href="/#blog">▹Blog</a>
 				<a class="" href="/#projects">▹Projects</a>
 				<a class="" href="/#contact">▹Contact</a>
