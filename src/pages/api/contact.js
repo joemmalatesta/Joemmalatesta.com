@@ -29,7 +29,7 @@ export async function post({ request }) {
     try {
         await new Promise((resolve, reject) => {
             transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
+                if (error || !data.name || !data.email || !data.message) {
                     console.log(error);
                     payload.message = `failure`
                     reject(error);
