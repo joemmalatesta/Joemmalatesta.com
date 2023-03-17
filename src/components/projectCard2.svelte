@@ -27,11 +27,11 @@
 {/if}
 
 {#if !active}
-	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer rounded-xl"
+	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer rounded-xl shadow-slate-100/50 hover:shadow-xl"
 	on:mouseenter={() => {inactiveHovered = true; }}
 	on:mouseleave={() => {inactiveHovered = false}}>
 		<img src={image} alt="" class="w-80 h-40 xl:w-96 xl:h-48 rounded-xl z-10" />
-		<div class="absolute inset-0 bg-neutral-800 opacity-[.65] rounded-xl" />
+		<div class="absolute inset-0 bg-neutral-800 opacity-[.65] rounded-xl " />
 		<div class="absolute inset-0 flex items-center justify-center">
 			<h3 class="text-4xl font-bold text-white text-center px-2 cursor-pointer">{title}</h3>
 		</div>

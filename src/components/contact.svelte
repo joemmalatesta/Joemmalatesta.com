@@ -5,6 +5,8 @@
 	let showError = false;
 	let showEmailError = false;
 	let modalType = "";
+	let possibleNames = ["Carl Jung", "Ayn Rand", "Noam Chomsky", "Jane Goodall", "Playboy Carti", "James Clear", "Joe Malatesta", "Kanye West", "Jermaine Cole", "Art Tatum", "Shigetora"]
+	let placeholderName = possibleNames[Math.floor(Math.random() * possibleNames.length)];
 	function sendEmail() {
 		if (validateForm() == false) {
 			console.log("here");
@@ -64,8 +66,8 @@
 						name="name"
 						id="name"
 						bind:value={name}
-						placeholder="Jane Goodall"
-						class="bg-slate-300 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-600 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm  drop-shadow-lg text-black w-full"
+						placeholder="{placeholderName}"
+						class="bg-slate-200/95 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-500 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-lg  drop-shadow-lg text-black w-full"
 					/>
 				</div>
 				<div class="xl:w-full m-2">
@@ -76,7 +78,7 @@
 						id="email"
 						bind:value={email}
 						placeholder="example@gmail.com"
-						class="bg-slate-300 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-600 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-sm drop-shadow-lg text-black w-full"
+						class="bg-slate-200/95 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-500 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-200 rounded-lg drop-shadow-lg text-black w-full"
 					/>
 					{#if showEmailError}
 						<h6 class="text-red-500 text-sm m-px">
@@ -96,7 +98,7 @@
 					id="message"
 					bind:value={message}
 					placeholder="Hey Joe, this is totally random but..."
-					class="bg-slate-300 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-600 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-sm  drop-shadow-lg text-black h-40"
+					class="bg-slate-200/95 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-500 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-lg  drop-shadow-lg text-black h-40"
 				/>
 			</div>
 			{#if showError}
