@@ -45,10 +45,10 @@
 		</svg>
 	</a>
 	<!-- Main Links -->
-	<div class="flex items-center">\
+	<div class="flex items-center">
 		<a
 			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition duration-100"
-			href="/#about">About</a
+			href="/about">About</a
 		>
 		<a
 			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition duration-100"

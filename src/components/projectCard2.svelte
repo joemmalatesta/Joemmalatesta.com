@@ -20,14 +20,14 @@
 			<a href={url} class="flex items-center text-xl font-semibold my-2 py-2"
             on:mouseenter={() => {urlHover = true }}
             on:mouseleave={() => {urlHover = false }}>{buttonText}
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="{urlHover ? "mx-6" : "mx-1"} transition-all duration-500"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="#f1f5f9" clip-rule="evenodd" class="{urlHover ? "mx-6" : "mx-1"} transition-all duration-500"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
             </a>
 		</div>
 	</div>
 {/if}
 
 {#if !active}
-	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer rounded-xl ring-slate-100 ring-1"
+	<div class="relative scale-95 hover:scale-105 transition-all duration-300 cursor-pointer rounded-xl"
 	on:mouseenter={() => {inactiveHovered = true; }}
 	on:mouseleave={() => {inactiveHovered = false}}>
 		<img src={image} alt="" class="w-80 h-40 xl:w-96 xl:h-48 rounded-xl z-10" />

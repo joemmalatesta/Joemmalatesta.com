@@ -70,8 +70,7 @@
 	{#if projects[active]}
 	<div class="p-6 rounded-lg xl:w-3/4 w-full relative z-10">
 	<div 
-	class="w-full scale-110 h-full absolute inset-0 -z-10 blur-2xl"
-	style="background: linear-gradient(to right, {projects[active].colors.join(", ")});"  />
+	class="w-full scale-100 h-full absolute inset-0 -z-10 bg-gradient-to-r from-rose-300 via-violet-300 to-sky-300 blur-2xl ring-slate-300 ring-4 opacity-25" />
 		<ProjectCard2
 			title={projects[active].title}
 			tech={projects[active].tech}
