@@ -16,38 +16,79 @@ import SectionHeader from "../components/SectionHeader.svelte";
 	</head>
 	<body>
 		<Header client:load />
-		<SectionHeader title={"About me"} subtitle={"An in depth look at who I was, who I am now, and who I want to be."} />
-		<div class=" flex flex-col lg:mx-20 xl:mx-60">
-			<div class="flex flex-col md:flex-row justify-between md:m-4 mx-10 my-5">
-				<div class="md:w-1/2 md:mx-3">
-					<p class="md:text-md lg:text-lg">my life didn't really start until last year, in a professional sense.
-Anytime before last summer, you could catch me with my friends, outside swimming or playing soccer, inside playing video games, or by myself doing the same.
-Nowadays I spend my days managing work, school, and personal programming, and going to the gym. Get rid of this Joe this is a bad paragraph. You're not being very humble..</p>
-				</div>
-				<div class="md:w-1/2 ">
-					<img src="/pureto-boy.jpeg" alt="" class="">
-				</div>
-			</div>
-			<div class="flex flex-col justify-between md:m-4 mx-10 my-5 md:flex-row-reverse">
-				<div class="md:w-1/2 md:mx-3">
-					<h4 class="md:text-2xl text-xl">Actually About Me</h4>
-					<p class="md:text-md lg:text-lg">I like going on hikes but not really. I like to travel and work out and things but I don't really go outside that often :(</p>
+		<SectionHeader
+			title={"About me"}
+			subtitle={"An in depth look at who I was, who I am now, and who I want to be."}
+		/>
+		<div class="flex flex-col lg:mx-20 xl:mx-60">
+			<div class="mx-10 my-5 flex flex-col justify-between md:m-4 md:flex-row">
+				<div class="md:mx-3 md:w-1/2">
+					<h2>Before</h2>
+					<p class="md:text-md lg:text-lg">
+						My life, in a professional sense, didn't really start until college,
+						but we’ll get there. In elementary and middle school my sole focus
+						was my personal enjoyment. Every second of every day was spent doing
+						exactly what I wanted to do which usually consisted of soccer,
+						diving, friends, or Minecraft PvP
+						(https://mcpvpminecraftpvp.fandom.com/wiki/Hardcore_Games). In
+						Highschool, my focus shifted a bit. I now had commitments that were
+						generally outside the realm of enjoyment. I stopped going to the
+						pool and quit soccer and instead started working and spending more
+						of my time online playing games and reselling shoes(link to humble
+						beginnings blog post /shop.soles). While my time spent online can
+						generally be seen as a waste of time, this is where I discovered the
+						world of programming and learned how to find and interact with
+						communities I was interested in to help deepen my understanding and
+						find people that share interests and ideas.
+					</p>
 				</div>
 				<div class="md:w-1/2">
-					<img src="/hawaii-hill.jpeg" alt="" class="">
+					<img src="/pureto-boy.jpeg" alt="" class="" />
 				</div>
 			</div>
-			<div class="flex flex-col md:flex-row justify-between md:m-4 mx-10 my-5">
-				<div class="md:w-1/2 md:mx-3">
-					<p class="md:text-md lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, minima obcaecati dolor ducimus illo earum ex qui laboriosam quam ea voluptatibus neque consectetur, enim quisquam sequi, ad in non esse!</p>
+			<div
+				class="mx-10 my-5 flex flex-col justify-between md:m-4 md:flex-row-reverse"
+			>
+				<div class="md:mx-3 md:w-1/2">
+					<h4 class="text-xl md:text-2xl">Now</h4>
+					<p class="md:text-md lg:text-lg">
+						Beginning in college, I still held many of the same tendencies.
+						Powered by online school, I would sit on my computer doing nothing
+						but school and video games for an ungodly amount of time each day. I
+						tried learning Python and Java but couldn’t bring myself to do
+						anything productive. The depressing state of the world got to me and
+						I wasn’t doing shit. Fast forward to the next year and I randomly
+						ended up in a gym one day and randomly ended up with a job teaching
+						programming. These two things alone turned my life around and got me
+						back being productive and actually enjoying it. It’s only been a
+						year since then and I’ve made progress in both respective areas that
+						I could only dream of, and found enjoyment in the process of
+						bettering myself.
+					</p>
 				</div>
 				<div class="md:w-1/2">
-					<img src="/hawaii-tube.jpeg" alt="" class="">
+					<img src="/hawaii-hill.jpeg" alt="" class="" />
+				</div>
+			</div>
+			<div class="mx-10 my-5 flex flex-col justify-between md:m-4 md:flex-row">
+				<div class="md:mx-3 md:w-1/2">
+					<h2>Soon to come (hopefully)</h2>
+					<p class="md:text-md lg:text-lg">
+						5th grade me is still trying to come to terms with sitting in a
+						chair for a good portion of the day, and 12th grade me is still
+						trying to get over the fear of judgement, but current me is looking
+						at every coming day as an opportunity to push myself and stay
+						consistent to the methods that have landed me great internships and
+						great improvement. Rewrite this but yeah. I want to rise to the top
+						of whatever I might be doing at the time. Whatever I do, I wanna be
+						great.
+					</p>
+				</div>
+				<div class="md:w-1/2">
+					<img src="/hawaii-tube.jpeg" alt="" class="" />
 				</div>
 			</div>
 		</div>
-
-
 
 		<Footer />
 	</body>
