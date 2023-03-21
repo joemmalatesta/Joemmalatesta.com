@@ -25,7 +25,7 @@
 				{tech}
 			</div>
 			<h3 class="text-3xl font-bold text-white text-center p-1">{title}</h3>
-			<h6 class="font-bold text-center text-sky-300 text-xl">
+			<h6 class="font-bold text-center text-indigo-300 text-xl">
 				{buttonText}
 			</h6>
 		</div>

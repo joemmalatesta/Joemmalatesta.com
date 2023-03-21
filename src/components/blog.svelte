@@ -40,7 +40,7 @@
 						<button
 						on:click={() => {active = 0}}
 							class="{active == 0
-								? 'bg-sky-400 font-semibold'
+								? 'bg-indigo-400 font-semibold'
 								: 'font-normal'} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-black poppins"
 						>
 							{postTypes[0]}
@@ -48,7 +48,7 @@
 						<button
 						on:click={() => {active = 1}}
 							class="{active == 1
-								? 'bg-sky-400 font-semibold'
+								? 'bg-indigo-400 font-semibold'
 								: 'font-normal'} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-black poppins"
 						>
 							{postTypes[1]}
@@ -86,7 +86,7 @@
 			<p class="absolute lg:text-3xl xl:text-4xl xl:w-3/4 z-50 quote font-semibold">{quotes[active]}</p>
 			
 		</div>
-		<!-- <div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-sky-200 via-sky-300 to-sky-400 p-6 rounded-tr-full rounded-bl-full blur-sm">
+		<!-- <div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-indigo-200 via-indigo-300 to-indigo-400 p-6 rounded-tr-full rounded-bl-full blur-sm">
 			<p
 				class="md:text-4xl p-6 font-serif text-2xl"
 			>

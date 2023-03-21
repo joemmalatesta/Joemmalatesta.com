@@ -27,7 +27,7 @@
 						on:click={() => {
 							modalType = "";
 						}}
-						class="py-2 px-12 rounded-lg my-2 bg-sky-400 text-white hover:bg-sky-500 w-full"
+						class="py-2 px-12 rounded-lg my-2 bg-indigo-400 text-white hover:bg-indigo-500 w-full"
 						>Sounds good</button
 					>
 				</div>
@@ -64,7 +64,7 @@
 						on:click={() => {
 							modalType = "";
 						}}
-						class="py-2 px-12 rounded-lg my-2 bg-sky-400 text-white hover:bg-sky-500"
+						class="py-2 px-12 rounded-lg my-2 bg-indigo-400 text-white hover:bg-indigo-500"
 						>Sigh..</button
 					>
 				</div>

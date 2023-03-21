@@ -30,7 +30,7 @@
 			<defs>
 				<linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
-					<stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
+					<stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
 				</linearGradient>
 			</defs>
 			<g
@@ -47,19 +47,19 @@
 	<!-- Main Links -->
 	<div class="flex items-center">
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition duration-100"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-indigo-500 transition duration-100"
 			href="/about">About</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition duration-100"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-indigo-500 transition duration-100"
 			href="/#blog">Blog</a
 		>
 		<a
-			class="mx-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition-all duration-100"
+			class="mx-2 hover:border-b-2 border-spacing-3 border-indigo-500 transition-all duration-100"
 			href="/#projects">Projects</a
 		>
 		<a
-			class="ml-2 hover:border-b-2 border-spacing-3 border-neutral-500 transition-all duration-100"
+			class="ml-2 hover:border-b-2 border-spacing-3 border-indigo-500 transition-all duration-100"
 			href="/#contact">Contact</a
 		>
 	</div>
