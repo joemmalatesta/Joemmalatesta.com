@@ -25,7 +25,7 @@
 	<!-- BLOG AND OTHER CONTENT -->
 	<div class="flex flex-col justify-between xl:justify-center lg:flex-row">
 		<!-- LEFT SIDE -->
-		<div class="mx-3 lg:mx-6 md:my-3 lg:w-1/2">
+		<div class="mx-3 lg:mx-6 md:my-3 lg:w-1/2 xl:mr-16">
 			
 			
 			<!-- SWITCH TYPES -->
@@ -83,16 +83,8 @@
 
 		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
 			<div class="bg-gradient-to-tl from-rose-400/70 via-violet-300/80 to-sky-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
-			<p class="absolute lg:text-3xl xl:text-4xl xl:w-3/4 z-50 quote font-semibold">{quotes[active]}</p>
-			
+			<p class="absolute lg:text-3xl xl:text-4xl xl:w-4/5 z-50 quote font-semibold">{quotes[active]}</p>
 		</div>
-		<!-- <div class="lg:w-2/5 flex items-center mx-5 bg-gradient-to-br from-indigo-200 via-indigo-300 to-indigo-400 p-6 rounded-tr-full rounded-bl-full blur-sm">
-			<p
-				class="md:text-4xl p-6 font-serif text-2xl"
-			>
-				{quotes[active]}
-			</p>
-		</div> -->
 	</div>
 </main>
 
@@ -128,10 +120,10 @@
   }
 }
 .rotating {
-  -webkit-animation: rotating 6s linear infinite;
-  -moz-animation: rotating 6s linear infinite;
-  -ms-animation: rotating 6s linear infinite;
-  -o-animation: rotating 6s linear infinite;
-  animation: rotating 6s linear infinite;
+  -webkit-animation: rotating 8s linear infinite;
+  -moz-animation: rotating 8s linear infinite;
+  -ms-animation: rotating 8s linear infinite;
+  -o-animation: rotating 8s linear infinite;
+  animation: rotating 8s linear infinite;
 }
 </style>
