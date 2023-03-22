@@ -15,7 +15,7 @@
 			url: "https://github.com/joemmalatesta/Auto-Typer",
 			buttonText: "Learn more",
 			image: "projects/auto-typer.jpg",
-			logos: ["python.png", "selenium.png", "matplotlib.png"],
+			logos: ["python.png", "selenium.png", "matplotlib.png", "chromium.png"],
 			colors: ["#b8a6c1", "#8fa770" ]
 		},
 		{
