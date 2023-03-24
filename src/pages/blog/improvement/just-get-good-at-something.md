@@ -6,7 +6,7 @@ description: "Learn why learning anything can benefit you in all future endeavor
 pubDate: "March 23, 2023"
 heroImage: "/blogs/improvement/just-get-good-at-something.jpg"
 ---
-The way baseball players are good quarterbacks, good musicians play multiple Instruments, and video game pros are high level in many games, the idea of general intelligence has been well established for a long time. While it’s obvious that mechanical ability and skill in closely related disciplines will transfer over, I want to argue that learning just about anything can benefit you in all future endeavors. I’m not in a position to speak about how the brain works, but even though Albert Einstein wasn’t some historian, if he told something about history I’d be inclined to believe him. What I’m trying to say is, people that think a lot are generally pretty good thinkers, and people that play sports a lot are pretty good sportsers.
+The way baseball players are good quarterbacks, good musicians play multiple Instruments, and video game pros are high level in many games, the idea of general intelligence has been well established for a long time. While it’s obvious that mechanical ability and skill in closely related disciplines will transfer over, I want to argue that learning just about anything can benefit you in all future endeavors.
 
 ## A process, a method
 
@@ -18,3 +18,7 @@ The idea I’m trying to get at is, don’t worry about the fact that what your 
 
 > Small caveat, but I remember watching TSM Hamlinz play Fortnite when he was considered the best in the world. I remember he said that he would intentionally give himself a disadvantage in order to challenge himself.
 >
+
+## Final thoughts
+
+This article may not seem applicable to some people, but I felt like I had to write it because I’ve probably spent a good two months going back and forth on what programming language, framework, or tools to use and for the most part, I never even stuck with my original choices. Making a decision always led me to a new discovery that eventually took me to where I am now. It’s a stubborn and uncomfortable thing to force decisiveness, but the choices you initially make have little impact on where you will end up. I mean, Amazon started out as a book store… All in all, you should spend far less time contemplating the right thing to learn and more time learning, because when the right opportunity finally does present itself, you’ll need that knowledge to take full advantage of it.
