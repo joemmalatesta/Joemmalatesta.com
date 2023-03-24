@@ -3,7 +3,7 @@ layout: "../../../layouts/BlogPost.astro" #Constant
 title: "The world is ending soon. So what?"
 cardDescription: "The threat of the world ending is increasingly high, here's how to take that news."
 description: "Explore the fear of an uncertain future as the world faces unprecedented challenges. Discover how to navigate the looming sense of doom and find a way to focus on living in the moment rather than worrying about what's out of your control."
-pubDate: "Jan 20, 2023"
+pubDate: "March 18, 2023"
 heroImage: "/blogs/improvement/hawaii-mountain.jpeg"
 imageAlt: "How to deal with impending doom hero image"
 ---
