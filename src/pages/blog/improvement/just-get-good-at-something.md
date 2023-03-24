@@ -4,7 +4,7 @@ title: "Just get good at something"
 cardDescription: "Get good at one thing, and everything else becomes easier"
 description: "Learn why learning anything can benefit you in all future endeavors, and how the process of learning can improve your overall thinking and problem-solving abilities. Discover the importance of diligence, delayed gratification, and self-reflection when pushing through plateaus and frustrations, and how failure can be the best teacher. This blog post argues that it's not the specific thing you learn, but rather the act of learning itself that can have a positive impact on your life."
 pubDate: "March 23, 2023"
-heroImage: "/teaching.jpeg"
+heroImage: "/blogs/improvement/just-get-good-at-something.jpg"
 ---
 The way baseball players are good quarterbacks, good musicians play multiple Instruments, and video game pros are high level in many games, the idea of general intelligence has been well established for a long time. While it’s obvious that mechanical ability and skill in closely related disciplines will transfer over, I want to argue that learning just about anything can benefit you in all future endeavors. I’m not in a position to speak about how the brain works, but even though Albert Einstein wasn’t some historian, if he told something about history I’d be inclined to believe him. What I’m trying to say is, people that think a lot are generally pretty good thinkers, and people that play sports a lot are pretty good sportsers.
 
