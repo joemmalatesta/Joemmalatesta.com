@@ -54,6 +54,18 @@
 			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"],
 			colors : ["#e89850", "#c8bbde"]
 		},
+		{
+			id: 4,
+			title: "Scattergories List Generator",
+			tech: "Svelte, Tailwind, Vercel",
+			description:
+				"A remake of a Scattergories List Generator using SvelteKit and Tailwind",
+			url: "https://scatter.joemmalatesta.com",
+			buttonText: "Live demo",
+			image: "projects/ScatterList.jpg",
+			logos: ["vercel.png", "js.png", "svelte.png", "tailwind.png"],
+			colors : ["#e89850", "#c8bbde"]
+		},
 	];
 	let active;
 	let delay = 0;
