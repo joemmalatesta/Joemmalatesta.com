@@ -57,8 +57,7 @@
 	>
 		<TypeWriter
 			words={[
-				"*Despite everything, it's still you.",
-				"Click the logo to go home.",
+				"404", "Click to go home"
 			]}
 		/>
 	</h1>
@@ -87,6 +86,6 @@
 <style>
 	/* Interesting, actually. 404 Pages automatically wrapped inside of a body tag. I suppose that makes sense, though... */
 	body {
-		@apply m-0 bg-black p-0;
+		@apply m-0 bg-[#222222] p-0;
 	}
 </style>
