@@ -82,7 +82,7 @@
 
 
 		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
-			<div class="bg-gradient-to-tl from-rose-400/70 via-violet-300/80 to-sky-400/70 blur-2xl absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
+			<div class="opacity-40 bg-gradient-to-tl from-purple-400/30 via-indigo-300/40 to-sky-400/30 blur-lg absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
 			<p class="absolute lg:text-3xl xl:text-4xl xl:w-4/5 z-50 quote font-semibold">{quotes[active]}</p>
 		</div>
 	</div>
@@ -120,10 +120,10 @@
   }
 }
 .rotating {
-  -webkit-animation: rotating 8s linear infinite;
-  -moz-animation: rotating 8s linear infinite;
-  -ms-animation: rotating 8s linear infinite;
-  -o-animation: rotating 8s linear infinite;
-  animation: rotating 8s linear infinite;
+  -webkit-animation: rotating 12s linear infinite;
+  -moz-animation: rotating 12s linear infinite;
+  -ms-animation: rotating 12s linear infinite;
+  -o-animation: rotating 12s linear infinite;
+  animation: rotating 12s linear infinite;
 }
 </style>

@@ -94,8 +94,13 @@
 			colors={projects[active].colors}
 		/>
 	</div>
+	{#if projects[active]}
+<div class="flex justify-center items-center">
+<button class="text-center underline text-lg underline-offset-2 hover:underline-offset-4 transition-all" on:click={() => {active = null}}>Reset View</button>
+</div>
+{/if}
 	{/if}
-	<div class="flex items-center {projects[active] ? "justify-between" : "flex-wrap justify-center"}">
+	<div class="flex items-center flex-wrap justify-center">
 		{#each projects as project, index}
 			{#if index != active}
 				<div
@@ -122,11 +127,7 @@
 		{/each}
 	</div>
 </div>
-{#if projects[active]}
-<div class="flex justify-center items-center">
-<button class="text-center underline text-lg underline-offset-2 hover:underline-offset-4 transition-all" on:click={() => {active = null}}>Reset View</button>
-</div>
-{/if}
+
 
 
 <!-- Maybe use for phone sizes.  -->
