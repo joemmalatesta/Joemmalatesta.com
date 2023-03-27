@@ -63,7 +63,7 @@
 			url: "https://scatter.joemmalatesta.com",
 			buttonText: "Live demo",
 			image: "projects/ScatterList.jpg",
-			logos: ["vercel.png", "js.png", "svelte.png", "tailwind.png"],
+			logos: ["vercel.png", "ts.png", "svelte.png", "tailwind.png"],
 			colors : ["#e89850", "#c8bbde"]
 		},
 	];
