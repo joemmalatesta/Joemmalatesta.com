@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/BlogPost.astro" #Constant
-title: "Just get good at something"
+title: "Get good at something, anything"
 cardDescription: "Get good at one thing, and everything else becomes easier"
 description: "Learn why learning anything can benefit you in all future endeavors, and how the process of learning can improve your overall thinking and problem-solving abilities. Discover the importance of diligence, delayed gratification, and self-reflection when pushing through plateaus and frustrations, and how failure can be the best teacher. This blog post argues that it's not the specific thing you learn, but rather the act of learning itself that can have a positive impact on your life."
 pubDate: "March 23, 2023"
