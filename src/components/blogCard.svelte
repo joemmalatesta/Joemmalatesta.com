@@ -20,7 +20,7 @@
 
 <!-- This looked okay--  hover:bg-violet-400 -->
 <div
-	class="flex flex-col container border-b-2 border-slate-200/20 p-2"
+	class="flex flex-col container border-b-2 border-slate-200/20 p-2 py-4"
 	on:mouseenter={() => {
 		showToggle = true;
 	}}
@@ -29,14 +29,7 @@
 	}}
 >
 	<div
-		class="flex flex-row justify-between items-center cursor-pointer"
-		on:click={() => {
-			active = !active;
-		}}
-		on:keypress={() => {
-			active = !active;
-		}}
-		>
+		class="flex flex-row justify-between items-center cursor-pointer">
 		<div class="w-fit">
 			<h6 class="text-sm text-slate-400 font-light">{date}</h6>
 			<h4 class="text-lg md:text-xl 2xl:text-2xl font-semibold poppins">{title}</h4>

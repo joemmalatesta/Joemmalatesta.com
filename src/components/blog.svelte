@@ -3,9 +3,10 @@
 	import Footer from "../components/Footer.astro";
 	import BlogCard from "../components/blogCard.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
-	import { crossfade, fade, slide } from "svelte/transition";
+	import { crossfade, fade, slide, fly } from "svelte/transition";
 	export let postTypes;
 	export let posts;
+	let activeType = 0;
 	let active = 0;
 	export let quotes;
 </script>
@@ -31,23 +32,22 @@
 			<!-- SWITCH TYPES -->
 			<div
 				class=" flex justify-center md:justify-start"
-				transition:crossfade={{ duration: 200 }}
 			>
 				<div
 					class="p-1 py-2 bg-slate-200 text-white rounded-lg"
 				>
 					<div class="flex">
 						<button
-						on:click={() => {active = 0}}
-							class="{active == 0
+						on:click={() => {activeType = 0; active = 0}}
+							class="{activeType == 0
 								? 'bg-indigo-400 font-semibold'
 								: 'font-normal'} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-black poppins"
 						>
 							{postTypes[0]}
 							</button>
 						<button
-						on:click={() => {active = 1}}
-							class="{active == 1
+						on:click={() => {activeType = 1; active = 0}}
+							class="{activeType == 1
 								? 'bg-indigo-400 font-semibold'
 								: 'font-normal'} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-black poppins"
 						>
@@ -59,11 +59,17 @@
 
 
 			<!-- Blog part -->
+
+				
+			
 			<div
 				class="flex flex-col items-start justify-center"
 			>
 			
-				{#each posts[active].slice(0, 5) as post}
+				{#each posts[activeType].slice(0, 5) as post, index}
+				<div class="w-full"
+				on:click={() => {active = index}}
+				on:keypress={() => {active = index}}>
 					<BlogCard
 						client:load
 						title={post.frontmatter.title}
@@ -71,10 +77,13 @@
 						date={post.frontmatter.pubDate}
 						url={post.url}
 						image={post.frontmatter.heroImage}
+						active={index == active ? true: false}
 					/>
+				</div>
 				{/each}
 			
 			</div>
+
 		</div>
 
 		<!-- Quote / other portion -->
@@ -82,8 +91,10 @@
 
 
 		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
-			<div class="opacity-40 bg-gradient-to-tl from-purple-400/30 via-indigo-300/40 to-sky-400/30 blur-lg absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
-			<p class="absolute lg:text-3xl xl:text-4xl xl:w-4/5 z-50 quote font-semibold">{quotes[active]}</p>
+			<div class="opacity-40 bg-gradient-to-tl from-indigo-400 to-neutral-200  blur-lg absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
+			{#key activeType}
+			<p class="absolute lg:text-3xl xl:text-4xl xl:w-4/5 z-50 font-serif" in:slide={{delay:400, duration:500}} out:slide={{duration:500}}>{quotes[activeType]}</p>
+			{/key}
 		</div>
 	</div>
 </main>
