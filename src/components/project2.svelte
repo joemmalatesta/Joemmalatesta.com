@@ -5,6 +5,8 @@
 	import { slide, fade, crossfade, fly } from "svelte/transition";
 	import { flip } from "svelte/animate";
 
+
+
 	const projects = [
 		{
 			id: 0,
@@ -16,7 +18,7 @@
 			buttonText: "Learn more",
 			image: "projects/auto-typer.jpg",
 			logos: ["python.png", "selenium.png", "matplotlib.png", "chromium.png"],
-			colors: ["#b8a6c1", "#8fa770" ]
+			colors: ["#b8a6c1", "#8fa770"],
 		},
 		{
 			id: 1,
@@ -28,7 +30,7 @@
 			buttonText: "Visit old site",
 			image: "projects/old-website.jpg",
 			logos: ["bootstrap.png", "css.png", "html.png", "github.svg"],
-			colors : ["#1d1d1d", "#70a1b1"]
+			colors: ["#1d1d1d", "#70a1b1"],
 		},
 		{
 			id: 2,
@@ -40,7 +42,7 @@
 			buttonText: "Learn more",
 			image: "projects/yvy-bot.jpg",
 			logos: ["python.png", "pi.png", "mongo.png", "osu.png"],
-			colors : ["#33333a", "#b4ac9c", "#33387d"]
+			colors: ["#33333a", "#b4ac9c", "#33387d"],
 		},
 		{
 			id: 3,
@@ -52,7 +54,7 @@
 			buttonText: "Live demo",
 			image: "projects/capchart.jpg",
 			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"],
-			colors : ["#e89850", "#c8bbde"]
+			colors: ["#e89850", "#c8bbde"],
 		},
 		{
 			id: 4,
@@ -64,41 +66,48 @@
 			buttonText: "Live demo",
 			image: "projects/ScatterList.jpg",
 			logos: ["vercel.png", "ts.png", "svelte.png", "tailwind.png"],
-			colors : ["#e89850", "#c8bbde"]
+			colors: ["#e89850", "#c8bbde"],
 		},
 	];
 	let active;
 	let delay = 0;
 </script>
 
-
 <SectionHeader
 	title={"Projects"}
 	subtitle={"blood, sweat, and carpal tunnel has lead me to this"}
 />
 
-
 <div class="lg:flex flex-col hidden justify-center items-center py-3">
 	{#if projects[active]}
-	<div class="p-6 rounded-lg xl:w-3/4 w-full relative z-10">
-	<div 
-	class="w-full scale-100 h-full absolute inset-0 -z-10 bg-gradient-to-r from-rose-300 via-violet-300 to-sky-300 blur-2xl ring-slate-300 ring-4 opacity-25" />
-		<ProjectCard2
-			title={projects[active].title}
-			tech={projects[active].tech}
-			description={projects[active].description}
-			url={projects[active].url}
-			buttonText={projects[active].buttonText}
-			image={projects[active].image}
-			active={true}
-			colors={projects[active].colors}
-		/>
-	</div>
-	{#if projects[active]}
-<div class="flex justify-center items-center">
-<button class="text-center underline text-lg underline-offset-2 hover:underline-offset-4 transition-all" on:click={() => {active = null}}>Reset View</button>
-</div>
-{/if}
+		
+			<div class="p-6 rounded-lg xl:w-3/4 w-full relative z-10" >
+
+				<div
+					class="w-full scale-100 h-full absolute inset-0 -z-10 bg-gradient-to-r from-rose-300 via-violet-300 to-sky-300 blur-2xl ring-slate-300 ring-4 opacity-25"
+				/>
+				<ProjectCard2
+					title={projects[active].title}
+					tech={projects[active].tech}
+					description={projects[active].description}
+					url={projects[active].url}
+					buttonText={projects[active].buttonText}
+					image={projects[active].image}
+					active={true}
+					colors={projects[active].colors}
+				/>
+			</div>
+		
+		{#if projects[active]}
+			<div class="flex justify-center items-center">
+				<button
+					class="text-center underline text-lg underline-offset-2 hover:underline-offset-4 transition-all"
+					on:click={() => {
+						active = null;
+					}}>Reset View</button
+				>
+			</div>
+		{/if}
 	{/if}
 	<div class="flex items-center flex-wrap justify-center">
 		{#each projects as project, index}
@@ -127,8 +136,6 @@
 		{/each}
 	</div>
 </div>
-
-
 
 <!-- Maybe use for phone sizes.  -->
 

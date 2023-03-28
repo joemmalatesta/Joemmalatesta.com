@@ -10,7 +10,7 @@
 {#if active}
 	<div class="flex">
 		<div class="w-1/2">
-			<img src={image} alt="{title} image" class="object-cover rounded-xl" />
+			<img src={image} alt="{title} image" class="object-cover rounded-xl aspect-video" />
 		</div>
 		<div class="w-1/2 flex flex-col justify-center items-start mx-5"
 		>
