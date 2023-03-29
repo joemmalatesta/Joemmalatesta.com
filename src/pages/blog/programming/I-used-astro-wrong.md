@@ -10,7 +10,7 @@ A few months ago, I set out to create a blog and actually stick to writing for i
 
 ## What is Astro?
 Astro doesn't lie to you. It knows what it's good at and knows where it falls short, and admits its shortcomings openly. It's a content focused framework that boasts a short learning curve, a good developer experience, and seamless integration with your favorite tools. Astro was the obvious choice for me because it's [fast](https://docs.astro.build/en/concepts/islands/), well suited for SEO, supports integration with Svelte and Tailwind, and, above all else, accepts markdown files as pages in your site. After struggling hard with SvelteKit, trying my luck with Astro was an incredibly easy and calming process.
-### Where I messed up up
+### Where I messed up
 After working on the site for a while though, I pretty much ended up with a live playground of [silly](https://www.joemmalatesta.com/404) Svelte components - so much so that my Github repository isn't even marked "Astro" anymore. I inadvertently avoided most of Astro's best features and my initial goal, and I'm not proud of it. The content on my "content focused website" turned into a small column in the middle of the homepage and it's a miracle that you're even reading this.
 ## What else went wrong
 #### Code design issues
