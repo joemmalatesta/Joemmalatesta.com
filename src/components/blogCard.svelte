@@ -18,7 +18,7 @@
 	import { slide } from "svelte/transition";
 </script>
 
-<!-- This looked okay--  hover:bg-violet-400 -->
+
 <div
 	class="flex flex-col container border-b-2 border-slate-200/20 p-2 py-4"
 	on:mouseenter={() => {
@@ -48,7 +48,7 @@
 	</div>
 	{#if active}
 		<div transition:slide>
-			<p class="lg:text-lg">{description}</p>
+			<p class="lg:text-lg opacity-90 font-thin">{description}</p>
 
 			<a href={url} class="flex items-center lg:text-xl text-lg font-semibold py-2 text-indigo-400 w-fit"
             on:mouseenter={() => {urlHover = true }}
