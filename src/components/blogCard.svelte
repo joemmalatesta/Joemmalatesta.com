@@ -2,10 +2,12 @@
 	//TODO.. no more arrow just click and it will become active
 	export let title, description, date, url, image;
 	export let active = false;
+	export let forceOpen = false
 	let showToggle = false;
 	let arrowSize = 20;
 	let screenWidth;
 	let urlHover = false
+	
 	$: if (screenWidth < 1024) {
 		arrowSize = 15;
 	}
@@ -35,20 +37,15 @@
 			<h4 class="text-lg md:text-xl 2xl:text-2xl font-semibold poppins">{title}</h4>
 		</div>
 		<!-- This causing issues on phone screen -->
-		{#if showToggle || active || screenWidth < 1024} 
+		{#if showToggle && !forceOpen || active && !forceOpen || screenWidth < 1024 && !forceOpen} 
 		<div>
-			<img
-				src="arrow.svg"
-				alt="expand blog card"
-				class="{turnArrow}rotate-90 transition duration-300"
-				width={arrowSize}
-			/>
+			<svg xmlns="http://www.w3.org/2000/svg" width={arrowSize} height="24" viewBox="0 0 24 24" fill="#cbd5e1" class="{turnArrow}rotate-90 transition duration-300"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
 		</div>
 		{/if}
 	</div>
-	{#if active}
+	{#if active || forceOpen}
 		<div transition:slide>
-			<p class="lg:text-lg opacity-90 font-thin">{description}</p>
+			<p class="lg:text-lg opacity-90 font-light font-sans">{description}</p>
 
 			<a href={url} class="flex items-center lg:text-xl text-lg font-semibold py-2 text-indigo-400 w-fit"
             on:mouseenter={() => {urlHover = true }}

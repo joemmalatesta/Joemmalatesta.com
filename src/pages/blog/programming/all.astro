@@ -1,9 +1,9 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import BlogCard from "../components/blogCard.svelte";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.svelte";
-const techPosts = (await Astro.glob("../pages/blog/programming/*.{md,mdx}")).sort(
+import BaseHead from "../../../components/BaseHead.astro";
+import BlogCard from "../../../components/blogCard.svelte";
+import Footer from "../../../components/Footer.astro";
+import Header from "../../../components/Header.svelte";
+const techPosts = (await Astro.glob("./*.{md,mdx}")).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
 		new Date(a.frontmatter.pubDate).valueOf()
@@ -17,7 +17,7 @@ const techPosts = (await Astro.glob("../pages/blog/programming/*.{md,mdx}")).sor
 </head>
 <body>
     <Header client:load/>
-    <div class="flex flex-col items-start justify-center">
+    <div class="flex flex-col items-center justify-center my-10">
 
         {
             techPosts
@@ -28,6 +28,7 @@ const techPosts = (await Astro.glob("../pages/blog/programming/*.{md,mdx}")).sor
                         date={post.frontmatter.pubDate}
                         url={post.url}
                         image={post.frontmatter.heroImage}
+                        forceOpen={true}
                     />
                 ))
         }

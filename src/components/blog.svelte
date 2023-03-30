@@ -9,6 +9,13 @@
 	let activeType = 0;
 	let active = 0;
 	export let quotes;
+	let seeAllLink;
+	$: if(activeType == 0){
+		seeAllLink = "/blog/programming/all"
+	}
+	else{
+		seeAllLink = "/blog/improvement/all"
+	}
 </script>
 
 <!-- <head>
@@ -24,117 +31,112 @@
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
-	<div class="flex flex-col justify-between xl:justify-center lg:flex-row">
+	<div class="flex flex-col justify-between xl:justify-center md:flex-row">
 		<!-- LEFT SIDE -->
-		<div class="mx-3 lg:mx-6 md:my-3 lg:w-1/2 xl:mr-16">
-			
-			
+		<div class="mx-3 lg:mx-6 md:my-3 lg:w-2/3 md:w-3/4 xl:mr-16">
 			<!-- SWITCH TYPES -->
-			<div
-				class=" flex justify-center md:justify-start"
-			>
-				<div
-					class="p-1 py-2 bg-slate-200 text-white rounded-lg"
-				>
+			<div class=" flex justify-center md:justify-start">
+				<div class="p-1 py-2 bg-slate-200 text-white rounded-lg">
 					<div class="flex">
 						<button
-						on:click={() => {activeType = 0; active = 0}}
+							on:click={() => {
+								activeType = 0;
+								active = 0;
+							}}
 							class="{activeType == 0
 								? 'bg-indigo-400 font-semibold'
 								: 'font-normal'} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-black poppins"
 						>
 							{postTypes[0]}
-							</button>
+						</button>
 						<button
-						on:click={() => {activeType = 1; active = 0}}
+							on:click={() => {
+								activeType = 1;
+								active = 0;
+							}}
 							class="{activeType == 1
 								? 'bg-indigo-400 font-semibold'
 								: 'font-normal'} mx-2 p-1 transition-all ease-in-out rounded-md hover:scale-105 active:scale-95 text-black poppins"
 						>
 							{postTypes[1]}
-							</button>
+						</button>
 					</div>
 				</div>
 			</div>
 
-
 			<!-- Blog part -->
 
-				
-			
-			<div
-				class="flex flex-col items-start justify-center"
-			>
-			
+			<div class="flex flex-col items-start justify-center">
 				{#each posts[activeType].slice(0, 5) as post, index}
-				<div class="w-full"
-				on:click={() => {active = index}}
-				on:keypress={() => {active = index}}>
-					<BlogCard
-						client:load
-						title={post.frontmatter.title}
-						description={post.frontmatter.cardDescription}
-						date={post.frontmatter.pubDate}
-						url={post.url}
-						image={post.frontmatter.heroImage}
-						active={index == active ? true: false}
-					/>
-				</div>
+					<div
+						class="w-full"
+						on:click={() => {
+							active = index;
+						}}
+						on:keypress={() => {
+							active = index;
+						}}
+					>
+						<BlogCard
+							client:load
+							title={post.frontmatter.title}
+							description={post.frontmatter.cardDescription}
+							date={post.frontmatter.pubDate}
+							url={post.url}
+							image={post.frontmatter.heroImage}
+							active={index == active ? true : false}
+						/>
+					</div>
 				{/each}
-			
 			</div>
-
+			<a class="px-2 text-lg text-indigo-400 underline underline-offset-2 hover:underline-offset-4 transition-all" href="{seeAllLink}">See All</a>
 		</div>
-
-		<!-- Quote / other portion -->
-		<!-- Maybe should do a specific signup for newsletter and the quote next to it so it doesn't look so shit -->
-
-
-		<div class="relative w-1/3 justify-center items-center hidden lg:flex">
-			<div class="opacity-40 bg-gradient-to-tl from-indigo-400 to-neutral-200  blur-lg absolute w-96 outline h-96 rounded-full xl:translate-x-32 translate-x-24 z-40 rotating" />
-			{#key activeType}
-			<p class="absolute lg:text-3xl xl:text-4xl xl:w-4/5 z-50 font-serif" in:slide={{delay:400, duration:500}} out:slide={{duration:500}}>{quotes[activeType]}</p>
-			{/key}
-		</div>
+		<!-- Right side -->
+		<!-- <div class="lg:w-1/3 md:w-1/4 hidden md:flex items-center justify-center flex-col mx-2">
+			<img src="{posts[activeType][active].frontmatter.heroImage}" alt="" class="aspect-square object-cover">
+			<div class="flex flex-col hidden">
+				<h3>Subscribe to the newsletter now</h3>
+				<input type="email" >
+				<button class="w-full bg-indigo-400 hover:bg-indigo-500 p-2 rounded-lg">Subscribe</button>
+			</div>
+		</div> -->
 	</div>
 </main>
 
-
-
 <style>
 	@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotating {
-  -webkit-animation: rotating 12s linear infinite;
-  -moz-animation: rotating 12s linear infinite;
-  -ms-animation: rotating 12s linear infinite;
-  -o-animation: rotating 12s linear infinite;
-  animation: rotating 12s linear infinite;
-}
+		from {
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		to {
+			-webkit-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes rotating {
+		from {
+			-ms-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		to {
+			-ms-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+	.rotating {
+		-webkit-animation: rotating 12s linear infinite;
+		-moz-animation: rotating 12s linear infinite;
+		-ms-animation: rotating 12s linear infinite;
+		-o-animation: rotating 12s linear infinite;
+		animation: rotating 12s linear infinite;
+	}
 </style>
