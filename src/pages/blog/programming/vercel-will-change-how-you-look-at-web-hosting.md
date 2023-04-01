@@ -4,7 +4,7 @@ title: "Vercel will change how you look at Web Hosting"
 cardDescription: "Simple was never used to describe website deployment until Vercel came along..."
 description: "Vercel has it all: from simple one click solutions to the support, development, and investment for small frameworks, I could not be happier with my experience using the platform, or the goals that it strives to achieve"
 pubDate: "March 31, 2023"
-heroImage: "/blogs/programming/in-defense-of-technical-interviews.jpg"
+heroImage: "/blogs/programming/vercel-will-change-how-you-look-at-web-hosting.webp"
 ---
 The first time I needed to deploy a site, I spent so much time worrying about how I was going to host it. I thought that if I wanted server functions, my only options were either to pay money or use my raspberry pi. For my first website, I was fine throwing away the server functionality because it was pretty trivial, but I understood at some point I was going to need it. I decided to look a bit further into my options and even write a professor of mine a (retrospectively) embarrassing email asking about hosting from a VM. A few months after, my group and I used Heroku for a school project and it seemed easy enough so I figured that’s what I would use, but by the end of the semester Heroku had removed their free tier - and thank god they did. It forced me to do a bit more digging and stumble upon a world of simplicity: Vercel.
 
