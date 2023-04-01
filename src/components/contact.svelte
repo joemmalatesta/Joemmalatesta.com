@@ -6,7 +6,9 @@
 	let showEmailError = false;
 	let modalType = "";
 	let possibleNames = ["Carl Jung", "Ayn Rand", "Noam Chomsky", "Jane Goodall", "Playboy Carti", "James Clear", "Joe Malatesta", "Kanye West", "Jermaine Cole", "Art Tatum", "Shigetora"]
+	let possibleTopics = ["prime fishing spots", "yellow journalism", "low level chess strategy", "how to dodge the draft", "code hoisting", "[Object object]", "the movie ready player one", "this website", "how often you should wash your bed sheets", "the correct inseam for mens shorts", "proper deadlift form", "2016 memes", "the price of dentures", "unnecessary ice cream flavors"]
 	let placeholderName = possibleNames[Math.floor(Math.random() * possibleNames.length)];
+	let topic = possibleTopics[Math.floor(Math.random() * possibleTopics.length)];
 	function sendEmail() {
 		if (validateForm() == false) {
 			console.log("here");
@@ -54,7 +56,7 @@
 <Modal bind:modalType />
 
 <main>
-	<SectionHeader title={"Contact"} subtitle={"Say what you gotta say"} />
+	<SectionHeader title={"Contact"} subtitle={`We can discuss ${topic}. or anything else`} />
 	<div class="flex justify-center">
 		<form method="POST" class="mx-3 flex flex-col md:w-2/3 w-full">
 			<!-- Email and Name -->
@@ -97,7 +99,7 @@
 					name="message"
 					id="message"
 					bind:value={message}
-					placeholder="Hey Joe, this is totally random but..."
+					placeholder="Joe, my thoughts on {topic} are..."
 					class="bg-slate-200/95 placeholder:text-slate-800/70 appearance-none ring-2 ring-slate-500 p-2 focus:outline-none focus:ring-slate-200/80 focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-20 rounded-lg  drop-shadow-lg text-black h-40"
 				/>
 			</div>
