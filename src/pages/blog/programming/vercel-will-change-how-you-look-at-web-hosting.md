@@ -1,0 +1,21 @@
+---
+layout: "../../../layouts/BlogPost.astro" #Constant
+title: "Vercel will change how you look at Web Hosting"
+cardDescription: "Simple was never used to describe website deployment until Vercel came along..."
+description: "Vercel has it all: from simple one click solutions to the support, development, and investment for small frameworks, I could not be happier with my experience using the platform, or the goals that it strives to achieve"
+pubDate: "March 31, 2023"
+heroImage: "/blogs/programming/in-defense-of-technical-interviews.jpg"
+---
+The first time I needed to deploy a site, I spent so much time worrying about how I was going to host it. I thought that if I wanted server functions, my only options were either to pay money or use my raspberry pi. For my first website, I was fine throwing away the server functionality because it was pretty trivial, but I understood at some point I was going to need it. I decided to look a bit further into my options and even write a professor of mine a (retrospectively) embarrassing email asking about hosting from a VM. A few months after, my group and I used Heroku for a school project and it seemed easy enough so I figured that’s what I would use, but by the end of the semester Heroku had removed their free tier - and thank god they did. It forced me to do a bit more digging and stumble upon a world of simplicity: Vercel.
+
+## Vercel’s immense impact
+
+I feel so at home on Vercel’s website. In a modern ecosystem of [bugs and inconsistency,]([https://youtu.be/FeAMiBKi_EM?t=2](https://youtu.be/FeAMiBKi_EM?t=247)48) I’m confident that all errors I’ve had with Vercel are attributed to my own mistakes. Their UI is beautiful and natural to interact with, the hosting presets they provide are beyond extensive, and all deployment failures I’ve had were simply because I didn’t have the Astro module updated in my code. I love that the benefits of using new technologies and frameworks isn’t ruined by headaches during the hosting process because Vercel is so on top of the game. They’re not just keeping up with the game, either - they’re investing in improvements to the web development ecosystem by sponsoring events, developing multiple open source, [meta frameworks]([https://prismic.io/blog/javascript-meta-frameworks-ecosystem](https://prismic.io/blog/javascript-meta-frameworks-ecosystem)), and even hiring Rich Harris to work full time on SvelteKit.
+
+## Little gems of simplicity
+
+Somehow, some way, Vercel managed to create and publish my website to a subdomain of my main website with a single click. A **Single Click**. This was my first time publishing to a subdomain on Vercel, and it was able to do it in a single click with no DNS configuration from me at all. While Github Pages provided a pretty good service for hosting - linking my website to a domain, let alone a subdomain, was more of a pain than it apparently needed to be. Also, when I needed to use environment variables for setting up my contact form; Vercel provided detailed, easy to find documentation that walked me through adding them and instantly redeployed with 0 further configuration. I’m incredibly impressed with the user experience that Vercel is able to provide, and I’m glad that they’re focused on simplicity for even the smallest of tasks.
+
+## A dream job
+
+Since my first time using Vercel, I’ve been talking about it to everyone that will listen - to the point where even my sister could tell you that working at Vercel is a dream of mine. When I say that I want to contribute to a company that’s pushing the boundaries of technology, I’m talking about Vercel. It’s my dream to be able to join an ecosystem with such forward thinking people working together to form a straight forward, clean cut, and incredibly useful application. I’m certain that I’ll end up somewhere that inspires me the way Vercel does, because the difference I can make when I truly care about the mission and the end user is 100x greater than it is when I’m working to fatten somebody else’s pocket.
