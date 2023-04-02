@@ -3,6 +3,7 @@ import BaseHead from "../../../components/BaseHead.astro";
 import BlogCard from "../../../components/blogCard.svelte";
 import Footer from "../../../components/Footer.astro";
 import Header from "../../../components/Header.svelte";
+import Subscribe from "../../../components/subscribe.svelte";
 const improvementPosts = (
 	await Astro.glob("./*.{md,mdx}")).sort(
 	(a, b) =>
@@ -19,7 +20,7 @@ const improvementPosts = (
 <body>
     <Header client:load/>
     <div class="flex flex-col items-center justify-center my-10">
-
+        <Subscribe client:load/>
         {
             improvementPosts
                 .map((post) => (

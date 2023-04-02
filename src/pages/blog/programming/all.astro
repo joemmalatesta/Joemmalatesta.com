@@ -3,6 +3,7 @@ import BaseHead from "../../../components/BaseHead.astro";
 import BlogCard from "../../../components/blogCard.svelte";
 import Footer from "../../../components/Footer.astro";
 import Header from "../../../components/Header.svelte";
+import Subscribe from "../../../components/subscribe.svelte";
 const techPosts = (await Astro.glob("./*.{md,mdx}")).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
@@ -18,7 +19,7 @@ const techPosts = (await Astro.glob("./*.{md,mdx}")).sort(
 <body>
     <Header client:load/>
     <div class="flex flex-col items-center justify-center my-10">
-
+        <Subscribe client:load/>
         {
             techPosts
                 .map((post) => (

@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.svelte';
 import Newsletter from '../components/Newsletter.svelte';
+import Subscribe from '../components/subscribe.svelte';
 
 export interface Props {
 	content: {
@@ -29,14 +30,17 @@ const {
 	<body>
 		<!-- HEADER DOESN'T WORK ON THIS PAGE.. PLEASE TELL ME WHY -->
 		<Header client:load />
-		<main class="md:mx-auto prose prose-invert prose-indigo md:prose-lg mx-6 prose-md pb-5 prose-quoteless">
-			<article>
+		<main >
+			<article class="md:mx-auto prose prose-invert prose-indigo md:prose-lg mx-6 prose-md pb-5 prose-quoteless">
 				<!-- Should Provide an Alt -->
-				{heroImage && <img class="object-cover" src={heroImage} alt={imageAlt} />}
+				<!-- Don't really need an image -->
+				<!-- {heroImage && <img class="object-cover" src={heroImage} alt={imageAlt} />} -->
 
 				<!-- && means, show if pubDate has a value -->
+				<div class="mt-4">
 				{pubDate && <time>{pubDate}</time>}
 				<h1>{title}</h1>
+				</div>
 
 				
 				<!-- This is where the actual MD part goes. -->
@@ -46,8 +50,11 @@ const {
 				<!-- <div class="my-5">
 					<Newsletter client:load/>
 				</div> -->
-
+				
 			</article>
+			<div class="flex justify-center items-center my-3">
+			<Subscribe client:load forPost={true}/>
+			</div>
 			
 		</main>
 		<Footer />
