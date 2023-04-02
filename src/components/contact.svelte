@@ -107,7 +107,7 @@
 				<h6 class="text-red-500 text-sm mx-2">All fields must be filled out</h6>
 			{/if}
 			<button
-				class="p-2 bg-indigo-400 hover:bg-indigo-500 text-white rounded-lg"
+				class="p-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg"
 				on:click|preventDefault={sendEmail}>Get in Touch</button
 			>
 		</form>

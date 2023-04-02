@@ -2,8 +2,10 @@
 	import BaseHead from "../components/BaseHead.astro";
 	import Footer from "../components/Footer.astro";
 	import BlogCard from "../components/blogCard.svelte";
+	import { subscribe } from "svelte/internal";
 	import SectionHeader from "./SectionHeader.svelte";
 	import { crossfade, fade, slide, fly } from "svelte/transition";
+  import Subscribe from "./subscribe.svelte";
 	export let postTypes;
 	export let posts;
 	let activeType = 0;
@@ -33,7 +35,7 @@
 	<!-- BLOG AND OTHER CONTENT -->
 	<div class="flex flex-col justify-between xl:justify-center md:flex-row">
 		<!-- LEFT SIDE -->
-		<div class="mx-3 lg:mx-6 md:my-3 lg:w-2/3 md:w-3/4 xl:mr-16">
+		<div class="mx-3 lg:mx-6 md:my-3 lg:w-1/2 md:w-3/4 xl:mr-16">
 			<!-- SWITCH TYPES -->
 			<div class=" flex justify-center md:justify-start">
 				<div class="p-1 py-2 bg-slate-200 text-white rounded-lg">
@@ -88,18 +90,13 @@
 						/>
 					</div>
 				{/each}
+				<a class="px-2 text-lg text-indigo-400 underline underline-offset-2 hover:underline-offset-4 transition-all" href="{seeAllLink}">See All</a>
 			</div>
-			<a class="px-2 text-lg text-indigo-400 underline underline-offset-2 hover:underline-offset-4 transition-all" href="{seeAllLink}">See All</a>
 		</div>
 		<!-- Right side -->
-		<!-- <div class="lg:w-1/3 md:w-1/4 hidden md:flex items-center justify-center flex-col mx-2">
-			<img src="{posts[activeType][active].frontmatter.heroImage}" alt="" class="aspect-square object-cover">
-			<div class="flex flex-col hidden">
-				<h3>Subscribe to the newsletter now</h3>
-				<input type="email" >
-				<button class="w-full bg-indigo-400 hover:bg-indigo-500 p-2 rounded-lg">Subscribe</button>
-			</div>
-		</div> -->
+		<div class="flex lg:w-1/3 justify-center items-center">
+			<Subscribe />
+		</div>
 	</div>
 </main>
 

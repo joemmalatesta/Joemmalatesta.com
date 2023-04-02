@@ -33,14 +33,16 @@
 	<div
 		class="flex flex-row justify-between items-center cursor-pointer">
 		<div class="w-fit">
+			{#if forceOpen}
 			<h6 class="text-sm text-slate-400 font-light">{date}</h6>
-			<h4 class="text-lg md:text-xl 2xl:text-2xl font-semibold poppins">{title}</h4>
+			{/if}
+			<h4 class="text-lg md:text-xl 2xl:text-2xl font-semibold quote">{title}</h4>
 		</div>
 		<!-- This causing issues on phone screen -->
 		{#if showToggle && !forceOpen || active && !forceOpen || screenWidth < 1024 && !forceOpen} 
-		<div>
+		<!-- <div>
 			<svg xmlns="http://www.w3.org/2000/svg" width={arrowSize} height="24" viewBox="0 0 24 24" fill="#cbd5e1" class="{turnArrow}rotate-90 transition duration-300"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
-		</div>
+		</div> -->
 		{/if}
 	</div>
 	{#if active || forceOpen}
