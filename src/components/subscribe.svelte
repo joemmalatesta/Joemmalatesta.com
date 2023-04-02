@@ -1,3 +1,6 @@
+<!-- Note for this, for some reason, you need to use translate-y-[..rem] for phone sizes. Not sure why but ok..
+	wait but it works for one of them. I'm so confused...
+-->
 <script>
 	// You know, the classic
 	const sleep = (milliseconds) => {
@@ -14,7 +17,7 @@
 
 	//Change message If I want. It looks good without changing though
 	$: if (hideExtras) {
-		message = "Success!";
+		message = "Get Notified";
 	} else {
 		message = "Get Notified";
 	}
@@ -70,56 +73,56 @@ async function animate(){
 			<h4 class="text-indigo-100 outline-text">{message}</h4>
 			<div
 				class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-[2.5rem] translate-y-10 bg-opacity-100'
+					? 'lg:translate-y-[2.5rem] translate-y-[1.5rem] bg-opacity-100'
 					: 'bg-opacity-70'} transition-all duration-700 -z-10"
 			>
 				<p>{message}</p>
 			</div>
 			<div
-				class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-20 translate-y-10 bg-opacity-100'
+				class="absolute  inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+					? 'lg:translate-y-20 translate-y-[3rem] bg-opacity-100'
 					: 'bg-opacity-0'} transition-all duration-700 -z-10"
 			>
 				<p>{message}</p>
 			</div>
 			<div
-				class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-[7.5rem] translate-y-10 bg-opacity-100'
+				class="absolute  inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+					? 'lg:translate-y-[7.5rem] translate-y-[4.5rem] bg-opacity-100'
 					: 'bg-opacity-0'} transition-all duration-700 -z-10"
 			>
 				<p>{message}</p>
 			</div>
 			<div
 				class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
-					? 'lg:translate-y-40 translate-y-20 bg-opacity-100'
+					? 'lg:translate-y-40 translate-y-[6rem] bg-opacity-100'
 					: 'bg-opacity-60'} transition-all duration-700  -z-20"
 			>
 				<p>{message}</p>
 			</div>
 			<div
 				class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-[12.5rem] translate-y-20 bg-opacity-100'
+					? 'lg:translate-y-[12.5rem] translate-y-[7.5rem] bg-opacity-100'
 					: 'bg-opacity-0'} transition-all duration-700  -z-20"
 			>
 				<p>{message}</p>
 			</div>
 			<div
-				class="absolute inset-0 translate-y-9  bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
-					? 'lg:translate-y-60 translate-y-[7.5rem] bg-opacity-100'
+				class="absolute inset-0 translate-y-9 bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
+					? 'lg:translate-y-60 translate-y-[9rem] bg-opacity-100'
 					: 'bg-opacity-50'} transition-all duration-700  -z-30"
 			>
 				<p>{message}</p>
 			</div>
 			<div
 				class="absolute inset-0 translate-y-9  bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
-					? 'lg:translate-y-[17.5rem] translate-y-[7.5rem] bg-opacity-100'
+					? 'lg:translate-y-[17.5rem] translate-y-[10.5rem] bg-opacity-100'
 					: 'bg-opacity-0'} transition-all duration-700  -z-30"
 			>
 				<p>{message}</p>
 			</div>
 			<div
 				class="absolute inset-0 translate-y-12  bg-indigo-600 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-80 translate-y-40 bg-opacity-100'
+					? 'lg:translate-y-80 translate-y-[12rem] bg-opacity-100'
 					: 'bg-opacity-40'} transition-all duration-700  -z-40 "
 			>
 				<p>{message}</p>
