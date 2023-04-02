@@ -11,11 +11,11 @@
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	let email = "";
 	let subscribeAnimation = false;
-	let title = "Get Notified"
+	let title = "Get Notified";
 	let message = "Subscribe to stay up to date on new blog posts!";
 	let hideExtras = false;
 	let showEmailError = false;
-	export let forPost = false
+	export let forPost = false;
 
 	//Change title If I want. It looks good without changing though
 	$: if (hideExtras) {
@@ -26,13 +26,13 @@
 
 	//Send request
 	function subscribeClicked() {
-		if (validateEmail() == false){
-			return
+		if (validateEmail() == false) {
+			return;
 		}
 		const payload = {
 			email: email,
 		};
-		console.log("me")
+		console.log("me");
 		fetch("/api/subscribe", {
 			method: "POST",
 			headers: {
@@ -41,18 +41,18 @@
 			body: JSON.stringify(payload),
 		})
 			.then((response) => response.json())
-			.then((data) => {
-			})
+			.then((data) => {})
 			.catch((error) => {
 				console.error(error);
 			});
 		email = "";
 		if (!forPost) {
-			animate()
-		} else {title = "Subscribed!"; message = "Thanks for subscribing! Top notch content is in your future "}
-		
+			animate();
+		} else {
+			title = "Subscribed!";
+			message = "Thanks for subscribing! Top notch content is in your future ";
+		}
 	}
-
 
 	function validateEmail() {
 		showEmailError = false;
@@ -61,82 +61,88 @@
 			return false;
 		}
 	}
-async function animate(){
-	subscribeAnimation = true;
+	async function animate() {
+		subscribeAnimation = true;
 		hideExtras = true;
-		await sleep(1200)
+		await sleep(1200);
 		subscribeAnimation = false;
-		await sleep(600)
+		await sleep(600);
 		hideExtras = false;
-}
+	}
 </script>
 
 <div class="flex-col justify-center items-center">
 	<div class="flex flex-col pt-4 items-center justify-center">
 		<!-- NOTIFY ANIMATION... LOTS OF DIVS -->
 		<div class="poppins xl:text-5xl text-4xl relative font-extrabold">
-			<h4 class=" outline-text {forPost ? "text-indigo-500" : "text-indigo-100"}">{title}</h4>
+			<h4
+				class=" outline-text {forPost ? 'text-indigo-500' : 'text-indigo-100'}"
+			>
+				{title}
+			</h4>
 			{#if !forPost}
-			<div
-				class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-[2.5rem] translate-y-[1.5rem] bg-opacity-100'
-					: 'bg-opacity-70'} transition-all duration-700 -z-10"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute  inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-20 translate-y-[3rem] bg-opacity-100'
-					: 'bg-opacity-0'} transition-all duration-700 -z-10"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute  inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-[7.5rem] translate-y-[4.5rem] bg-opacity-100'
-					: 'bg-opacity-0'} transition-all duration-700 -z-10"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
-					? 'lg:translate-y-40 translate-y-[6rem] bg-opacity-100'
-					: 'bg-opacity-60'} transition-all duration-700  -z-20"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-[12.5rem] translate-y-[7.5rem] bg-opacity-100'
-					: 'bg-opacity-0'} transition-all duration-700  -z-20"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute inset-0 translate-y-9 bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
-					? 'lg:translate-y-60 translate-y-[9rem] bg-opacity-100'
-					: 'bg-opacity-50'} transition-all duration-700  -z-30"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute inset-0 translate-y-9  bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
-					? 'lg:translate-y-[17.5rem] translate-y-[10.5rem] bg-opacity-100'
-					: 'bg-opacity-0'} transition-all duration-700  -z-30"
-			>
-				<p>{title}</p>
-			</div>
-			<div
-				class="absolute inset-0 translate-y-12  bg-indigo-600 rounded-xl text-transparent bg-clip-text {subscribeAnimation
-					? 'lg:translate-y-80 translate-y-[12rem] bg-opacity-100'
-					: 'bg-opacity-40'} transition-all duration-700  -z-40 "
-			>
-				<p>{title}</p>
-			</div>
+				<div
+					class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+						? 'lg:translate-y-[2.5rem] translate-y-[1.5rem] bg-opacity-100'
+						: 'bg-opacity-70'} transition-all duration-700 -z-10"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute  inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+						? 'lg:translate-y-20 translate-y-[3rem] bg-opacity-100'
+						: 'bg-opacity-0'} transition-all duration-700 -z-10"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute  inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+						? 'lg:translate-y-[7.5rem] translate-y-[4.5rem] bg-opacity-100'
+						: 'bg-opacity-0'} transition-all duration-700 -z-10"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
+						? 'lg:translate-y-40 translate-y-[6rem] bg-opacity-100'
+						: 'bg-opacity-60'} transition-all duration-700  -z-20"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+						? 'lg:translate-y-[12.5rem] translate-y-[7.5rem] bg-opacity-100'
+						: 'bg-opacity-0'} transition-all duration-700  -z-20"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute inset-0 translate-y-9 bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
+						? 'lg:translate-y-60 translate-y-[9rem] bg-opacity-100'
+						: 'bg-opacity-50'} transition-all duration-700  -z-30"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute inset-0 translate-y-9  bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
+						? 'lg:translate-y-[17.5rem] translate-y-[10.5rem] bg-opacity-100'
+						: 'bg-opacity-0'} transition-all duration-700  -z-30"
+				>
+					<p>{title}</p>
+				</div>
+				<div
+					class="absolute inset-0 translate-y-12  bg-indigo-600 rounded-xl text-transparent bg-clip-text {subscribeAnimation
+						? 'lg:translate-y-80 translate-y-[12rem] bg-opacity-100'
+						: 'bg-opacity-40'} transition-all duration-700  -z-40 "
+				>
+					<p>{title}</p>
+				</div>
 			{/if}
 		</div>
 		<p
-			class=" text-xl lg:text-2xl  text-center {forPost ? "mt-1":"mt-12"} mx-4 transition-all duration-75 {hideExtras
+			class=" text-xl lg:text-2xl  text-center {forPost
+				? 'mt-1'
+				: 'mt-12'} mx-4 transition-all duration-75 {hideExtras
 				? 'opacity-0'
 				: 'opacity-100'}"
 		>
@@ -158,7 +164,7 @@ async function animate(){
 			>Subscribe!<button /></button
 		>
 		{#if showEmailError}
-		<p class="text-red-500 text-lg">Enter Valid Email</p>
+			<p class="text-red-500 text-lg">Enter Valid Email</p>
 		{/if}
 	</div>
 </div>
