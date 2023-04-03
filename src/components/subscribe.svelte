@@ -148,6 +148,7 @@
 		>
 			{message}
 		</p>
+		<form action="POST" class="w-full flex flex-col justify-center items-center">
 		<input
 			bind:value={email}
 			type="email"
@@ -157,12 +158,12 @@
 				: 'opacity-100'} transition-all duration-75 lg:p-2 mt-2 p-1 w-4/5 placeholder:text-neutral-600/90 placeholder:text-center font-sans text-xl rounded-t-lg border-b-2 border-black/60 focus:placeholder:opacity-0 text-neutral-900 focus:outline-none"
 		/>
 		<button
-			on:click={subscribeClicked}
+			on:click|preventDefault={subscribeClicked}
 			class="{hideExtras
 				? 'opacity-0'
 				: 'opactiy-100'} transition-all duration-75 lg:p-2 p-1 bg-indigo-500 text-white hover:bg-indigo-600 hover:shadow-md shadow-black hover:text-white font-bold w-4/5 font-sans text-xl rounded-b-lg"
-			>Subscribe!<button /></button
-		>
+			>Subscribe!</button>
+		</form>
 		{#if showEmailError}
 			<p class="text-red-500 text-lg">Enter Valid Email</p>
 		{/if}
