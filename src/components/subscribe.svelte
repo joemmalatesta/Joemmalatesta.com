@@ -26,9 +26,9 @@
 
 	//Send request
 	function subscribeClicked() {
-		if (validateEmail() == false) {
-			return;
-		}
+		// if (validateEmail() == false) {
+		// 	return;
+		// }
 		const payload = {
 			email: email,
 		};
