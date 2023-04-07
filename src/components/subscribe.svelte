@@ -26,13 +26,12 @@
 
 	//Send request
 	function subscribeClicked() {
-		// if (validateEmail() == false) {
-		// 	return;
-		// }
+		if (validateEmail() == false) {
+			return;
+		}
 		const payload = {
 			email: email,
 		};
-		console.log("me");
 		fetch("/api/subscribe", {
 			method: "POST",
 			headers: {
@@ -50,7 +49,7 @@
 			animate();
 		} else {
 			title = "Subscribed!";
-			message = "Thanks for subscribing! Top notch content is in your future ";
+			message = "Thanks for subscribing!";
 		}
 	}
 
