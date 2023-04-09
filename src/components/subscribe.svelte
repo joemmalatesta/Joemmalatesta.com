@@ -49,7 +49,7 @@
 			animate();
 		} else {
 			title = "Subscribed!";
-			message = "Thanks for subscribing!";
+			message = "Thanks, welcome to the club!";
 		}
 	}
 
