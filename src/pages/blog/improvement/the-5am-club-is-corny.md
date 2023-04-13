@@ -1,8 +1,8 @@
 ---
 layout: "../../../layouts/BlogPost.astro" #Constant
 title: "The 5AM Club is Corny"
-cardDescription: "Put good things in plain sight, and hide the bad. You will be astonished on how shallow your habits truly are."
-description: "A blog post about creating good habits and breaking bad ones by making the cues obvious. Some practical examples of one of the steps in James Clear's Atomic Habits"
+cardDescription: "The critically acclaimed guide to jump start your day was fictional?"
+description: "311 Pages of what could have been a fantasy bored me and inspired me at the same time. Robin Sharmas, The 5AM Club, was a book I found corny and unrealistic but served as a great reminder for how to live a fulfilling life."
 pubDate: "April 11, 2023"
 heroImage: "/teaching.jpeg"
 ---
