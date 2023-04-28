@@ -2,7 +2,7 @@
 layout: "../../../layouts/BlogPost.astro" #Constant
 title: "The 5AM Club is Corny"
 cardDescription: "The critically acclaimed guide to jump start your day was fictional?"
-description: "311 Pages of what could have been a fantasy bored me and inspired me at the same time. Robin Sharmas, The 5AM Club, was a book I found corny and unrealistic but served as a great reminder for how to live a fulfilling life."
+description: "311 Pages of what could have been a fantasy bored me and inspired me at the same time. Robin Sharma's, The 5AM Club, was a book I found corny and unrealistic but served as a great reminder for how to live a fulfilling life."
 pubDate: "April 11, 2023"
 heroImage: "/teaching.jpeg"
 ---

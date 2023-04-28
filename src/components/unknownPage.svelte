@@ -85,6 +85,8 @@
 
 <style>
 	/* Interesting, actually. 404 Pages automatically wrapped inside of a body tag. I suppose that makes sense, though... */
+	/* Leaving that comment there but damn what a stupid thing to say  */
+	/* Actually no I think the comment was fine because I was confused that it didn't take the websites general body style, but overwrote it */
 	body {
 		@apply m-0 bg-[#222222] p-0;
 	}
