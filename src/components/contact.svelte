@@ -7,7 +7,7 @@
 	let modalType = "";
 
 	//Just some sillies here
-	let possibleNames = ["Carl Jung", "Ayn Rand", "Noam Chomsky", "Jane Goodall", "Playboy Carti", "James Clear", "Joe Malatesta", "Kanye West", "Jermaine Cole", "Art Tatum", "Shigetora"]
+	let possibleNames = ["Carl Jung", "Ayn Rand", "Noam Chomsky", "Jane Goodall", "James Clear", "Joe Malatesta", "Kanye West", "Jermaine Cole", "Art Tatum", "Shigetora"]
 	let possibleTopics = ["prime fishing spots", "yellow journalism", "low level chess strategy", "how to dodge the draft", "code hoisting", "[object Object]", "the movie ready player one", "this website", "how often you should wash your bed sheets", "the correct inseam for mens shorts", "proper deadlift form", "2016 memes", "the price of dentures", "unnecessary ice cream flavors"]
 	let placeholderName = possibleNames[Math.floor(Math.random() * possibleNames.length)];
 	let topic = possibleTopics[Math.floor(Math.random() * possibleTopics.length)];
