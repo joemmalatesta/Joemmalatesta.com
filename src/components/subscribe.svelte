@@ -151,6 +151,7 @@
 		<input
 			bind:value={email}
 			type="email"
+			name="email"
 			placeholder="Your email here"
 			class="{hideExtras
 				? 'opacity-0'
