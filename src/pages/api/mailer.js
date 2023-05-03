@@ -18,7 +18,7 @@ async function emailNewSubscriber(email) {
         to: email,
         subject: `Subscribed!`,
         html:`
-        hey there fella, thanks for joining me! You're gunna have a dollar in no time from all this sense I'm bouta give you.
+        hey there, thanks for joining me! You're gunna have a dollar in no time from all this sense I'm bouta give you.
         <br>
         <span>If you hate me, you can </span><span><a href="https://joemmalatesta.com/unsubscribe">unsubscribe</a></span>
         `,
