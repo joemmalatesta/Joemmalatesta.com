@@ -20,7 +20,7 @@ async function emailNewSubscriber(email) {
         html:`
         hey there fella, thanks for joining me! You're gunna have a dollar in no time from all this sense I'm bouta give you.
         <br>
-        <span>If you hate me, you can </span><span><a href="https://joemmalatesta.com/#blog">unsubscribe</a></span>
+        <span>If you hate me, you can </span><span><a href="https://joemmalatesta.com/unsubscribe">unsubscribe</a></span>
         `,
  } 
  try {
@@ -51,7 +51,7 @@ async function emailUnsubscriber(email) {
         html:`
         Successfully unsubscribed from blog post updates.
         <br>
-        <span>If you ever wanna come back, you can </span><span><a href="https://joemmalatesta.com/unsubscribe">subscribe again!</a></span>
+        <span>If you ever wanna come back, you can </span><span><a href="https://joemmalatesta.com/#blog">subscribe again!</a></span>
         `,
  } 
  try {
