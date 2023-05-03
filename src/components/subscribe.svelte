@@ -12,7 +12,7 @@
 	let email = "";
 	let subscribeAnimation = false;
 	let title = "Get Notified";
-	let message = "Subscribe to stay up to date on new blog posts!";
+	let message = "Stay up to date on new blog posts!";
 	let hideExtras = false;
 	let showEmailError = false;
 	export let forPost = false;
@@ -138,34 +138,37 @@
 				</div>
 			{/if}
 		</div>
-		<p
-			class=" text-xl lg:text-2xl  text-center {forPost
+		
+		<form action="POST" class="{forPost
 				? 'mt-1'
-				: 'mt-12'} mx-4 transition-all duration-75 {hideExtras
-				? 'opacity-0'
-				: 'opacity-100'}"
-		>
-			{message}
-		</p>
-		<form action="POST" class="w-full flex flex-col justify-center items-center">
+				: 'mt-12'} w-full flex flex-col justify-center items-center">
 		<input
 			bind:value={email}
 			type="email"
 			name="email"
 			placeholder="Your email here"
-			class="{hideExtras
+			class=" {hideExtras
 				? 'opacity-0'
-				: 'opacity-100'} transition-all duration-75 lg:p-2 mt-2 p-1 w-4/5 placeholder:text-neutral-600/90 placeholder:text-center font-sans text-xl rounded-t-lg border-b-2 border-black/60 focus:placeholder:opacity-0 text-neutral-900 focus:outline-none"
+				: 'opacity-100'} drop-shadow-md z-20 transition-all duration-75 lg:p-2 mt-2 p-1 w-full placeholder:text-neutral-600/90 placeholder:text-center font-sans text-xl rounded-t-md focus:placeholder:opacity-0 text-neutral-900 focus:outline-none"
 		/>
 		<button
 			on:click|preventDefault={subscribeClicked}
-			class="{hideExtras
+			class="
+			{hideExtras
 				? 'opacity-0'
-				: 'opactiy-100'} transition-all duration-75 lg:p-2 p-1 bg-indigo-500 text-white hover:bg-indigo-600 hover:shadow-md shadow-black hover:text-white font-bold w-4/5 font-sans text-xl rounded-b-lg"
+				: 'opactiy-100'} transition-all duration-75 lg:p-2 p-1 bg-indigo-500 text-white hover:bg-indigo-600 hover:shadow-md shadow-black hover:text-white w-full font-sans text-xl rounded-b-md"
 			>Subscribe!</button>
+			<!-- Message not even necessary but we leave it JIC -->
+			<!-- <p
+			class=" text-lg lg:text-xl  text-center mx-4 transition-all duration-75 {hideExtras
+				? 'opacity-0'
+				: 'opacity-100'}"
+		>
+			{message}
+		</p> -->
 		</form>
 		{#if showEmailError}
-			<p class="text-red-500 text-lg">Enter Valid Email</p>
+			<p class="text-red-500 text-sm">Enter Valid Email</p>
 		{/if}
 	</div>
 </div>

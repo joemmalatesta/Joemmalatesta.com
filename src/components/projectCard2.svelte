@@ -17,10 +17,10 @@
 			<p>{tech}</p>
 			<h4 class="font-bold text-3xl poppins">{title}</h4>
 			<p class="text-xl">{description}</p>
-			<a href={url} class="flex items-center text-xl font-semibold my-2 py-2"
+			<a href={url} class="flex items-center text-xl font-semibold my-4"
             on:mouseenter={() => {urlHover = true }}
             on:mouseleave={() => {urlHover = false }}>{buttonText}
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="#f1f5f9" clip-rule="evenodd" class="{urlHover ? "mx-6" : "mx-1"} transition-all duration-500"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="#f1f5f9" clip-rule="evenodd" class="{urlHover ? "mx-4" : "mx-2"} transition-all duration-200"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
             </a>
 		</div>
 	</div>

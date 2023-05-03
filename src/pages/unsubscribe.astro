@@ -1,0 +1,26 @@
+---
+import Unsubscribe from "../components/unsubscribe.svelte"
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.svelte";
+import Footer from "../components/Footer.astro";
+import TypeWriter from "../components/TypeWriter.svelte";
+import SectionHeader from "../components/SectionHeader.svelte";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Joe Malatesta"
+			description="Personal website for Joe Malatesta, a software developer focused on new tech and self improvement"
+		/>
+	</head>
+	<body>
+		<Header client:load />
+		<SectionHeader
+			title={"Leaving so soon?"}
+			subtitle={"It's hard to accept, but I've loved having you! Thank you"}
+		/>
+
+
+<Unsubscribe client:load />
