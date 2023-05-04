@@ -42,7 +42,7 @@ export async function post({ request }) {
 		}
     // Remove them and send them an angry email
 		const result = await collection.deleteOne({ email });
-    emailUnsubscriber(email)
+    	await emailUnsubscriber(email)
 		payload.message = "Successfully removed"
 	} catch (error) {
 		console.log(error);

@@ -41,8 +41,8 @@ export async function post({ request }) {
       };
 		}
 		const result = await collection.insertOne({ email, time });
-		emailNewSubscriber(email);
-
+		await emailNewSubscriber(email);
+		payload.message = "Success"
 		console.log(
 			`Inserted ${email} document into the subscribers collection`
 		);

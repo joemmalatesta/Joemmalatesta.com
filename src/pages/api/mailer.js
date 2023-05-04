@@ -36,7 +36,7 @@ async function emailNewSubscriber(email) {
         });
     });
 } catch (error) {
-    return
+    console.log(error)
 }
 
 
