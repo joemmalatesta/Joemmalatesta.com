@@ -20,6 +20,7 @@ We’ve seen lots of tech layoffs in the past year, and it’s sad the way that 
 
 AI is going to change everything, or maybe it won’t. But assuming it will, we aren’t all fucked, we just don’t know what to expect yet. New jobs will come and old jobs will go as they always have. I haven’t lived through a major paradigm shift like the industrial revolution, but I imagine this is the same sort of sentiment from the people of that time when everything started moving. Then again, there was no risk of trains becoming sentient and torturing us for all that we have done to them.
 
-Reminds me a bit about the first movie that was shown. It was a video of a train moving, and everyone in the theatre jumped out of their seat because they thought they were going to get hit by a train. It’s so obvious now, but technology like that was horrifying at a first glance. Hopefully it’s the same sort of thing.
+Reminds me a bit about the first movie that was shown. It was a video of a train moving, and everyone in the theatre jumped out of their seat because they thought they were going to get hit by a train. It’s so obvious now, but technology like that was horrifying at a first glance. Hopefully it’s the same sort of thing. IDK, we need to treat this the same way we treat nukes and we are already off to a bad start. I'd like to get a closer look at what AGI really entails but I always end up with a feeling of doom when I watch AI youtube videos so perhaps another day.
 
 
+> “No matter how bleak or menacing a situation may appear, it does not entirely own us. It can’t take away our freedom to respond, our power to take action.” – Ryder Carroll
