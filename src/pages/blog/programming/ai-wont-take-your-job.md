@@ -24,3 +24,5 @@ Reminds me a bit about the first movie that was shown. It was a video of a train
 
 
 > “No matter how bleak or menacing a situation may appear, it does not entirely own us. It can’t take away our freedom to respond, our power to take action.” – Ryder Carroll
+
+The fact of the matter is we have always overcome. Human kind has not yet been wiped out and it's not completely off the table, but we are pretty good at not letting things make us extinct.
