@@ -1,30 +1,32 @@
 ---
 layout: "../../../layouts/BlogPost.astro" #Constant
 title: "AI isn't taking our jobs"
-cardDescription: "AI undoubtedly comes with some new risk, but in the short term, nothing we haven't seen before."
+cardDescription: "AI undoubtedly comes with some new risk but, in the short term, nothing we haven't seen before."
 description: ""
-pubDate: "May 08, 2022"
+pubDate: "May 08, 2023"
 # heroImage: "/blogs/programming/2023-tech.webp"
 inProgress: true
 ---
-AS OF RIGHT NOW, THIS BLOG IS MEANT TO BE AN OPEN DISCUSSION.
-these are just my thoughts jotted down, and will be explained more succinctly in later revisions.
+well, it is. But you’ll still have a job.
 
+It’s not often that something new comes along and disrupts everything about everything. There have been major game changers that turn industries on their heads, but aside from the internet itself and perhaps things like railroads or the printing press, no single improvement will have as much impact on the world as AI.
 
+## How industries react to overwhelming change
 
-I mean, yes, it is. But you'll still have a job.
+The process of automating jobs out of existence has been around pretty much forever. The loom put the average weaver out of business, the printing press put the average scribe out of business, and Wordpress put the average web developer out of business. In each of these cases, though, those who were able to adapt to the situation were able to not only last, but flourish even further in their domain, and I see the current and near future state of AI in the same way.
 
-Companies that take up a huge market share are actually generally good for their respective ecosystems, and I don’t know how much of a hot take this is, but while it’s sad that the web is no longer unique, it makes the special projects all the more special. 
+AI won’t disrupt a single market the way these advancements did, but is rather likely to effect almost all conceivable jobs, the same way the invention of the internet did. That said, the principal of adapting to the changing environment holds true. Even now, there are people breaking away from their competition because they are making full use of the new AI tools afforded to them.
 
-For example, when the Loom came out, people making shirts to simply keep people clothed were fresh out of luck, but those making specialty pieces became even more in demand, because everything else became bland. In the same way, Wordpress has standardized the web, but allowed for skilled creators to become even more in demand and their work strands out more than it did before. I share the same sentiment with the singularity. When AI inevitably “takes” our jobs, I imagine it will be a lot like how Wordpress took the jobs of mediocre web developers, and the loom took the jobs of mediocre shirt makers. If you’re good at what you do, can do some critical thinking, and make use of the new tools, you will not only be able to outlast the new market, but actually thrive in it.
+## Layoffs
 
-We’ve seen lots of tech layoffs in the past year and while it’s sad the way that people are being treated, the companies are really only worried about their bottom line, and you can’t blame them. These companies were very bloated and laying off 6000 people making 100k a year isn’t anything to scoff at. It feels bad to say, but if you’re not keeping up with tech that you could be using, your job might already be automated and you aren’t a necessary asset. A lot of now 50 and 60 year old’s got into tech using lotus notes and VBA, and that shit is just outdated. If they haven’t taken the time between then and now to learn something new, they can’t put these places at fault for letting them go. Some jobs move much slower, and it’s easy to coast and stay employed, but they knew what they were getting into when they got into tech and they know it moves fast. 
+Last year, someone high up in tech finally got smart and decided to remove the excessive bloat that their company had developed, and it started a chain reaction of reviewing employee count in several companies. In several ways, this is powered by AI. Not only can developers and other employees work multitudes faster, but these companies now need more capital to invest into their own AI. Microsoft and Google both had massive cuts this year, likely to lean more into investing and developing AI. Also, companies are inclined to hire people that are using AI to help their productivity. There is no novelty in doing things the old fashioned way when there are superior tools, and those who are not accustomed to using them will fall FAR behind, further than they ever would have before.
 
-AI is going to change everything, or maybe it won’t. But assuming it will, we aren’t all fucked, we just don’t know what to expect yet. New jobs will come and old jobs will go as they always have. I haven’t lived through a major paradigm shift like the industrial revolution, but I imagine this is the same sort of sentiment from the people of that time when everything started moving. Then again, there was no risk of trains becoming sentient and torturing us though.
+## Annoying Caveat
 
-Reminds me a bit about the first movie that was shown. It was a video of a train moving, and everyone in the theatre jumped out of their seat because they thought they were going to get hit by a train. It’s so obvious now, but technology like that was horrifying at a first glance. Hopefully it’s the same sort of thing. IDK, we need to treat this the same way we treat nukes and we are already off to a bad start. I'd like to get a closer look at what AGI really entails but I always end up with a feeling of doom when I watch AI youtube videos so perhaps another day.
+I can spot a GPT generated paragraph from a mile away the same way I can tell that a website is built with Shopify or Wordpress from a quick look. It’s sad to think that previously creative jobs like writing and marketing can, and are generally inclined to, now be automated. The automation of things gives more power to truly special work, like how the loom made artesian workers worth more, but the truly great work will now be few and far between.
 
+## Final thoughts
+
+I’m not some sort of fortune teller, but history says that when jobs go away, new jobs show up. AI will undoubtedly change every aspect of our society, but with a technology that has the capacity to develop more rapidly than anyone could imagine, I shy away from making predictions about anything but the near future. TL;DR - use AI or lose.
 
 > “No matter how bleak or menacing a situation may appear, it does not entirely own us. It can’t take away our freedom to respond, our power to take action.” – Ryder Carroll
-
-The fact of the matter is we have always overcome. Human kind has not yet been wiped out and it's not completely off the table, but we are pretty good at not letting things make us extinct.
