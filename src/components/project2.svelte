@@ -10,14 +10,14 @@
 	const projects = [
 		{
 			id: 0,
-			title: "Auto Typer",
-			tech: "Python, Selenium, MatPlotLib",
+			title: "WakeMate",
+			tech: "Svelte, Typescript, Stripe, Mongo, Twilio",
 			description:
-				"Auto complete a typing test at a specified WPM, taking into account computational delays",
-			url: "https://github.com/joemmalatesta/Auto-Typer",
-			buttonText: "Learn more",
-			image: "projects/auto-typer.webp",
-			logos: ["python.png", "selenium.png", "matplotlib.png", "chromium.png"],
+				"Subscription based service focused on waking users up and keeping them motivated.",
+			url: "https://github.com/joemmalatesta/wake-up-call",
+			buttonText: "Visit Site",
+			image: "projects/wakeMate.jpg",
+			logos: ["svelte.png", "mongo.png", "twilio.svg", "stripe.png"],
 			colors: ["#b8a6c1", "#8fa770"],
 		},
 		{
@@ -27,7 +27,7 @@
 			description:
 				"The first iteration of my website! My introduction to front end development.",
 			url: "https://dev.joemmalatesta.com/",
-			buttonText: "Visit old site",
+			buttonText: "Visit Site",
 			image: "projects/old-website.webp",
 			logos: ["bootstrap.png", "css.png", "html.png", "github.svg"],
 			colors: ["#1d1d1d", "#70a1b1"],
@@ -51,7 +51,7 @@
 			description:
 				"Captcha completed by correctly identifying parts of a linear graph",
 			url: "https://joemmalatesta.github.io/CapChart/",
-			buttonText: "Live demo",
+			buttonText: "Visit Site",
 			image: "projects/capchart.webp",
 			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"],
 			colors: ["#e89850", "#c8bbde"],
@@ -63,7 +63,7 @@
 			description:
 				"A remake of a Scattergories List Generator using SvelteKit and Tailwind",
 			url: "https://scatter.joemmalatesta.com",
-			buttonText: "Live demo",
+			buttonText: "Visit Site",
 			image: "projects/ScatterList.webp",
 			logos: ["vercel.png", "ts.png", "svelte.png", "tailwind.png"],
 			colors: ["#e89850", "#c8bbde"],
