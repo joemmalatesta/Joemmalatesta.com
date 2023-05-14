@@ -14,7 +14,7 @@
 			tech: "Svelte, Typescript, Stripe, Mongo, Twilio",
 			description:
 				"Subscription based service focused on waking users up and keeping them motivated.",
-			url: "https://github.com/joemmalatesta/wake-up-call",
+			url: "https://wakemate.joemmalatesta.com",
 			buttonText: "Visit Site",
 			image: "projects/wakeMate.jpg",
 			logos: ["svelte.png", "mongo.png", "twilio.svg", "stripe.png"],
