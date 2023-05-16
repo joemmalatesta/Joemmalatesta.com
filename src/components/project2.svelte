@@ -46,7 +46,7 @@
 		},
 		{
 			id: 3,
-			title: "CaptChart",
+			title: "CapChart",
 			tech: "Javascript, Chartjs, Bootstrap",
 			description:
 				"Captcha completed by correctly identifying parts of a linear graph",
