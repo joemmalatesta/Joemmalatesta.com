@@ -38,7 +38,7 @@
 <!-- DEFO MAKE THEM VALIDATE THIS SHIT. -->
 <div class="flex flex-col justify-center items-center">
 	<form action="" class="w-80 flex flex-col">
-        <input class="text-black p-2 text-lg rounded-t-md placeholder:text-center" type="text" bind:value={email} placeholder="Your email"/>
+        <input class="text-black p-2 text-lg rounded-t-md placeholder:text-center" type="text" bind:value={email} placeholder="Your email" name="email"/>
         <button class="z-20 drop-shadow-md text-white p-2 text-lg bg-indigo-500 hover:bg-indigo-600 rounded-b-md" on:click|preventDefault={unsubscribeClicked}>Unsubscribe :(</button>
         {#if showEmailError}
             <p class="text-red-500">Enter a valid email.</p>
