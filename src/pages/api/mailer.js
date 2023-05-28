@@ -83,8 +83,7 @@ async function emailNewSubscriber(email) {
             hey there, thanks for joining me! You're gunna have a dollar in no time from all this sense I'm bouta give you.
             </p>
             <p class="message">
-            If you hate me, you can unsubscribe
-            IIf you hate me, you can <a class="unsubscribe" href="https://www.joemmalatesta.com/unsubscribe">unsubscribe</a>
+              If you hate me, you can <a class="unsubscribe" href="https://www.joemmalatesta.com/unsubscribe">unsubscribe</a>
             </p>
           </div>
         </body>
