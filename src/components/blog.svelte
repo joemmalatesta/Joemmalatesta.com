@@ -29,7 +29,7 @@
 <main>
 	<SectionHeader
 		title={"Blog"}
-		subtitle={"Bear with me while I sort out an identity crisis"}
+		subtitle={"A history of my internal dialogue, trying to answer the questions I ask myself"}
 	/>
 
 	<!-- BLOG AND OTHER CONTENT -->
