@@ -9,9 +9,9 @@ heroImage: "/teaching.jpeg"
 is delusion really a bad thing if it benefits you? If I gain confidence from people telling me that I’m smart, does the possibility that they were lying or being sarcastic really matter?
 
 ### You can't help it
-In a perfect world everyone would know their own worth and act accordingly, placing no value on other peoples opinions - but alas, the world is not perfect. Every single person, bar none, pays some level of attention to what people say, and it's actually advantageous to do so. To fit in and be productive in communication, you are inclined to take feedback from others and change your personality accordingly. You might say "but I don't want to fit in" to which I reply: Yes, you do. Your niche interests and esoteric knowledge don't remove you from still being ordinary.
+In a perfect world everyone would know their own worth and act accordingly, placing no value on other peoples opinions - but alas, the world is not perfect. Every single person, bar none, pays some level of attention to what people say, and it's actually advantageous to do so. To fit in and be productive in communication, you are inclined to take feedback from others and change your personality accordingly. You might say "but I don't want to fit in" to which I reply: Yes, you do. Your niche interests and esoteric knowledge doesn't absolve your need to contribute to society.
 Anyway, my point is that you can't change the fact that you place value on other opinions, but you can change the people you surround yourself with.
-Most of your personality, self worth, and motivation should come from within, but since it can't ALL come from within, it's good to know when people are dragging you down to their level. versus when they're telling you the truth.
+Most of your personality, self worth, and motivation should come from within, but since it can't ALL come from within, it's good to know when people are giving you undeserved or untruthful feedback, versus when they're telling you the truth and being fair.
 
 ## When you need to change your friends
 too much praise - they want something from you, your hanging out with people too far beneath you and getting complacent.
