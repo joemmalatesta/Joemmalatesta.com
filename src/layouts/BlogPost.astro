@@ -52,11 +52,12 @@ const {
 				<!-- Add Twitter thing here -->
 				<a
 					href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-					class="twitter-share-button"
+					class="flex items-center gap-2 w-fit h-10 px-2 no-underline rounded-full bg-indigo-500 text-black hover:bg-indigo-500/80"
 					data-text=`${twitterDescription ? twitterDescription : cardDescription} - check out this blog! `
 					data-url=`joemmalatesta.com${url}`
-					data-show-count="false">Tweet</a
-				><script
+					data-show-count="false"
+					>Tweet <img src="/tweet.svg" alt="Twitter Icon" class="w-5 h-fit" /></a>
+					<script
 					async
 					src="https://platform.twitter.com/widgets.js"
 					charset="utf-8"
@@ -69,3 +70,4 @@ const {
 		<Footer />
 	</body>
 </html>
+
