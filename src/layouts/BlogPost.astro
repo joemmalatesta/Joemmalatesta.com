@@ -1,9 +1,9 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.svelte';
-import Newsletter from '../components/Newsletter.svelte';
-import Subscribe from '../components/subscribe.svelte';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.svelte";
+import Newsletter from "../components/Newsletter.svelte";
+import Subscribe from "../components/subscribe.svelte";
 
 export interface Props {
 	content: {
@@ -13,48 +13,59 @@ export interface Props {
 		pubDate?: string;
 		heroImage?: string;
 		imageAlt?: string;
+		cardDescription?: string
+		twitterDescription?: string
 	};
 }
-
+const url = Astro.url.pathname;
 const {
-	content: { title, description, pubDate, heroImage, imageAlt },
+	content: { title, description, pubDate, heroImage, imageAlt, cardDescription, twitterDescription },
 } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		
 		<BaseHead title={title} description={description} />
 	</head>
 
 	<body>
+		
 		<!-- HEADER DOESN'T WORK ON THIS PAGE.. PLEASE TELL ME WHY -->
 		<Header client:load />
-		<main >
-			<article class="md:mx-auto prose prose-invert prose-indigo md:prose-lg mx-6 prose-md pb-5 prose-quoteless">
+		<main>
+			<article
+				class="prose-md prose prose-invert prose-indigo prose-quoteless mx-6 pb-5 md:prose-lg md:mx-auto"
+			>
 				<!-- Should Provide an Alt -->
 				<!-- Don't really need an image -->
 				<!-- {heroImage && <img class="object-cover" src={heroImage} alt={imageAlt} />} -->
 
 				<!-- && means, show if pubDate has a value -->
 				<div class="mt-4">
-				{pubDate && <time>{pubDate}</time>}
-				<h1>{title}</h1>
+					{pubDate && <time>{pubDate}</time>}
+					<h1>{title}</h1>
 				</div>
 
-				
 				<!-- This is where the actual MD part goes. -->
-					<slot/>
+				<slot />
 
-					
-			<!-- Add Twitter thing here my boy Ill do it rn. -->
+				<!-- Add Twitter thing here -->
+				<a
+					href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+					class="twitter-share-button"
+					data-text=`${twitterDescription ? twitterDescription : cardDescription} - check out this blog! `
+					data-url=`joemmalatesta.com${url}`
+					data-show-count="false">Tweet</a
+				><script
+					async
+					src="https://platform.twitter.com/widgets.js"
+					charset="utf-8"
+				></script>
 			</article>
-			<div class="flex justify-center items-center my-3">
-			<Subscribe client:load forPost={true}/>
+			<div class="my-3 flex items-center justify-center">
+				<Subscribe client:load forPost={true} />
 			</div>
-			
 		</main>
 		<Footer />
-		
 	</body>
 </html>
