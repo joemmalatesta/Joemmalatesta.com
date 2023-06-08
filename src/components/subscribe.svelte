@@ -83,7 +83,7 @@
 				<div
 					class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
 						? 'lg:translate-y-[2.5rem] translate-y-[1.5rem] bg-opacity-100'
-						: 'bg-opacity-70'} transition-all duration-700 -z-10"
+						: 'bg-opacity-50 translate-y-[.5rem]'} transition-all duration-700 -z-10"
 				>
 					<p>{title}</p>
 				</div>
@@ -104,7 +104,7 @@
 				<div
 					class="absolute inset-0 translate-y-6  bg-indigo-400 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
 						? 'lg:translate-y-40 translate-y-[6rem] bg-opacity-100'
-						: 'bg-opacity-60'} transition-all duration-700  -z-20"
+						: 'bg-opacity-40 translate-y-[1rem]'} transition-all duration-700  -z-20"
 				>
 					<p>{title}</p>
 				</div>
@@ -118,7 +118,7 @@
 				<div
 					class="absolute inset-0 translate-y-9 bg-indigo-500 rounded-xl text-transparent bg-clip-text  {subscribeAnimation
 						? 'lg:translate-y-60 translate-y-[9rem] bg-opacity-100'
-						: 'bg-opacity-50'} transition-all duration-700  -z-30"
+						: 'bg-opacity-30 translate-y-[1.5rem]'} transition-all duration-700  -z-30"
 				>
 					<p>{title}</p>
 				</div>
@@ -132,7 +132,7 @@
 				<div
 					class="absolute inset-0 translate-y-12  bg-indigo-600 rounded-xl text-transparent bg-clip-text {subscribeAnimation
 						? 'lg:translate-y-80 translate-y-[12rem] bg-opacity-100'
-						: 'bg-opacity-40'} transition-all duration-700  -z-40 "
+						: 'bg-opacity-20 translate-y-[2rem]'} transition-all duration-700  -z-40 "
 				>
 					<p>{title}</p>
 				</div>
@@ -141,7 +141,7 @@
 		
 		<form action="POST" class="{forPost
 				? 'mt-1'
-				: 'mt-12'} w-full flex flex-col justify-center items-center">
+				: 'mt-8'} w-full flex flex-col justify-center items-center">
 		<input
 			bind:value={email}
 			type="email"
@@ -159,13 +159,13 @@
 				: 'opactiy-100'} transition-all duration-75 lg:p-2 p-1 bg-indigo-500 text-white hover:bg-indigo-600 hover:shadow-md shadow-black hover:text-white w-full font-sans text-xl rounded-b-md"
 			>Subscribe!</button>
 			<!-- Message not even necessary but we leave it JIC -->
-			<!-- <p
-			class=" text-lg lg:text-xl  text-center mx-4 transition-all duration-75 {hideExtras
+			<p
+			class=" text-sm lg:text-md  text-center mx-4 transition-all duration-75 font-semibold {hideExtras
 				? 'opacity-0'
 				: 'opacity-100'}"
 		>
-			{message}
-		</p> -->
+			No spam, just thought provoking posts
+		</p>
 		</form>
 		{#if showEmailError}
 			<p class="text-red-500 text-sm">Enter Valid Email</p>

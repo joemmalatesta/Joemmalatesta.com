@@ -55,6 +55,10 @@ async function emailNewSubscriber(email) {
             .message {
               margin-bottom: 10px;
             }
+
+            .small {
+              font-size: 12px
+            }
         
             .subscribe {
               color: #28a745;
@@ -80,9 +84,9 @@ async function emailNewSubscriber(email) {
           <div class="container">
             <h1>Subscribed :D</h1>
             <p class="message">
-            hey there, thanks for joining me! You're gunna have a dollar in no time from all this sense I'm bouta give you.
+            hey there, thanks for joining me! You'll have a dollar in no time from all this sense I'm bouta give you.
             </p>
-            <p class="message">
+            <p class="message small">
               If you hate me, you can <a class="unsubscribe" href="https://www.joemmalatesta.com/unsubscribe">unsubscribe</a>
             </p>
           </div>
