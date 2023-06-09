@@ -13,13 +13,21 @@ export interface Props {
 		pubDate?: string;
 		heroImage?: string;
 		imageAlt?: string;
-		cardDescription?: string
-		twitterDescription?: string
+		cardDescription?: string;
+		twitterDescription?: string;
 	};
 }
 const url = Astro.url.pathname;
 const {
-	content: { title, description, pubDate, heroImage, imageAlt, cardDescription, twitterDescription },
+	content: {
+		title,
+		description,
+		pubDate,
+		heroImage,
+		imageAlt,
+		cardDescription,
+		twitterDescription,
+	},
 } = Astro.props;
 ---
 
@@ -29,7 +37,6 @@ const {
 	</head>
 
 	<body>
-		
 		<!-- HEADER DOESN'T WORK ON THIS PAGE.. PLEASE TELL ME WHY -->
 		<Header client:load />
 		<main>
@@ -51,17 +58,11 @@ const {
 
 				<!-- Add Twitter thing here -->
 				<a
-					href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-					class="flex items-center gap-2 w-fit h-10 px-2 no-underline rounded-full bg-indigo-500 text-black hover:bg-indigo-500/80"
-					data-text=`${twitterDescription ? twitterDescription : cardDescription} - check out this blog! `
-					data-url=`joemmalatesta.com${url}`
-					data-show-count="false"
-					>Tweet <img src="/tweet.svg" alt="Twitter Icon" class="w-5 h-fit" /></a>
-					<script
-					async
-					src="https://platform.twitter.com/widgets.js"
-					charset="utf-8"
-				></script>
+					target="_blank"
+					class="spin-border flex h-10 w-fit items-center gap-2 rounded-full bg-indigo-500 px-2 text-black no-underline hover:bg-indigo-500/80"
+					href=`https://twitter.com/intent/tweet?text=${twitterDescription ? twitterDescription : cardDescription} - check out this blog!&url=joemmalatesta.com${url}&via=_joemalatesta`
+					>Tweet<img src="/tweet.svg" alt="Twitter Icon" class="h-fit w-5" /></a
+				>
 			</article>
 			<div class="my-3 flex items-center justify-center">
 				<Subscribe client:load forPost={true} />
@@ -70,4 +71,6 @@ const {
 		<Footer />
 	</body>
 </html>
+
+
 
