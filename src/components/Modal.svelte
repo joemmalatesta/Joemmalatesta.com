@@ -21,7 +21,7 @@
 				</div>
 				<div class="flex flex-col items-center justify-center">
 					<p class="text-sm md:text-lg text-center">
-						I'll get back to you in a day or two</p>
+						I'll get back to you later today</p>
 					
 					<button
 						on:click={() => {
