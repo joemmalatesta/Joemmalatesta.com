@@ -2,7 +2,7 @@
 layout: "../../../layouts/BlogPost.astro" #Constant
 title: "How to be diligent without Willpower"
 cardDescription: "Discover a real life improvement duplication glitch"
-description: ""
+description: "Discover effective strategies to build positive habits and break free from destructive ones. Learn how to make the right actions effortless and the wrong choices inconvenient. Unlock your potential for focus, productivity, and personal growth. Take control of your habits and transform your life starting today."
 pubDate: "April 7, 2023"
 heroImage: "/blogs/improvement/just-get-good-at-something.jpg"
 ---
