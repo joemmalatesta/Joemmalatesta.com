@@ -75,11 +75,11 @@
 		<!-- NOTIFY ANIMATION... LOTS OF DIVS -->
 		<div class="poppins xl:text-5xl text-4xl relative font-extrabold">
 			<h4
-				class=" outline-text {forPost ? 'text-indigo-500' : 'text-indigo-100'}"
+				class=" outline-text text-indigo-100"
 			>
 				{title}
 			</h4>
-			{#if !forPost}
+			<!-- {#if !forPost} -->
 				<div
 					class="absolute inset-0 translate-y-3 bg-indigo-300 rounded-xl text-transparent bg-clip-text {subscribeAnimation
 						? 'lg:translate-y-[2.5rem] translate-y-[1.5rem] bg-opacity-100'
@@ -136,12 +136,10 @@
 				>
 					<p>{title}</p>
 				</div>
-			{/if}
+			<!-- {/if} -->
 		</div>
 		
-		<form action="POST" class="{forPost
-				? 'mt-1'
-				: 'mt-8'} w-full flex flex-col justify-center items-center">
+		<form action="POST" class="mt-8 w-full flex flex-col justify-center items-center">
 		<input
 			bind:value={email}
 			type="email"

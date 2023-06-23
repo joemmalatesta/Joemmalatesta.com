@@ -42,5 +42,9 @@ p {
 }
 
 
+mark{
+  @apply bg-indigo-300/80
+}
+
 
 
