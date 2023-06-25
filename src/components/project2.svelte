@@ -73,7 +73,7 @@
 			title: "Scattergories Game",
 			tech: "Svelte, Typescript, Tailwind, Vercel, GPT-3.5",
 			description:
-				"My childhood favorite board game, virtualized and judged by an GPT-3.5",
+				"My childhood favorite board game, virtualized and judged by AI",
 			url: "https://scattergories.joemmalatesta.com",
 			buttonText: "Visit Site",
 			image: "projects/scattergories.webp",
