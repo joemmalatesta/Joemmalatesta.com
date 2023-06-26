@@ -6,16 +6,44 @@ description: ""
 pubDate: "June 1, 2022"
 heroImage: "/teaching.jpeg"
 ---
-Earlier in the week, I asked myself this question: is delusion really a bad thing if it benefits you? If I gain confidence from people telling me that I’m smart, does the possibility that they were being sarcastic really matter? I asked some people, thinking the answer was straightforward, but the responses I got led me to digging a bit deeper and thinking of it from multiple perspectives. It’s still opinionated, but here’s what I came up with.
+# You think, therefore I am
 
-### You can’t help but care
-In a perfect world everyone would know their own worth and act accordingly, placing no value on other peoples opinions - but alas, the world is not perfect. Every single person, bar none, pays some level of attention to what people say, and it’s actually advantageous to do so. To fit in and be productive in communication, you are inclined to take feedback from others and change yourself accordingly. You can’t change the fact that you place value on others opinions (even if only subconsciously), but you can change the people you surround yourself with. Most of your personality, self worth, and motivation should come from within - but since it can’t ALL come from within, it’s good to know when people are giving you undeserved or untruthful feedback.
+My mom says she likes my writing - thanks mom! Could she be lying? Yes.
 
-## When you need to change your environment
-Receiving consistent feedback when the person providing it stands to gain something should always be taken wearily. The most common occurrences I personally observe are people sucking up to those who have what they desire, or those who can help them accomplish their goals (usually monetarily or in status), men overly complimenting or validating women to court their attention, or people putting others down to feel better about themselves. In all of these instances, the person giving the feedback has only themselves in mind and their feedback should be taken with a grain of salt.
+Either way, the act of her telling me she likes it makes me want to write more. It doesn’t matter if she thinks it’s shit right now because as long as I keep writing, I’ll get better. People tend to lean into things that their good at, and take pride in maintaining and bettering the things th
 
-## When you need to change yourself
-When its in moderation and from people you trust, feedback should carry more weight. If people you trust to tell you the truth tell you that you’re doing good, or that you’re dropping the ball, you should accept that as real constructive feedback and either pat yourself on the back or consider what they’re saying and take action to change. When the feedback from these people overwhelmingly does not align with the way you view yourself, you may need to be truer with yourself and try understanding other perspectives.
+## For me
 
-## Feedback is an enhancer, not a baseline
-At the end of the day, you are your own person and the vast majority of your analysis and action should be based in your own experiences, successes and shortcomings. By and large, feedback is based in reality, and a majority of what others say trends with what you already know. Either way, though, take feedback in a positive way. If you’re getting shit on, you’re probably doing something wrong and you should be thankful people are telling you what you need to know, and if you’re getting praised, know you’re doing something right and give yourself more confidence in pursuing more of that.
+I’ve always been told I was smart. It started with my family, and branched off into aunts, uncles, teachers, and finally my friends. The first few examples (family, aunts, uncles, teachers) are pretty much required to say those things, but when I get validation from those who are more sparing with their compliments, it makes me actually believe it. I was always good at math and would hear a lot of “how do you do well without studying” and I didn’t really know at the time. The fact is I would hardly ever study the actual material for tests, but I think about things mathematically by default, I was raised to do so. 
+
+## Positive Illusions
+
+They give you an inch and you take a mile, you end up complacent. They give you an inch and you take a yard or so, then you’re more confident.
+
+## In General
+
+In general, people 
+
+This blog has two ideas
+
+- Don’t seek validation for things you feel you don’t deserve
+    - Don’t lie, be true about your accomplishments and don’t go looking for compliments.
+    - You should always be better than you think you are.
+- Give validation when someone is working hard, not only when they do a good job
+    - Parenting tip here - Raise your kid up to do good and enjoy the process of becoming good
+
+If you want your son to be a world class soccer player you don’t tell him he’s shit the first time he touches a ball. You’d say “Oh you have a natural talent” or “you’re learning so quickly”. 
+
+- Of course he’s shit, it’s his first time playing. But if you tell him that he’s going to not want to continue
+
+It’s hard not to become complacent. This has happened to me in the past (and I talk about it in [this post](https://www.joemmalatesta.com/blog/improvement/overjustification-effect)) with the gym. I was told I was doing well and making improvement by too many people 
+
+People always told me 
+
+people that are told they have nice hair work to keep their hair nice.
+
+In general, if you’re complimented on your garden, you’re going to keep watering the plants.
+
+There is a line between reinforcing bad behavior and reinforcing future behavior.
+
+There’s no point in telling your kid he’s bad at sports when he’s young. Tell him he’s good so that he’ll fall in love with it and enjoy getting better
