@@ -30,7 +30,7 @@
 				<h6 class="font-bold text-center text-black text-xl px-2">
 				{buttonText}
 			</h6>
-			<div class="absolute inset-0 w-full bg-gradient-to-r from-indigo-500 to-white blur-sm opacity-50 -z-10"/>
+			<div class="absolute inset-0 w-full bg-indigo-400 rounded-3xl opacity-80 -z-10"/>
 			</div>
 			
 		</div>

@@ -149,7 +149,9 @@
 	</div>
 </div>
 
-<!-- Maybe use for phone sizes.  -->
+
+
+<!-- use for phone sizes.  -->
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:hidden">
 	{#each projects as project}
