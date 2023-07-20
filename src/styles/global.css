@@ -43,7 +43,7 @@ p {
 
 
 mark{
-  @apply bg-indigo-300/80
+  @apply bg-indigo-300/80 p-0.5 rounded-sm
 }
 
 

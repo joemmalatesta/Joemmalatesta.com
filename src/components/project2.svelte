@@ -44,18 +44,18 @@
 			logos: ["python.png", "pi.png", "mongo.png", "osu.png"],
 			colors: ["#33333a", "#b4ac9c", "#33387d"],
 		},
-		{
-			id: 3,
-			title: "CapChart",
-			tech: "Javascript, Chartjs, Bootstrap",
-			description:
-				"Captcha completed by correctly identifying parts of a linear graph",
-			url: "https://joemmalatesta.github.io/CapChart/",
-			buttonText: "Visit Site",
-			image: "projects/capchart.webp",
-			logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"],
-			colors: ["#e89850", "#c8bbde"],
-		},
+		// {
+		// 	id: 3,
+		// 	title: "CapChart",
+		// 	tech: "Javascript, Chartjs, Bootstrap",
+		// 	description:
+		// 		"Captcha completed by correctly identifying parts of a linear graph",
+		// 	url: "https://joemmalatesta.github.io/CapChart/",
+		// 	buttonText: "Visit Site",
+		// 	image: "projects/capchart.webp",
+		// 	logos: ["js.png", "bootstrap.png", "github.svg", "chart.png"],
+		// 	colors: ["#e89850", "#c8bbde"],
+		// },
 		{
 			id: 4,
 			title: "Scattergories List Generator",
@@ -70,11 +70,11 @@
 		},
 		{
 			id: 4,
-			title: "Scattergories Game",
+			title: "Groople",
 			tech: "Svelte, Typescript, Tailwind, Vercel, GPT-3.5",
 			description:
 				"My childhood favorite board game, virtualized and judged by AI",
-			url: "https://scattergories.joemmalatesta.com",
+			url: "https://groople.xyz",
 			buttonText: "Visit Site",
 			image: "projects/scattergories.webp",
 			logos: ["vercel.png", "tailwind.png", "svelte.png", "openAI.png"],
@@ -149,7 +149,9 @@
 	</div>
 </div>
 
-<!-- Maybe use for phone sizes.  -->
+
+
+<!-- use for phone sizes.  -->
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:hidden">
 	{#each projects as project}
