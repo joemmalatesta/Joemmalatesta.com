@@ -5,7 +5,6 @@ cardDescription: "AI undoubtedly comes with some new risk but, in the short term
 description: ""
 pubDate: "May 08, 2023"
 # heroImage: "/blogs/programming/2023-tech.webp"
-inProgress: true
 ---
 well, it is. But you’ll still have a job.
 
