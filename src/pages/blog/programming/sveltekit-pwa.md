@@ -8,9 +8,9 @@ pubDate: "August 14, 2023"
 ---
 
 
-Groople has been undergoing some changes recently. One of the main features I’ve implemented as of recent is the introduction of a progressive web app (PWA). 
+My new game [Groople](https://groople.xyz) has been undergoing some changes recently. One of the main features I’ve implemented as of recent is the introduction of a Progressive Web App (PWA) for the game. 
 
-Making a SvleteKit project into a PWA is straightforward but the documentation is a bit scattered, and the process is slightly different from ones you will find online. After a struggle and breaking prod a few times, I’ve congregated the information into a single place, with some tips for testing. 
+Making a SvelteKit project into a PWA is straightforward but the documentation is a bit scattered, and the process is slightly different from ones you will find online. After a bit of a struggle and breaking prod a few times, I’ve congregated the information I learned into a single place, with some tips for testing and optimizing. 
 
 There are only 2 files you will need to add to your application. 
 
@@ -19,13 +19,13 @@ There are only 2 files you will need to add to your application.
     
     ```json
     {
-        "name": "Groople",
-        "short_name": "Groople",
-        "start_url": "/",
-        "display": "standalone",
+        "name": "Groople", //long name of your app
+        "short_name": "Groople", //name of your app on home screen
+        "start_url": "/", //homepage
+        "display": "standalone", //how app is displayed
         "background_color": "#ffffff",
         "theme_color": "#ffffff",
-        "icons": [
+        "icons": [ //icons for different uses, SVG can be used for all
             {
                 "src": "/favicon.svg",
                 "type": "image/svg+xml",
@@ -36,7 +36,7 @@ There are only 2 files you will need to add to your application.
     ```
     
 ### service-worker.js
-- Even in a typescript project, I suggest using ServiceWorkers.js - I was getting type errors a lot with using a TypeScript file. The exact code for this file is documented on the [SvelteKit documentation](https://kit.svelte.dev/docs/service-workers) and can be copied 1:1. What this does is saves and caches all the information on each page load, making your app viewable while offline.
+- Even in a TypeScript project, I suggest using ServiceWorkers.js to relieve some unnecessary errors. The exact code for this file is documented on the [SvelteKit documentation](https://kit.svelte.dev/docs/service-workers) and can be copied 1:1. What this does is saves and caches all the information on each page load, making your app viewable while offline. This file (given the correct file name) will auto initialize the service worker. You can confirm this in the developer tools under Application -> Service Workers
     
     ```javascript
     /// <reference types="@sveltejs/kit" />
@@ -103,9 +103,45 @@ There are only 2 files you will need to add to your application.
     });
     ```
     
-    Finally, you will need to change
+    Finally, you will need to change the head of your ```app.html``` file. It will look something like this. Keep in mind, iOS does not allow SVG images as their app icons. Use an [image generator](https://www.pwabuilder.com/imageGenerator), and save a 196x196 png image to your static folder for the file. To access files from the static folder in this file, we need to prefix with `%sveltekit.assets%` 
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="theme-color" content="#ffffff" />
+            <!-- Apple does not allow svg icons. -->
+            <!-- Use 196x196 png instead -->
+            <link rel="apple-touch-icon"
+            href="%sveltekit.assets%/apple-touch-icon.png" />
+            <link rel="apple-touch-icon-precomposed" 
+            href="%sveltekit.assets%/apple-touch-icon-precomposed.png" />
+
+            <link rel="icon" sizes="196x196" href="%sveltekit.assets%/apple-touch-icon.png" />
+            <link rel="manifest" href="%sveltekit.assets%/manifest.json" />
+            <title>Groople</title>
+            <meta name="viewport" content="width=device-width" />
+            %sveltekit.head%
+        </head>
+        <body data-sveltekit-preload-data="hover">
+            <div style="display: contents">%sveltekit.body%</div>
+        </body>
+    </html>
+    ```
     
-    TIPS
-    
-    - Apple does not accept svg’s as an app icon image format. Use png with the size 912x912. You can go [here](https://www.pwabuilder.com/imageGenerator) to generate the images from an svg.
-    - Use `npm run dev -- --host` to put your project on your local network. You can then try downloading the PWA on your phone.
+## TIPS
+
+- Use `npm run dev -- --host` to share your project to your local network. You can then try downloading the PWA onto your phone.
+- To remove the pesky search bar in iOS, add a scope to your PWA.
+  - In the `manifest.json` add ```"scope": "/",``` and in your `app.html` add 
+  ```html
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-wep-app-capable" content="yes" />
+  ```
+- Prompt users to download your app on PC using `something` and on the phone using `npm pack that prompts`
+- You can upload your PWA to the Google Play Store and the Microsoft Store (but not the iOS app store)
+
+
+### Conclusion
+Making your website into a PWA can have massive benefits for your users and can allow your app to have a more native feel. SvelteKit has a special process and helpers for creating a PWA, and I hope this guide helped you through the process of making your own. If you need additional help, you can [contact me](https://www.joemmalatesta.com/#contact), message me on [Twitter/X](https://twitter.com/_JoeMalatesta), or ask around in the [Svelte Discord](https://discord.gg/svelte) server.
