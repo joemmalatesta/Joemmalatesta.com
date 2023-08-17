@@ -36,7 +36,7 @@ There are only 2 files you will need to add to your application.
     ```
     
 ### service-worker.js
-- Even in a TypeScript project, I suggest using ServiceWorkers.js to relieve some unnecessary errors. The exact code for this file is documented on the [SvelteKit documentation](https://kit.svelte.dev/docs/service-workers) and can be copied 1:1. What this does is saves and caches all the information on each page load, making your app viewable while offline. This file (given the correct file name) will auto initialize the service worker. You can confirm this in the developer tools under Application -> Service Workers
+- Even in a TypeScript project, I suggest using ServiceWorkers.js to relieve some unnecessary errors. The exact code for this file is on the [SvelteKit documentation](https://kit.svelte.dev/docs/service-workers) and can be copied 1:1. What this does is saves and caches all the information on each page load, making your app viewable while offline. This file (given the correct file name service-worker.js) will auto initialize the service worker. You can confirm this in the developer tools by looking for a green dot in `Application -> Service Workers`
     
     ```javascript
     /// <reference types="@sveltejs/kit" />
@@ -103,7 +103,7 @@ There are only 2 files you will need to add to your application.
     });
     ```
     
-    Finally, you will need to change the head of your ```app.html``` file. It will look something like this. Keep in mind, iOS does not allow SVG images as their app icons. Use an [image generator](https://www.pwabuilder.com/imageGenerator), and save a 196x196 png image to your static folder for the file. To access files from the static folder in this file, we need to prefix with `%sveltekit.assets%` 
+    Finally, you will need to change the head of your ```app.html``` file. It will look something like this. To access files from the static folder in this file, we need to prefix with `%sveltekit.assets%` 
 
     ```html
     <!DOCTYPE html>
@@ -130,7 +130,7 @@ There are only 2 files you will need to add to your application.
     </html>
     ```
     
-## TIPS
+## Tips
 
 - Use `npm run dev -- --host` to share your project to your local network. You can then try downloading the PWA onto your phone.
 - To remove the pesky search bar in iOS, add a scope to your PWA.
@@ -144,4 +144,4 @@ There are only 2 files you will need to add to your application.
 
 
 ### Conclusion
-Making your website into a PWA can have massive benefits for your users and can allow your app to have a more native feel. SvelteKit has a special process and helpers for creating a PWA, and I hope this guide helped you through the process of making your own. If you need additional help, you can [contact me](https://www.joemmalatesta.com/#contact), message me on [Twitter/X](https://twitter.com/_JoeMalatesta), or ask around in the [Svelte Discord](https://discord.gg/svelte) server.
+Making your website into a PWA can have massive benefits for your users and can allow your app to have a more native feel. SvelteKit has a special process and helpers for creating a PWA and I hope this guide helped you through the process of building your own. If you need additional help, you can [contact me](https://www.joemmalatesta.com/#contact), message me on [Twitter/X](https://twitter.com/_JoeMalatesta), or ask around in the [Svelte Discord](https://discord.gg/svelte) server.
