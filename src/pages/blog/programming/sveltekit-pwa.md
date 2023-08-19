@@ -18,6 +18,7 @@ There are only 2 files you will need to add to your application.
 - This goes in the static directory - here is a sample, but extensive information of what can be done in this file can be found from [web.dev](http://web.dev)
     
     ```json
+    // static/manifest.json
     {
         "name": "Groople", //long name of your app
         "short_name": "Groople", //name of your app on home screen
@@ -39,6 +40,8 @@ There are only 2 files you will need to add to your application.
 - Even in a TypeScript project, I suggest using ServiceWorkers.js to relieve some unnecessary errors. The exact code for this file is on the [SvelteKit documentation](https://kit.svelte.dev/docs/service-workers) and can be copied 1:1. What this does is saves and caches all the information on each page load, making your app viewable while offline. This file (given the correct file name service-worker.js) will auto initialize the service worker. You can confirm this in the developer tools by looking for a green dot in `Application -> Service Workers`
     
     ```javascript
+    // src/service-worker.js
+
     /// <reference types="@sveltejs/kit" />
     import { build, files, version } from '$service-worker';
     
@@ -102,10 +105,15 @@ There are only 2 files you will need to add to your application.
         event.respondWith(respond());
     });
     ```
-    
-    Finally, you will need to change the head of your ```app.html``` file. It will look something like this. To access files from the static folder in this file, we need to prefix with `%sveltekit.assets%` 
+### Update app.hmtl
+- Finally, you will need to change the head of your ```app.html``` file. It will look something like this. To access files from the static folder in this file, we need to prefix with `%sveltekit.assets%` 
+- You must include
+  - manifest link `<link rel="manifest"`
+  - Icons link `<link rel="apple-touch-icon"`, `<link rel="apple-touch-icon-precomposed"`, `<link rel="icon"`
+  - theme-color `<meta name="theme-color"` 
 
     ```html
+    <!-- src/app.html -->
     <!DOCTYPE html>
     <html lang="en">
         <head>
