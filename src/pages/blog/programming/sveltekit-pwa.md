@@ -139,7 +139,6 @@ There are only 2 files you will need to add to your application.
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-wep-app-capable" content="yes" />
   ```
-- Prompt users to download your app on PC using `something` and on the phone using `npm pack that prompts`
 - You can upload your PWA to the Google Play Store and the Microsoft Store (but not the iOS app store)
 
 
