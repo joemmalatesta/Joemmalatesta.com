@@ -148,6 +148,7 @@ There are only 2 files you will need to add to your application.
   <meta name="mobile-wep-app-capable" content="yes" />
   ```
 - You can upload your PWA to the Google Play Store and the Microsoft Store (but not the iOS app store)
+- If you are starting a new app and want to have a working PWA from day one, you can clone [this repository](https://github.com/joemmalatesta/SvelteKit-PWA-Guide/tree/main/PWA-Demo) and work out from there
 
 
 ### Conclusion

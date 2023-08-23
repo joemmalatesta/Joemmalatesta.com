@@ -4,6 +4,16 @@ module.exports = {
 	theme: {
 		extend: {
 			typography: {
+				DEFAULT: {
+					css: {
+						a: {
+							color: "#818cf8",
+							"&:hover": {
+								color: "#6366f1",
+							},
+						},
+					},
+				},
 				quoteless: {
 					css: {
 						"blockquote p:first-of-type::before": { content: "none" },
@@ -16,8 +26,8 @@ module.exports = {
 							backgroundColor: "#0d1117",
 							color: "#ffffff",
 							fontWeight: "400",
-							"border-radius": "0.25rem"
-						  },
+							"border-radius": "0.25rem",
+						},
 						"code::before": {
 							content: '""',
 							"padding-left": "0.25rem",
@@ -25,7 +35,6 @@ module.exports = {
 						"code::after": {
 							content: '""',
 							"padding-right": "0.25rem",
-							
 						},
 					},
 				},
