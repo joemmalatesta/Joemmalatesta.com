@@ -8,9 +8,6 @@ module.exports = {
 					css: {
 						a: {
 							color: "#818cf8",
-							"&:hover": {
-								color: "#6366f1",
-							},
 						},
 					},
 				},
