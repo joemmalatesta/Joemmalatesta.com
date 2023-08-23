@@ -105,7 +105,7 @@ There are only 2 files you will need to add to your application.
         event.respondWith(respond());
     });
     ```
-### Update app.hmtl
+### Update app.html
 - Finally, you will need to change the head of your ```app.html``` file. It will look something like this. To access files from the static folder in this file, we need to prefix with `%sveltekit.assets%` 
 - You must include
   - manifest link `<link rel="manifest"`
