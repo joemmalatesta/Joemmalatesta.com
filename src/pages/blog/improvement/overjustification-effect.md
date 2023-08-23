@@ -4,8 +4,6 @@ title: "Think before you compliment someone"
 cardDescription: "Why I stopped going to the gym, and why I'm scared to be paid to program."
 description: "Recount the story of why I initially stopped going to the gym, the power of the Overjustification Effect, and why I'm scared to get paid to program."
 pubDate: "May 1, 2023"
-heroImage: "/teaching.jpeg"
-imageAlt: ""
 ---
 
 When I initially started going to the gym, I never thought about what would make me quit. It wasn't something I ever considered until after it happened. Why would I stop? It makes me feel good, look good, gives me confidence, and is a place to socialize with friends. Regardless of all that, I slowly removed it as a priority and began going less and less until it was a month in between sessions. While it was not a single thing that made me quit, a conversation with my mom opened me up to a profound idea. 

@@ -4,7 +4,6 @@ title: "In Defense of Technical Interviews"
 cardDescription: "Showing some deserved remorse for the bane of software developer interviewees"
 description: ""
 pubDate: "Feb 01, 2023"
-heroImage: "/blogs/programming/in-defense-of-technical-interviews.jpg"
 ---
 
 Technical Interviews are, without doubt, the most loathed part of the interview process. They are meant to meant to measure your coding ability, thought process, and how you approach a problem but have gained a reputation for being an inconsistent exam for regurgitating useless algorithms and data structures. For many, they are the sole thing that deters them from applying at many top companies, barring them from earning a higher salary or a better work life balance. 

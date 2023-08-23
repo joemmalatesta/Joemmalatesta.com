@@ -4,8 +4,6 @@ title: "The world is ending soon. So what?"
 cardDescription: "The threat of the world ending is increasingly high, here's how to take that news."
 description: "Explore the fear of an uncertain future as the world faces unprecedented challenges. Discover how to navigate the looming sense of doom and find a way to focus on living in the moment rather than worrying about what's out of your control."
 pubDate: "March 18, 2023"
-heroImage: "/blogs/improvement/the-world-is-ending-so-what.jpg"
-imageAlt: "How to deal with impending doom hero image"
 ---
 What are you afraid of? Or rather, what do you fear? The first question can be answered with shallow responses likely following the lines of “the dark, heights, spiders, etc.”. The second prompt, however, poses more of an existential question. What do you fear? Nowadays it seems like there is a lot to fear. My brother fears the world will not recover from the climate crisis, I fear technology is dehumanizing people, and my sister fears dying in a mass shooting. Each of these fears are not yet realized, but lie in the uncertainty of the future. 
 

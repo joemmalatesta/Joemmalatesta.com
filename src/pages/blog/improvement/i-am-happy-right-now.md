@@ -4,7 +4,6 @@ title: "I am happy right now."
 cardDescription: "I'm opting out of regret."
 description: ""
 pubDate: "July 10, 2023"
-heroImage: "/blogs/improvement/just-get-good-at-something.jpg"
 ---
 Today is my 21st birthday. I’m living through what most people call the best years of their life - and while I don’t want to share that sentiment (I hope they’re all good), I can see how that could be true. Legally, your level of autonomy pretty much maxes out at 21 years old. Everything is new, exciting, and you have all of your best friends to share it with for the next couple of years. Soon, however, those friends will have less and less time, fostering new jobs and new families, and you yourself will do the same. The acceptance of falling into a monotonous, comfortable job that you mindlessly do for 40 years is grotesque, but also kind of tempting. Being uncomfortable and taking risk in the moment sucks and is scary, but what's more scary is the alternative where you do nothing but work from 20-60 and have to look back at a life wasted. 
 ## Regret

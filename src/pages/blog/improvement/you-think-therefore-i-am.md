@@ -4,7 +4,6 @@ title: "You think, therefore I am"
 cardDescription: "How much do people opinions effect you? Probably more than you think."
 description: ""
 pubDate: "June 1, 2022"
-heroImage: "/teaching.jpeg"
 ---
 # You think, therefore I am
 

@@ -4,7 +4,8 @@ title: "SvelteKit PWA Guide"
 cardDescription: "How to create a progressive web app (PWA) with SvelteKit"
 description: "How to create a progressive web app (PWA) with SvelteKit. This goes over the files, file structure, and contents of the file in order to make a progressive web app. Using some built in helpers and my trial and error, creating a PWA in SvelteKit is really a trivial thing that can add a lot of value to your application."
 pubDate: "August 14, 2023"
-# heroImage: "/blogs/programming/2023-tech.webp"
+heroImage: "/Blogs/tech/sveltekit-pwa-guide.webp"
+imageAlt: "Installable PWA judged by lighthouse"
 ---
 
 

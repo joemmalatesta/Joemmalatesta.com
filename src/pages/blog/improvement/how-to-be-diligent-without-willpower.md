@@ -4,7 +4,6 @@ title: "How to be diligent without Willpower"
 cardDescription: "Discover a real life improvement duplication glitch"
 description: "Discover effective strategies to build positive habits and break free from destructive ones. Learn how to make the right actions effortless and the wrong choices inconvenient. Unlock your potential for focus, productivity, and personal growth. Take control of your habits and transform your life starting today."
 pubDate: "April 7, 2023"
-heroImage: "/blogs/improvement/just-get-good-at-something.jpg"
 ---
 Have you ever been trying to focus, but you just keep checking your phone, unprompted, every 3 minutes? You have, Don’t lie - We all do it. You know that checking it serves no real purpose; there’s nothing that needs your attention, and ignoring the work isn’t going to finish it - you know these things, so why do you still check your phone? And why is it that when your phone is in another room, on your bed, in a drawer, or just out of your direct vicinity that you pay no mind to it at all? If you’re so addicted to your phone, why aren’t you rushing to grab it every third minute?
 

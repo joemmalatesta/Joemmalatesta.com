@@ -45,7 +45,7 @@ const {
 			>
 				<!-- Should Provide an Alt -->
 				<!-- Don't really need an image -->
-				<!-- {heroImage && <img class="object-cover" src={heroImage} alt={imageAlt} />} -->
+				{heroImage ? <img class="object-cover" src={heroImage} alt={imageAlt} /> : ""}
 
 				<!-- && means, show if pubDate has a value -->
 				<div class="mt-4">

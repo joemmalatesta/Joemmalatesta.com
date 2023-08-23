@@ -4,7 +4,6 @@ title: "Front end Battle"
 cardDescription: "My struggles with learning front end development, it's secret dark side, and where I stand now"
 description: "Blog post about my introduction to computers and later, software development."
 pubDate: "Sept 14, 2022"
-heroImage: "/blogs/programming/front-end battle.jpg"
 ---
 Since I started learning how to program, I never gave much thought to becoming a front-end developer, and I've never been overly creative or
 had a knack for design. Even with all of that in mind, I still decided against making this website using a template like Squarespace or

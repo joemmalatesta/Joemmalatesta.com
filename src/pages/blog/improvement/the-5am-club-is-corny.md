@@ -4,7 +4,6 @@ title: "The 5AM Club is Corny"
 cardDescription: "The critically acclaimed guide to jump start your day was fictional?"
 description: "311 Pages of what could have been a fantasy bored me and inspired me at the same time. Robin Sharma's, The 5AM Club, was a book I found corny and unrealistic but served as a great reminder for how to live a fulfilling life."
 pubDate: "April 11, 2023"
-heroImage: "/teaching.jpeg"
 ---
 I forgot to go to bed last night, and instead spent the night finishing a book I couldn’t put down a few weeks ago. While I didn’t *wake up* at 5AM, I was awake at 5AM and got to experience an uncommon, but beautiful early morning. I woke up with the birds, watched some bunnies play with a squirrel, and got to enjoy the silence of the early morning. As corny as the book was, every time I picked it up I felt incredibly empowered and looked at the world a bit differently. It reminded me of the power of gratitude and to appreciate the unique in all that has become common. **Spoilers** - Even though that shouldn’t really matter.
 
