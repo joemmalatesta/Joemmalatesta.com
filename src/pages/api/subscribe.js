@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-import { emailNewSubscriber, sendMail } from "./mailer";
+import { emailNewSubscriber } from "./mailer";
 let mongoUsername = import.meta.env.MONGO_USERNAME;
 let mongoPassword = import.meta.env.MONGO_USER_PASSWORD;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
