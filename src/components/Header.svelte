@@ -12,7 +12,7 @@
 
 <!-- LARGE SCREEN SIZES -->
 <nav
-	class=" hidden md:flex items-center justify-between  text-2xl xl:mx-36 lg:mx-10 md:mx-5"
+	class=" hidden md:flex items-center justify-between text-2xl xl:mx-36 lg:mx-10 md:mx-5"
 >
 	<!-- Name -->
 	<a href="/">
@@ -98,26 +98,24 @@
 			</svg>
 		</a>
 		<button
+		class="flex flex-col py-2 pb-2 px-1"
 			on:click={() => {
 				showNav = !showNav;
 			}}
-			><img
-				src="/toggleNavButtonWhite.png"
-				alt="Navigation menu toggler"
-				width="40"
-				id="navToggler"
-				class={burgerClass}
-			/></button
 		>
+		<!-- Make burger that turns into an X -->
+				<div class="w-10 bg-white h-1 origin-center {showNav ? "rotate-45" : "rotate-0"} transition-all" />
+				<div class="w-10 bg-white h-1 origin-center {showNav ? "-rotate-45 -translate-y-1" : "rotate-0 translate-y-3"} transition-all" />
+		</button>
 	</div>
 
 	{#if showNav}
 		<div class="wrapper" transition:slide>
 			<div class="mx-2 mb-4 flex flex-col text-2xl">
-				<a class="" href="/about">▹About</a>
-				<a class="" href="/#blog">▹Blog</a>
-				<a class="" href="/#projects">▹Projects</a>
-				<a class="" href="/#contact">▹Contact</a>
+				<a class="underline underline-offset-2" href="/about">About</a>
+				<a class="underline underline-offset-2" href="/#blog">Blog</a>
+				<a class="underline underline-offset-2" href="/#projects">Projects</a>
+				<a class="underline underline-offset-2" href="/#contact">Contact</a>
 			</div>
 		</div>
 	{/if}
