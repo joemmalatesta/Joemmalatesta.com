@@ -66,7 +66,7 @@
 </nav>
 
 <!-- PHONE SCREEN SIZES -->
-<nav class="md:hidden flex flex-col items-start justify-start px-3 text-lg">
+<nav class="md:hidden flex flex-col items-start justify-center px-3 text-lg">
 	<div class="flex justify-between items-center w-full py-2 px-2">
 		<a href="/">
 			<svg
@@ -104,8 +104,8 @@
 			}}
 		>
 		<!-- Make burger that turns into an X -->
-				<div class="w-10 bg-white h-1 origin-center {showNav ? "rotate-45" : "rotate-0"} transition-all" />
-				<div class="w-10 bg-white h-1 origin-center {showNav ? "-rotate-45 -translate-y-1" : "rotate-0 translate-y-3"} transition-all" />
+				<div class="w-10 bg-white h-1 origin-center {showNav ? "rotate-45 translate-y-0" : "rotate-0 -translate-y-1.5"} transition-all" />
+				<div class="w-10 bg-white h-1 origin-center {showNav ? "-rotate-45 -translate-y-1" : "rotate-0 translate-y-1.5"} transition-all" />
 		</button>
 	</div>
 
