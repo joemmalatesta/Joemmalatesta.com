@@ -13,10 +13,10 @@
 	export let quotes;
 	let seeAllLink;
 	$: if(activeType == 0){
-		seeAllLink = "/blog/programming/all"
+		seeAllLink = "/blog/improvement/all"
 	}
 	else{
-		seeAllLink = "/blog/improvement/all"
+		seeAllLink = "/blog/programming/all"
 	}
 </script>
 
