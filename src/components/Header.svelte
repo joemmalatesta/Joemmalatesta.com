@@ -104,7 +104,8 @@
 			}}
 		>
 		<!-- Make burger that turns into an X -->
-				<div class="w-10 bg-white h-1 origin-center {showNav ? "rotate-45 translate-y-0" : "rotate-0 -translate-y-1.5"} transition-all" />
+				<div class="w-10 bg-white h-1 origin-center {showNav ? "rotate-45 translate-y-1" : "rotate-0 -translate-y-1.5"} transition-all" />
+				<div class="w-10 bg-white h-1 origin-center {showNav ? "rotate-45 translate-y-0" : "rotate-0 "} transition-all" />
 				<div class="w-10 bg-white h-1 origin-center {showNav ? "-rotate-45 -translate-y-1" : "rotate-0 translate-y-1.5"} transition-all" />
 		</button>
 	</div>
