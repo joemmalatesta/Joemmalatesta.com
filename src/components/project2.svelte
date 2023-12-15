@@ -9,6 +9,18 @@
 
 	const projects = [
 		{
+			id: 5,
+			title: "Groople",
+			tech: "Svelte, Typescript, Tailwind, Vercel, GPT-3.5",
+			description:
+				"My childhood favorite board game, virtualized and judged by AI",
+			url: "https://groople.xyz",
+			buttonText: "Visit Site",
+			image: "projects/scattergories.webp",
+			logos: ["vercel.png", "tailwind.png", "svelte.png", "openAI.png"],
+			colors: ["#e89850", "#c8bbde"],
+		},
+		{
 			id: 0,
 			title: "WakeMate",
 			tech: "Svelte, Typescript, Stripe, Mongo, Twilio",
@@ -19,6 +31,18 @@
 			image: "projects/wakeMate.webp",
 			logos: ["svelte.png", "mongo.png", "twilio.svg", "stripe.png"],
 			colors: ["#b8a6c1", "#8fa770"],
+		},
+		{
+			id: 6,
+			title: "ScanBite",
+			tech: "Svelte, Tailwind, Vercel, Clarifai, GPT-3.5",
+			description:
+				"Winning first place at Hack Dearborn, Snapbite gives you a breakdown of your meals nutrition from a photo.",
+			url: "https://devpost.com/software/snapbite",
+			buttonText: "Read DevPost",
+			image: "projects/scanbite.webp",
+			logos: ["clarifai.webp", "svelte.png", "mlhWin.webp", "openAI.png"],
+			colors: ["#e89850", "#c8bbde"],
 		},
 		// {
 		// 	id: 1,
@@ -66,18 +90,6 @@
 			buttonText: "Visit Site",
 			image: "projects/ScatterList.webp",
 			logos: ["vercel.png", "ts.png", "svelte.png", "tailwind.png"],
-			colors: ["#e89850", "#c8bbde"],
-		},
-		{
-			id: 4,
-			title: "Groople",
-			tech: "Svelte, Typescript, Tailwind, Vercel, GPT-3.5",
-			description:
-				"My childhood favorite board game, virtualized and judged by AI",
-			url: "https://groople.xyz",
-			buttonText: "Visit Site",
-			image: "projects/scattergories.webp",
-			logos: ["vercel.png", "tailwind.png", "svelte.png", "openAI.png"],
 			colors: ["#e89850", "#c8bbde"],
 		},
 	];
