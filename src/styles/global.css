@@ -15,6 +15,9 @@ body {
   @apply bg-[#222222] text-[#CFCFCF] overflow-x-hidden;
 
 }
+body:has(.navShown){
+overflow: hidden
+}
 h1{
   font-family:  sans-serif;
 }
